@@ -33,7 +33,7 @@
         <!-- /.navigation-list -->
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a href="#" class="navigation-link">+7 800 555-86-28</a>
+            <a href="tel:+78005558628" class="navigation-link">+7 800 555-86-28</a>
             <!-- /.navigation-link -->
           </li>
           <!-- /.navigation-item -->
@@ -61,27 +61,24 @@
 
     <main class="main-index">
 
-      <section class="information">
+      <section class="gallery">
         <h2>Нежный пломбир с клубничным джемом</h2>
         <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-        <button>Заказать</button>
-      </section>
-      <!-- /.information -->
+        <button type="button">Заказать</button>
 
-      <section class="gallery">
         <h2 class="visually-hidden">Слайдер</h2>
         <!-- /.visually-hidden -->
         <img src="" alt="Примеры товаров">
-        <button class="slider-button slider-button-prev">
+        <button type="button" class="slider-button slider-button-prev">
           <span class="visually-hidden">Предыдущее фото</span>  
         </button>
         <!-- /.slider-button slider-button-prev -->
-        <button class="slider-button slider-button-next">
+        <button type="button" class="slider-button slider-button-next">
           <span class="visually-hidden">Предыдущее фото</span>  
         </button>
         <!-- /.slider-button slider-button-next -->
 
-        <ol class="slider-pagination">
+        <ul class="slider-pagination">
           <li class="slider-pagination-item">
             <span class="visually-hidden">1 фото</span>
             <!-- /.visually-hidden -->
@@ -97,7 +94,7 @@
             <!-- /.visually-hidden -->
           </li>
           <!-- /.slider-pagination-item -->
-        </ol>
+        </ul>
         <!-- /.slider-pagination -->
 
         <ul class="social">
@@ -127,14 +124,14 @@
           <li class="gift-item">
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <button>Хочу подарок</button>
+            <button type="button">Хочу подарок</button>
             <img src="" alt="Фото малины в рожке для мороженного">
           </li>
           <!-- /.gift-item -->
           <li class="gift-item">
             <h3>Маршмеллоу даром!</h3>
             <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-            <button>Хочу подарок</button>
+            <button type="button">Хочу подарок</button>
             <img src="" alt="Фото маршмеллоу в рожке для мороженного">
           </li>
           <!-- /.gift-item -->
@@ -152,7 +149,7 @@
             <p>Сливочное мороженое с малиновым джемом</p>
             <p>
               <b>310 ₽/кг</b>
-              <button>В корзину</button>
+              <button type="button">В корзину</button>
             </p>
           </li>
           <!-- /.popular-product-item -->
@@ -162,7 +159,7 @@
             <p>Фисташковый пломбир с кусочками шоколада</p>
             <p class="price">
               <b>340 ₽/кг</b>
-              <button>В корзину</button>
+              <button type="button">В корзину</button>
             </p>
           </li>
           <!-- /.popular-product-item -->
@@ -172,7 +169,7 @@
             <p>Крем-брюле с черничным джемом</p>
             <p class="price">
               <b>330 ₽/кг</b>
-              <button>В корзину</button>
+              <button type="button">В корзину</button>
             </p>
           </li>
           <!-- /.popular-product-item -->
@@ -182,7 +179,7 @@
             <p>Ванильный пломбир со сладкой посыпкой</p>
             <p class="price">
               <b>320 ₽/кг</b>
-              <button>В корзину</button>
+              <button type="button">В корзину</button>
             </p>
           </li>
           <!-- /.popular-product-item -->
@@ -240,39 +237,37 @@
       <section class="delivery">
         <h3>Доставка любимого мороженого на дом</h3>
         <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-      </section>
-      <!-- /.delivery -->
 
-      <section class="delivery-form">
         <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <form action="https://echo.htmlacademy.ru/" class="delivery-form" method="post">
-          <p class="delivery-date">
+          <div class="delivery-date">
             <label for="delivery-date-time">Дата</label>
             <input type="text" id="delivery-date-time" class="delivery-date-time" name="delivery-date-time" placeholder="01.04.2020">
-          </p>
-        <!-- /.appointment-date -->
-          <p class="delivery-phone">
-            <label for="delivery-date-phone">Телефон</label>
-            <input type="tel" id="delivery-date-phone" class="delivery-date-phone" name="delivery-date-phone" placeholder="+7 800 999-00-00">
-          </p>
-        <!-- /.appointment-date -->
-          <p class="delivery-address">
-            <label for="delivery-date-address">Дата</label>
-            <input type="text" id="delivery-date-address" class="delivery-date-address" name="delivery-date-address" placeholder="ул. Большая Конюшенная, 19/8">
-          </p>
-        <!-- /.appointment-date -->
+          </div>
+        <!-- /.delivery-date -->
+          <div class="delivery-phone">
+            <label for="delivery-phone-number">Телефон</label>
+            <input type="tel" id="delivery-phone-number" class="delivery-phone-number" name="delivery-phone-number" placeholder="+7 800 999-00-00">
+          </div>
+        <!-- /.delivery-phone -->
+          <div class="delivery-address">
+            <label for="delivery-address-street">Адрес</label>
+            <input type="text" id="delivery-address-street" class="delivery-address-street" name="delivery-address-street" placeholder="ул. Большая Конюшенная, 19/8">
+          </div>
+        <!-- /.delivery-address -->
         <button class="button" type="submit">Отправить</button>
         </form>
         <!-- /.delivery-form -->
       </section>
-      <!-- /.delivery-form -->
+      <!-- /.delivery -->
+
 
       <section class="address">
         <address>
-          <p>Адрес главного офиса и офлайн-магазина:</p>
+          <span>Адрес главного офиса и офлайн-магазина:</span>
           <b>наб. реки Карповки, 5 лит П, Санкт-Петербург</b>
-          <p>Для заказов по телефону:</p>
-          <b>+7 (812) 812-12-12</b>
+          <span>Для заказов по телефону:</span>
+          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
           <span>(с 10 до 20 ежедневно)</span>
         </address>
       </section>
