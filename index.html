@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси</title>
+    <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -37,7 +38,7 @@
           </li>
           <!-- /.navigation-item -->
           <li class="navigation-item navigation-item-input">
-            <a href="#" class="navigation-link"><img src="" alt="Поиск"></a>
+            <a href="#" class="navigation-link"><span class="visually-hidden">Поиск</span><svg width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.663 8.188a4.667 4.667 0 1 1 8.028 3.237.67.67 0 0 0-.123.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" fill="#2D3440"/></svg></a>
             <!-- /.navigation-link -->
           </li>
           <!-- /.navigation-item navigation-item-input -->
@@ -146,40 +147,40 @@
             <img src="img/index/photo.jpg" alt="Малина">
             <h4>Малинка</h4>
             <p>Сливочное мороженое с малиновым джемом</p>
-            <p>
+            <div>
               <b>310 ₽/кг</b>
               <button type="button">В корзину</button>
-            </p>
+            </div>
           </li>
           <!-- /.popular-product-item -->
           <li class="popular-product-item">
             <img src="img/index/photo 1.jpg" alt="Фисташка">
             <h4>Малинка</h4>
             <p>Фисташковый пломбир с кусочками шоколада</p>
-            <p class="price">
+            <div>
               <b>340 ₽/кг</b>
               <button type="button">В корзину</button>
-            </p>
+            </div>
           </li>
           <!-- /.popular-product-item -->
           <li class="popular-product-item">
             <img src="img/index/photo 2.jpg" alt="Черника">
             <h4>Черника</h4>
             <p>Крем-брюле с черничным джемом</p>
-            <p class="price">
+            <div>
               <b>330 ₽/кг</b>
               <button type="button">В корзину</button>
-            </p>
+            </div>
           </li>
           <!-- /.popular-product-item -->
           <li class="popular-product-item">
             <img src="img/index/photo 3.jpg" alt="Бабл-гам">
             <h4>Бабл-гам</h4>
             <p>Ванильный пломбир со сладкой посыпкой</p>
-            <p class="price">
+            <div>
               <b>320 ₽/кг</b>
               <button type="button">В корзину</button>
-            </p>
+            </div>
           </li>
           <!-- /.popular-product-item -->
         </ul>
@@ -196,17 +197,17 @@
           </li>
           <!-- /.about-shop-item -->
           <li class="about-shop-item">
-            <img src="" alt="">
+            <img src="" alt="Иконка листика">
             <p>Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
           </li>
           <!-- /.about-shop-item -->
           <li class="about-shop-item">
-            <img src="" alt="">
+            <img src="" alt="Иконка коровы">
             <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.
-            </li>
+          </li>
           <!-- /.about-shop-item -->
           <li class="about-shop-item">
-            <img src="" alt="">
+            <img src="" alt="Иконка градусника">
             <p>Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
           </li>
           <!-- /.about-shop-item -->
@@ -234,22 +235,23 @@
       <!-- /.mailing-list -->
 
       <section class="delivery">
-        <h3>Доставка любимого мороженого на дом</h3>
+        <h2>Доставка любимого мороженого на дом</h2>
         <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
 
-        <div>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</div>
+      
         <form action="https://echo.htmlacademy.ru/" class="delivery-form" method="post">
-          <div class="delivery-date">
+          <div>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</div>
+          <div class="delivery-date delivery-point">
             <label for="delivery-date-time">Дата <img src="" alt="Иконка информации"></label>
             <input type="text" id="delivery-date-time" class="delivery-date-time" name="delivery-date-time" placeholder="01.04.2020">
           </div>
         <!-- /.delivery-date -->
-          <div class="delivery-phone">
+          <div class="delivery-phone delivery-point">
             <label for="delivery-phone-number">Телефон</label>
             <input type="tel" id="delivery-phone-number" class="delivery-phone-number" name="delivery-phone-number" placeholder="+7 800 999-00-00">
           </div>
         <!-- /.delivery-phone -->
-          <div class="delivery-address">
+          <div class="delivery-address delivery-point">
             <label for="delivery-address-street">Адрес <img src="" alt="Иконка информации"></label>
             <input type="text" id="delivery-address-street" class="delivery-address-street" name="delivery-address-street" placeholder="ул. Большая Конюшенная, 19/8">
           </div>
@@ -267,7 +269,8 @@
           <b>наб. реки Карповки, 5 лит П, Санкт-Петербург</b>
           <span>Для заказов по телефону:</span>
           <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <span>(с 10 до 20 ежедневно)</span>
+          <span class="schedule">(с 10 до 20 ежедневно)</span>
+          <button class="button">Форма обратной связи</button>
         </address>
       </section>
       <!-- /.address -->
@@ -300,7 +303,7 @@
         <ul class="footer-navigation-list">
           <li class="footer-navigation-item">
             <img src="" alt="Сердечко">
-            <a href="#" class="footer-navigation-link">Для поставщиков</a>
+            <a href="#" class="footer-navigation-link footer-navigation-link-active">Для поставщиков</a>
             <!-- /.footer-navigation-link -->
           </li>
           <!-- /.footer-navigation-item -->

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -73,11 +74,12 @@
                     <!-- /.breadcrumbs-item -->
                 </ul>
                 <!-- /.breadcrumbs -->
-                <h1 class="inner-header-title">Сливочное мороженое</h1>
+                <h2 class="inner-header-title">Сливочное мороженое</h2>
                 <!-- /.inner-header-title -->
             <div class="catalog-filter">
                 <h2 class="visually-hidden">Список товаров с фильтрами</h2>
                 <!-- /.visually-hidden -->
+                <span class="catalog-filter-title">Сортировка:</span>
                 <select aria-label="Сортировка" class="select-control">
                     <option value="popular">по популярности</option>
                     <option value="price-cheap">по цене(убыванию)</option>
@@ -86,7 +88,7 @@
                 <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form" method="get">
 
                     <div class="range-price">
-                        <label for="price">Цена: 100 ₽ – 500 ₽</label>
+                        <label class="catalog-filter-title" for="price">Цена: 100 ₽ – 500 ₽</label>
                         <input type="range" id="price" name="price" >
                     </div>
                     <!-- /.range-price -->
@@ -171,7 +173,7 @@
                     </fieldset>
                     <!-- /.catalog-filter-group -->
 
-                    <button class="button" type="submit">Применить</button>
+                    <button class="button filter-button" type="submit">Применить</button>
                 </form>
                 <!-- /.catalog-filter-form -->
             </div>
@@ -183,7 +185,7 @@
                             <h3>Малинка</h3>
                             <p>Сливочное мороженое с малиновым джемом</p>
                             <div>
-                                <span>310 ₽/кг</span>
+                                <b>310 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -196,7 +198,7 @@
                             <h3>Фисташка</h3>
                             <p>Фисташковый пломбир с кусочками шоколада</p>
                             <div>
-                                <span>340 ₽/кг</span>
+                                <b>340 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -209,7 +211,7 @@
                             <h3>Черника</h3>
                             <p>Крем-брюле с черничным джемом</p>
                             <div>
-                                <span>330 ₽/кг</span>
+                                <b>330 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -222,7 +224,7 @@
                             <h3>Бабл-гам</h3>
                             <p>Ванильный пломбир со сладкой посыпкой</p>
                             <div>
-                                <span>320 ₽/кг</span>
+                                <b>320 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -235,7 +237,7 @@
                             <h3>Ежевика</h3>
                             <p>Сливочное мороженое с ежевичным джемом</p>
                             <div>
-                                <span>330 ₽/кг</span>
+                                <b>330 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -248,7 +250,7 @@
                             <h3>Банан</h3>
                             <p>Сливочный пломбир с банановым вкусом</p>
                             <div>
-                                <span>340 ₽/кг</span>
+                                <b>340 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -261,7 +263,7 @@
                             <h3>Шоколадка</h3>
                             <p>Классический шоколадный пломбир</p>
                             <div>
-                                <span>270 ₽/кг</span>
+                                <b>270 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -274,7 +276,7 @@
                             <h3>Клубничка</h3>
                             <p>Сливочный пломбир с клубничным вкусом</p>
                             <div>
-                                <span>300 ₽/кг</span>
+                                <b>300 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -287,7 +289,7 @@
                             <h3>Лимон</h3>
                             <p>Освежающий лимонный сорбет</p>
                             <div>
-                                <span>310 ₽/кг</span>
+                                <b>310 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -300,7 +302,7 @@
                             <h3>Ментол</h3>
                             <p>Сливочный пломбир с ментоловым сиропом</p>
                             <div>
-                                <span>320 ₽/кг</span>
+                                <b>320 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -313,7 +315,7 @@
                             <h3>Орешек</h3>
                             <p>Фисташковый пломбир с шоколадным сиропом</p>
                             <div>
-                                <span>360 ₽/кг</span>
+                                <b>360 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -326,7 +328,7 @@
                             <h3>Крем-брюле</h3>
                             <p>Классическое крем-брюле</p>
                             <div>
-                                <span>280 ₽/кг</span>
+                                <b>280 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -345,27 +347,27 @@
                     </li>
                     <!-- /.pagination-item -->
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link pagination-prev">1</a>
+                        <a href="#" class="pagination-link">1</a>
                         <!-- /.pagination-link -->
                     </li>
                     <!-- /.pagination-item -->
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link pagination-prev">2</a>
+                        <a href="#" class="pagination-link">2</a>
                         <!-- /.pagination-link -->
                     </li>
                     <!-- /.pagination-item -->
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link pagination-prev">3</a>
+                        <a href="#" class="pagination-link">3</a>
                         <!-- /.pagination-link -->
                     </li>
                     <!-- /.pagination-item -->
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link pagination-prev">4</a>
+                        <a href="#" class="pagination-link">4</a>
                         <!-- /.pagination-link -->
                     </li>
                     <!-- /.pagination-item -->
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link pagination-prev">5</a>
+                        <a href="#" class="pagination-link">5</a>
                         <!-- /.pagination-link -->
                     </li>
                     <!-- /.pagination-item -->
