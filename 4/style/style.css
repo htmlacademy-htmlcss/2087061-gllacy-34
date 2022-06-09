@@ -1,0 +1,301 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/inter-400.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/inter-700.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/inter-900.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #2D3440;
+}
+
+/* .visually-hidden {
+    display: none;
+} */
+
+button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FCFCFC;
+}
+
+.navigation-list .navigation-item a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.navigation-user .navigation-item a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.gallery h2 {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.gallery p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.gallery button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+li.gift-item h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+
+
+li.gift-item p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+
+li.gift-item button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+li.popular-product-item h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+li.popular-product-item div b {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.about-shop {
+    background-image: url("/img/index/Сео.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.about-shop-item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.serving {
+    background-image: url("/img/index/news.jpg");
+    background-repeat: no-repeat;
+}
+
+.serving span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #565C66;
+}
+
+.serving h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.mailing-list {
+    background-image: url("/img/index/subscription.svg");
+    background-repeat: no-repeat;
+}
+
+.mailing-list p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #565C66;
+}
+
+.mailing-list-form input#email::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.delivery {
+    background-image: url("/img/index/delivery.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.delivery p {
+    font-weight: 400;
+    font-style: 16px;
+    line-height: 22px;
+    color: #565C66;
+}
+
+.delivery-form div {
+    font-weight: 400;
+    font-style: 16px;
+    line-height: 22px;
+    color: #565C66;
+}
+
+.delivery-point label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.delivery-point input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B9B9B9;
+}
+
+.address {
+    background-image: url("/img/index/feedback.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+address span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #565C66;
+}
+
+address b {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+address a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+address span.schedule {
+    font-size: 14px;
+}
+
+.footer-navigation-item a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-navigation-item a.footer-navigation-link-active {
+    font-weight: 700;
+}
+
+.footer-logo span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.breadcrumbs-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+} 
+
+.catalog-filter-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.select-control option {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.filter-button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.product-link h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2D3440;
+}
+
+.product-link p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #565C66;
+}
+
+.product-link div b {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2D3440;
+}
+
+.catalog-navigation button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.pagination-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.pagination-prev {
+    opacity: .3;
+}
+
