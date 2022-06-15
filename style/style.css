@@ -25,11 +25,12 @@
 body {
     font-family: "Inter", sans-serif;
     color: #2D3440;
+    background-color: #FEAFC3;
 }
 
-/* .visually-hidden {
-    display: none;
-} */
+input.input {
+    font-family: 'Inter';
+}
 
 button {
     font-weight: 700;
@@ -44,16 +45,26 @@ button {
     color: #2D3440;
 }
 
+.navigation-item-input button[type="button"] span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+    font-family: "Inter";
+}
+
 .navigation-list .navigation-item a {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    font-family: "Inter";
 }
 
 .navigation-user .navigation-item a {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    font-family: "Inter";
 }
 
 h2 {
@@ -269,13 +280,6 @@ address span.schedule {
     line-height: 20px;
 }
 
-
-.select-control option {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-}
-
 .filter-button {
     font-weight: 700;
     font-size: 14px;
@@ -327,6 +331,10 @@ address span.schedule {
 .select-control {
     background-color: rgba(252, 252, 252, 0.3);
     color: #2D3440;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
 }
 
 .catalog-filter-group {
