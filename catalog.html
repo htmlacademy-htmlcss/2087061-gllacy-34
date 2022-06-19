@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -14,7 +15,7 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <span class="navigation-link navigation-link-active">Каталог</span>
+              <span class="navigation-link-active">Каталог</span>
               <!-- /.navigation-link -->
             </li>
             <!-- /.navigation-item -->
@@ -32,23 +33,23 @@
           <!-- /.navigation-list -->
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a href="#" class="navigation-link">+7 800 555-86-28</a>
+              <a href="tel:+78005558628" class="navigation-link">+7 800 555-86-28</a>
               <!-- /.navigation-link -->
             </li>
             <!-- /.navigation-item -->
             <li class="navigation-item navigation-item-input">
-              <button type="button" class="navigation-link"><img src="" alt="Поиск"></a>
-              <!-- /.navigation-link -->
+              <button type="button" href="#" class="navigation-link"><span class="visually-hidden">Поиск</span></button>
+              <!-- /.navigation-link navigation-item-input-->
             </li>
             <!-- /.navigation-item navigation-item-input -->
-            <li class="navigation-item">
-                <a href="#" class="navigation-link"><img src="" alt="Вход"></a>
-                <!-- /.navigation-link -->
-              </li>
-              <!-- /.navigation-item -->
-            <li class="navigation-item">
-              <button type="button" class="navigation-link"><img src="" alt="Корзина"></button>
-              <!-- /.navigation-link -->
+            <li class="navigation-item navigation-item-input">
+              <button type="button" href="#" class="navigation-link"><span class="visually-hidden">Вход</span></button>
+              <!-- /.navigation-link navigation-item-input-->
+            </li>
+            <!-- /.navigation-item -->
+            <li class="navigation-item navigation-item-input">
+              <button type="button" href="#" class="navigation-link"><span class="visually-hidden">Корзина</span></button>
+              <!-- /.navigation-link navigation-item-input-->
             </li>
             <!-- /.navigation-item -->
           </ul>
@@ -73,21 +74,28 @@
                     <!-- /.breadcrumbs-item -->
                 </ul>
                 <!-- /.breadcrumbs -->
-                <h1 class="inner-header-title">Сливочное мороженое</h1>
+                <h2 class="inner-header-title">Сливочное мороженое</h2>
                 <!-- /.inner-header-title -->
             <div class="catalog-filter">
                 <h2 class="visually-hidden">Список товаров с фильтрами</h2>
                 <!-- /.visually-hidden -->
-                <select aria-label="Сортировка" class="select-control">
-                    <option value="popular">по популярности</option>
-                    <option value="price-cheap">по цене(убыванию)</option>
-                    <option value="preice-expensive">по цене(возрастанию)</option>
-                </select>
+                <div class="sorting">
+                    <span class="catalog-filter-title">Сортировка:</span>
+                    <select aria-label="Сортировка" class="select-control">
+                        <option value="popular">по популярности</option>
+                        <option value="price-cheap">по цене(убыванию)</option>
+                        <option value="preice-expensive">по цене(возрастанию)</option>
+                    </select>
+                </div>
+                <!-- /.sorting -->
                 <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form" method="get">
 
                     <div class="range-price">
-                        <label for="price">Цена: 100 ₽ – 500 ₽</label>
-                        <input type="range" id="price" name="price" >
+                        <label class="catalog-filter-title" for="price">Цена: 100 ₽ – 500 ₽</label>
+                        <div class="range-price-line">
+                            <input class="input" type="range" id="price" name="price" >
+                        </div>
+                        <!-- /.range-price-line -->
                     </div>
                     <!-- /.range-price -->
 
@@ -97,28 +105,28 @@
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input type="radio" class="control-input" name="product-group" value="0%">0%
+                                    <input type="radio" class="control-input input" name="product-group" value="0%">0%
                                 </label>
                                 <!-- /.control -->
                             </li>
                             <!-- /.catalog-filter-item -->
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input type="radio" class="control-input" name="product-group" value="10%" checked>до 10% 
+                                    <input type="radio" class="control-input input" name="product-group" value="10%" checked>до 10%
                                 </label>
                                 <!-- /.control -->
                             </li>
                             <!-- /.catalog-filter-item -->
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input type="radio" class="control-input" name="product-group" value="30%">до 30% 
+                                    <input type="radio" class="control-input input" name="product-group" value="30%">до 30%
                                 </label>
                                 <!-- /.control -->
                             </li>
                             <!-- /.catalog-filter-item -->
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input type="radio" class="control-input" name="product-group" value="above-30%">выше 30% 
+                                    <input type="radio" class="control-input input" name="product-group" value="above-30%">выше 30%
                                 </label>
                                 <!-- /.control -->
                             </li>
@@ -133,35 +141,35 @@
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input type="checkbox" class="control-input" name="chocolate" checked>шоколадные
+                                    <input type="checkbox" class="control-input input" name="chocolate" checked>шоколадные
                                 </label>
                                 <!-- /.control -->
                             </li>
                             <!-- /.catalog-filter-item -->
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input type="checkbox" class="control-input" name="sprinkles" checked>сахарные посыпки
+                                    <input type="checkbox" class="control-input input" name="sprinkles" checked>сахарные посыпки
                                 </label>
                                 <!-- /.control -->
                             </li>
                             <!-- /.catalog-filter-item -->
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input type="checkbox" class="control-input" name="fruits">фрукты
+                                    <input type="checkbox" class="control-input input" name="fruits">фрукты
                                 </label>
                                 <!-- /.control -->
                             </li>
                             <!-- /.catalog-filter-item -->
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input type="checkbox" class="control-input" name="syrups">сиропы
+                                    <input type="checkbox" class="control-input input" name="syrups">сиропы
                                 </label>
                                 <!-- /.control -->
                             </li>
                             <!-- /.catalog-filter-item -->
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input type="checkbox" class="control-input" name="jams">джемы
+                                    <input type="checkbox" class="control-input input" name="jams">джемы
                                 </label>
                                 <!-- /.control -->
                             </li>
@@ -171,7 +179,7 @@
                     </fieldset>
                     <!-- /.catalog-filter-group -->
 
-                    <button class="button" type="submit">Применить</button>
+                    <button class="button filter-button" type="submit">Применить</button>
                 </form>
                 <!-- /.catalog-filter-form -->
             </div>
@@ -179,11 +187,11 @@
                 <ul class="product-list">
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 1.jpg" width="168px" height="168px" alt="Малина">
+                            <img src="img/catalog/photo1.jpg" width="168px" height="168px" alt="Малина">
                             <h3>Малинка</h3>
                             <p>Сливочное мороженое с малиновым джемом</p>
-                            <div>
-                                <span>310 ₽/кг</span>
+                            <div class="price-block">
+                                <b>310 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -192,11 +200,11 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 2.jpg" width="168px" height="168px" alt="Фисташка">
+                            <img src="img/catalog/photo2.jpg" width="168px" height="168px" alt="Фисташка">
                             <h3>Фисташка</h3>
                             <p>Фисташковый пломбир с кусочками шоколада</p>
-                            <div>
-                                <span>340 ₽/кг</span>
+                            <div class="price-block">
+                                <b>340 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -205,11 +213,11 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 3.jpg" width="168px" height="168px" alt="Черника">
+                            <img src="img/catalog/photo3.jpg" width="168px" height="168px" alt="Черника">
                             <h3>Черника</h3>
                             <p>Крем-брюле с черничным джемом</p>
-                            <div>
-                                <span>330 ₽/кг</span>
+                            <div class="price-block">
+                                <b>330 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -218,11 +226,11 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 4.jpg" width="168px" height="168px" alt="Бабл-гам">
+                            <img src="img/catalog/photo4.jpg" width="168px" height="168px" alt="Бабл-гам">
                             <h3>Бабл-гам</h3>
                             <p>Ванильный пломбир со сладкой посыпкой</p>
-                            <div>
-                                <span>320 ₽/кг</span>
+                            <div class="price-block">
+                                <b>320 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -231,11 +239,11 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 5.jpg" width="168px" height="168px" alt="Ежевика">
+                            <img src="img/catalog/photo5.jpg" width="168px" height="168px" alt="Ежевика">
                             <h3>Ежевика</h3>
                             <p>Сливочное мороженое с ежевичным джемом</p>
-                            <div>
-                                <span>330 ₽/кг</span>
+                            <div class="price-block">
+                                <b>330 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -244,11 +252,11 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 6.jpg" width="168px" height="168px" alt="Банан">
+                            <img src="img/catalog/photo6.jpg" width="168px" height="168px" alt="Банан">
                             <h3>Банан</h3>
                             <p>Сливочный пломбир с банановым вкусом</p>
-                            <div>
-                                <span>340 ₽/кг</span>
+                            <div class="price-block">
+                                <b>340 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -257,11 +265,11 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 7.jpg" width="168px" height="168px" alt="Шоколадка">
+                            <img src="img/catalog/photo7.jpg" width="168px" height="168px" alt="Шоколадка">
                             <h3>Шоколадка</h3>
                             <p>Классический шоколадный пломбир</p>
-                            <div>
-                                <span>270 ₽/кг</span>
+                            <div class="price-block">
+                                <b>270 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -270,11 +278,11 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 8.jpg" width="168px" height="168px" alt="Клубничка">
+                            <img src="img/catalog/photo8.jpg" width="168px" height="168px" alt="Клубничка">
                             <h3>Клубничка</h3>
                             <p>Сливочный пломбир с клубничным вкусом</p>
-                            <div>
-                                <span>300 ₽/кг</span>
+                            <div class="price-block">
+                                <b>300 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -283,11 +291,11 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 9.jpg" width="168px" height="168px" alt="Лимон">
+                            <img src="img/catalog/photo9.jpg" width="168px" height="168px" alt="Лимон">
                             <h3>Лимон</h3>
                             <p>Освежающий лимонный сорбет</p>
-                            <div>
-                                <span>310 ₽/кг</span>
+                            <div class="price-block">
+                                <b>310 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -296,11 +304,11 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 10.jpg" width="168px" height="168px" alt="Ментол">
+                            <img src="img/catalog/photo10.jpg" width="168px" height="168px" alt="Ментол">
                             <h3>Ментол</h3>
                             <p>Сливочный пломбир с ментоловым сиропом</p>
-                            <div>
-                                <span>320 ₽/кг</span>
+                            <div class="price-block">
+                                <b>320 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -309,11 +317,11 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 11.jpg" width="168px" height="168px" alt="Орешек">
+                            <img src="img/catalog/photo11.jpg" width="168px" height="168px" alt="Орешек">
                             <h3>Орешек</h3>
                             <p>Фисташковый пломбир с шоколадным сиропом</p>
-                            <div>
-                                <span>360 ₽/кг</span>
+                            <div class="price-block">
+                                <b>360 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -322,11 +330,11 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 12.jpg" width="168px" height="168px" alt="Крем-брюле">
+                            <img src="img/catalog/photo12.jpg" width="168px" height="168px" alt="Крем-брюле">
                             <h3>Крем-брюле</h3>
                             <p>Классическое крем-брюле</p>
-                            <div>
-                                <span>280 ₽/кг</span>
+                            <div class="price-block">
+                                <b>280 ₽/кг</b>
                                 <button type="button"><span class="visually-hidden">Добавить в коризну</span></button>
                             </div>
                         </a>
@@ -338,6 +346,7 @@
             </div>
             <!-- /.product-cards -->
             <div class="catalog-navigation">
+                <button type="button" class="button">Показать еще</button>
                 <ul class="pagination">
                     <li class="pagination-item">
                         <a href="#" class="pagination-link pagination-prev"><span class="visually-hidden">Предыдущая страница</span></a>
@@ -345,27 +354,27 @@
                     </li>
                     <!-- /.pagination-item -->
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link pagination-prev">1</a>
+                        <a href="#" class="pagination-link">1</a>
                         <!-- /.pagination-link -->
                     </li>
                     <!-- /.pagination-item -->
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link pagination-prev">2</a>
+                        <a href="#" class="pagination-link">2</a>
                         <!-- /.pagination-link -->
                     </li>
                     <!-- /.pagination-item -->
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link pagination-prev">3</a>
+                        <a href="#" class="pagination-link">3</a>
                         <!-- /.pagination-link -->
                     </li>
                     <!-- /.pagination-item -->
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link pagination-prev">4</a>
+                        <a href="#" class="pagination-link">4</a>
                         <!-- /.pagination-link -->
                     </li>
                     <!-- /.pagination-item -->
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link pagination-prev">5</a>
+                        <a href="#" class="pagination-link">5</a>
                         <!-- /.pagination-link -->
                     </li>
                     <!-- /.pagination-item -->
@@ -376,7 +385,6 @@
                     <!-- /.pagination-item -->
                 </ul>
                 <!-- /.pagination -->
-                <button type="button" class="button">Показать еще</button>
             </div>
             <!-- /.catalog-navigation -->
         </section>
