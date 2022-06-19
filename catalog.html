@@ -79,17 +79,23 @@
             <div class="catalog-filter">
                 <h2 class="visually-hidden">Список товаров с фильтрами</h2>
                 <!-- /.visually-hidden -->
-                <span class="catalog-filter-title">Сортировка:</span>
-                <select aria-label="Сортировка" class="select-control">
-                    <option value="popular">по популярности</option>
-                    <option value="price-cheap">по цене(убыванию)</option>
-                    <option value="preice-expensive">по цене(возрастанию)</option>
-                </select>
+                <div class="sorting">
+                    <span class="catalog-filter-title">Сортировка:</span>
+                    <select aria-label="Сортировка" class="select-control">
+                        <option value="popular">по популярности</option>
+                        <option value="price-cheap">по цене(убыванию)</option>
+                        <option value="preice-expensive">по цене(возрастанию)</option>
+                    </select>
+                </div>
+                <!-- /.sorting -->
                 <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form" method="get">
 
                     <div class="range-price">
                         <label class="catalog-filter-title" for="price">Цена: 100 ₽ – 500 ₽</label>
-                        <input class="input" type="range" id="price" name="price" >
+                        <div class="range-price-line">
+                            <input class="input" type="range" id="price" name="price" >
+                        </div>
+                        <!-- /.range-price-line -->
                     </div>
                     <!-- /.range-price -->
 
@@ -181,7 +187,7 @@
                 <ul class="product-list">
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 1.jpg" width="168px" height="168px" alt="Малина">
+                            <img src="img/catalog/photo1.jpg" width="168px" height="168px" alt="Малина">
                             <h3>Малинка</h3>
                             <p>Сливочное мороженое с малиновым джемом</p>
                             <div>
@@ -194,7 +200,7 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 2.jpg" width="168px" height="168px" alt="Фисташка">
+                            <img src="img/catalog/photo2.jpg" width="168px" height="168px" alt="Фисташка">
                             <h3>Фисташка</h3>
                             <p>Фисташковый пломбир с кусочками шоколада</p>
                             <div>
@@ -207,7 +213,7 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 3.jpg" width="168px" height="168px" alt="Черника">
+                            <img src="img/catalog/photo3.jpg" width="168px" height="168px" alt="Черника">
                             <h3>Черника</h3>
                             <p>Крем-брюле с черничным джемом</p>
                             <div>
@@ -220,7 +226,7 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 4.jpg" width="168px" height="168px" alt="Бабл-гам">
+                            <img src="img/catalog/photo4.jpg" width="168px" height="168px" alt="Бабл-гам">
                             <h3>Бабл-гам</h3>
                             <p>Ванильный пломбир со сладкой посыпкой</p>
                             <div>
@@ -233,7 +239,7 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 5.jpg" width="168px" height="168px" alt="Ежевика">
+                            <img src="img/catalog/photo5.jpg" width="168px" height="168px" alt="Ежевика">
                             <h3>Ежевика</h3>
                             <p>Сливочное мороженое с ежевичным джемом</p>
                             <div>
@@ -246,7 +252,7 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 6.jpg" width="168px" height="168px" alt="Банан">
+                            <img src="img/catalog/photo6.jpg" width="168px" height="168px" alt="Банан">
                             <h3>Банан</h3>
                             <p>Сливочный пломбир с банановым вкусом</p>
                             <div>
@@ -259,7 +265,7 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 7.jpg" width="168px" height="168px" alt="Шоколадка">
+                            <img src="img/catalog/photo7.jpg" width="168px" height="168px" alt="Шоколадка">
                             <h3>Шоколадка</h3>
                             <p>Классический шоколадный пломбир</p>
                             <div>
@@ -272,7 +278,7 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 8.jpg" width="168px" height="168px" alt="Клубничка">
+                            <img src="img/catalog/photo8.jpg" width="168px" height="168px" alt="Клубничка">
                             <h3>Клубничка</h3>
                             <p>Сливочный пломбир с клубничным вкусом</p>
                             <div>
@@ -285,7 +291,7 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 9.jpg" width="168px" height="168px" alt="Лимон">
+                            <img src="img/catalog/photo9.jpg" width="168px" height="168px" alt="Лимон">
                             <h3>Лимон</h3>
                             <p>Освежающий лимонный сорбет</p>
                             <div>
@@ -298,7 +304,7 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 10.jpg" width="168px" height="168px" alt="Ментол">
+                            <img src="img/catalog/photo10.jpg" width="168px" height="168px" alt="Ментол">
                             <h3>Ментол</h3>
                             <p>Сливочный пломбир с ментоловым сиропом</p>
                             <div>
@@ -311,7 +317,7 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 11.jpg" width="168px" height="168px" alt="Орешек">
+                            <img src="img/catalog/photo11.jpg" width="168px" height="168px" alt="Орешек">
                             <h3>Орешек</h3>
                             <p>Фисташковый пломбир с шоколадным сиропом</p>
                             <div>
@@ -324,7 +330,7 @@
                     <!-- /.product-card -->
                     <li class="product-card">
                         <a href="#" class="product-link">
-                            <img src="img/catalog/photo 12.jpg" width="168px" height="168px" alt="Крем-брюле">
+                            <img src="img/catalog/photo12.jpg" width="168px" height="168px" alt="Крем-брюле">
                             <h3>Крем-брюле</h3>
                             <p>Классическое крем-брюле</p>
                             <div>
@@ -340,6 +346,7 @@
             </div>
             <!-- /.product-cards -->
             <div class="catalog-navigation">
+                <button type="button" class="button">Показать еще</button>
                 <ul class="pagination">
                     <li class="pagination-item">
                         <a href="#" class="pagination-link pagination-prev"><span class="visually-hidden">Предыдущая страница</span></a>
@@ -378,7 +385,6 @@
                     <!-- /.pagination-item -->
                 </ul>
                 <!-- /.pagination -->
-                <button type="button" class="button">Показать еще</button>
             </div>
             <!-- /.catalog-navigation -->
         </section>
