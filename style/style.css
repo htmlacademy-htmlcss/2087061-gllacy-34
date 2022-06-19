@@ -65,17 +65,22 @@ body {
     background-color: rgba(252, 252, 252, 0.3);
 }
 
+.navigation-link-active {
+    color: #FFFFFF;
+    background-color: #FF4A78;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+}
+
 .navigation-item-input-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #2D3440;
     font-family: "Inter", sans-serif;
-}
-
-.navigation-link-active {
-    color: #ffffff;
-    background-color: #FF4A78;
 }
 
 .navigation-item .navigation-link {
@@ -116,7 +121,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    background-color: #fcfcfc;
+    background-color: #FCFCFC;
     color: #2D3440;
 }
 
@@ -319,7 +324,7 @@ body {
     font-size: 14px;
     line-height: 20px;
     color: #2D3440;
-    background-color: rgba(#000000, 0.1);
+    background-color: rgba(252, 252, 252, 0.3);
 }
 
 .product-link {
@@ -481,7 +486,7 @@ ul.product-list {
 
 li.product-card {
     flex-basis: 25%;
-    background-color: #fcfcfc;
+    background-color: #FCFCFC;
 }
 
 .range-price-line {
