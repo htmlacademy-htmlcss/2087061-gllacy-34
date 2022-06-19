@@ -28,8 +28,6 @@ body {
     font-family: "Inter", sans-serif;
     color: #2D3440;
     background-color: #FEAFC3;
-    margin: 0;
-    padding: 0;
 }
 
 .page-container {
@@ -41,7 +39,7 @@ body {
     display: none;
 }
 
-input.input {
+.input {
     font-family: 'Inter';
 }
 
@@ -57,19 +55,25 @@ input.input {
     list-style: none;
 }
 
-.navigation-item-input button[type="button"] {
-    background-color: rgba(252, 252, 252, 0.3);
+.navigation-link-button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
     color: #2D3440;
+    background-color: rgba(252, 252, 252, 0.3);
 }
 
-.navigation-item-input button[type="button"] span {
+.navigation-item-input-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #2D3440;
     font-family: "Inter", sans-serif;
 }
-.navigation-item .navigation-link-active {
+
+.navigation-link-active {
     color: #ffffff;
     background-color: #FF4A78;
 }
@@ -90,7 +94,7 @@ input.input {
     font-family: "Inter", sans-serif;
 }
 
-h2 {
+.title-block {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
@@ -120,23 +124,19 @@ h2 {
     background-color: #FF7799;
 }
 
-li.gift-item h3{
+.gift-item h3{
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
 }
 
-
-
-li.gift-item p{
+.gift-item p{
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
 }
 
-
-
-li.gift-item button{
+.gift-item button{
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -144,26 +144,27 @@ li.gift-item button{
     color: #2D3440;
 }
 
-li.popular-product-item {
+.popular-product-item {
     background-color: #FCFCFC;
 }
 
-li.popular-product-item h4 {
+.popular-product-item h4 {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
 
-li.popular-product-item p {
+.popular-product-item p {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
 }
 
-li.popular-product-item div b {
+.price-block b {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    color: #2D3440;
 }
 
 .about-shop {
@@ -208,7 +209,7 @@ li.popular-product-item div b {
     color: #565C66;
 }
 
-.mailing-list-form input[type="email"] {
+.mailing-list-form .input {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -227,7 +228,7 @@ li.popular-product-item div b {
     color: #565C66;
 }
 
-.delivery-form div {
+.info-order {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -339,14 +340,7 @@ li.popular-product-item div b {
     color: #565C66;
 }
 
-.product-link div b {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #2D3440;
-}
-
-.catalog-navigation button {
+.catalog-navigation .button {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -433,7 +427,7 @@ ul.pagination {
     justify-content: space-evenly;
 }
 
-footer {
+.page-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -490,12 +484,10 @@ li.product-card {
     background-color: #fcfcfc;
 }
 
-
-
 .range-price-line {
     background-color: rgba(252, 252, 252, 0.3);
 }
 
-ul.pagination li {
+.pagination .pagination-item {
     list-style: none;
 }
