@@ -45,7 +45,7 @@ input.input {
     font-family: 'Inter';
 }
 
-button {
+.button {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -74,7 +74,7 @@ button {
     background-color: #FF4A78;
 }
 
-.navigation-list .navigation-item a {
+.navigation-item .navigation-link {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -83,7 +83,7 @@ button {
     color: #2D3440;
 }
 
-.navigation-user .navigation-item a {
+.navigation-user .navigation-link {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -116,7 +116,7 @@ h2 {
     color: #2D3440;
 }
 
-li.gift-item {
+.gift-item {
     background-color: #FF7799;
 }
 
@@ -253,26 +253,26 @@ li.popular-product-item div b {
     background-size: 100% auto;
 }
 
-address span {
+.address-block span {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #565C66;
 }
 
-address b {
+.address-block b {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
 
-address a {
+.address-block a {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
 
-address span.schedule {
+.address-block .schedule {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -318,7 +318,7 @@ address span.schedule {
     font-size: 14px;
     line-height: 20px;
     color: #2D3440;
-    background-color: rgba(252, 252, 252, 0.3);
+    background-color: rgba(#000000, 0.1);
 }
 
 .product-link {
