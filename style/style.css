@@ -22,17 +22,15 @@
     font-display: swap;
 }
 
-
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
 
 body {
     font-family: "Inter", sans-serif;
     color: #2D3440;
     background-color: #FEAFC3;
-}
-
-.page-container {
-    max-width: 1170px;
-    margin: 0 auto;
 }
 
 .visually-hidden {
@@ -128,6 +126,16 @@ body {
     color: #2D3440;
 }
 
+.gift {
+    margin-top: 80px;
+}
+
+.gift .title-block {
+    max-width: 434px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .gift-item {
     background-color: #FF7799;
 }
@@ -179,6 +187,22 @@ body {
     background-image: url("../img/index/Сео.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.about-shop-content {
+    background-color: #FFFFFF;
+}
+
+.about-shop-content .title-block {
+    text-align: center;
+}
+
+.about-shop-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .about-shop-item p {
@@ -203,6 +227,7 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+    margin: 0;
 }
 
 .mailing-list {
@@ -210,7 +235,12 @@ body {
     background-repeat: no-repeat;
 }
 
-.mailing-list p {
+.mailing-list-content {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.mailing-list-content p {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -221,13 +251,26 @@ body {
     background-image: url("../img/index/delivery.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.delivery p {
+.delivery-info {
+    max-width: 371px;
+}
+
+.delivery-info p {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #565C66;
+}
+
+.delivery-form {
+    max-width: 500px;
+    background-color: #FCFCFC;
+    padding: 40px;
 }
 
 .info-order {
@@ -254,6 +297,12 @@ body {
     background-image: url("../img/index/feedback.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
+    padding: 64px;
+}
+
+.address-block {
+    max-width: 343px;
+    background-color: #FCFCFC;
 }
 
 .address-block span {
@@ -404,6 +453,7 @@ body {
 
 .gallery {
     display: flex;
+    padding-left: 70px;
 }
 
 .gift-items {
@@ -427,6 +477,13 @@ body {
 
 .about-shop-item {
     flex-basis: 50%;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
 }
 
 .delivery {
