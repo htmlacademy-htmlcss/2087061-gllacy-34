@@ -442,6 +442,17 @@ body {
     line-height: 20px;
     color: #2D3440;
     background-color: rgba(252, 252, 252, 0.3);
+    border: 2px solid #FCFCFC;
+    width: 185px;
+    height: 36px;
+    border-radius: 20px;
+}
+
+.sorting {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 24px;
 }
 
 .product-link {
@@ -505,7 +516,11 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-
+    width: 196px;
+    height: 36px;
+    border-radius: 20px;
+    padding: 0 10px 0 16px;
+    border: none;
 }
 
 .control {
@@ -517,6 +532,43 @@ body {
 .catalog-filter-group {
     background-color: rgba(252, 252, 252, 0.3);
     color: #2D3440;
+    border: none;
+    border-radius: 18px;
+    padding: 0;
+}
+
+.catalog-filter-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 8px 24px;
+}
+
+.catalog-filter-item {
+    list-style: none;
+}
+
+.catalog-filter-item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.catalog-filter-upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalog-filter-upper .catalog-filter-group {
+    margin-left: 24px;
+}
+
+.catalog-filter-lower {
+    display: flex;
+    align-items: center;
+}
+
+.catalog-filter-lower .catalog-filter-group {
+    margin-right: 16px;
 }
 
 .navigation {
@@ -611,11 +663,14 @@ body {
 
 .catalog-filter {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 823px;
 }
 
 .catalog-filter-form {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 .product-list {
@@ -632,6 +687,16 @@ body {
 
 .range-price-line {
     background-color: rgba(252, 252, 252, 0.3);
+    border-radius: 20px;
+    width: 196px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.range-price-line .input {
+
 }
 
 .pagination .pagination-item {
