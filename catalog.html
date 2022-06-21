@@ -80,109 +80,115 @@
                 <div class="catalog-filter">
                     <h2 class="visually-hidden">Список товаров с фильтрами</h2>
                     <!-- /.visually-hidden -->
-                    <div class="sorting">
-                        <span class="catalog-filter-title">Сортировка:</span>
-                        <select aria-label="Сортировка" class="select-control">
-                            <option value="popular">по популярности</option>
-                            <option value="price-cheap">по цене(убыванию)</option>
-                            <option value="preice-expensive">по цене(возрастанию)</option>
-                        </select>
-                    </div>
-                    <!-- /.sorting -->
-                    <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form" method="get">
-
-                        <div class="range-price">
-                            <label class="catalog-filter-title" for="price">Цена: 100 ₽ – 500 ₽</label>
-                            <div class="range-price-line">
-                                <input class="input" type="range" id="price" name="price" >
-                            </div>
-                            <!-- /.range-price-line -->
+                    <div class="catalog-filter-upper">
+                        <div class="sorting">
+                            <span class="catalog-filter-title">Сортировка:</span>
+                            <select aria-label="Сортировка" class="select-control">
+                                <option value="popular">по популярности</option>
+                                <option value="price-cheap">по цене(убыванию)</option>
+                                <option value="preice-expensive">по цене(возрастанию)</option>
+                            </select>
                         </div>
-                        <!-- /.range-price -->
+                        <!-- /.sorting -->
+                        <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form" method="get">
 
-                        <fieldset class="catalog-filter-group">
-                            <legend class="catalog-filter-title">Жирность:</legend>
+                            <div class="range-price">
+                                <label class="catalog-filter-title" for="price">Цена: 100 ₽ – 500 ₽</label>
+                                <div class="range-price-line">
+                                    <input class="input" type="range" id="price" name="price" >
+                                </div>
+                                <!-- /.range-price-line -->
+                            </div>
+                            <!-- /.range-price -->
 
-                            <ul class="catalog-filter-list">
-                                <li class="catalog-filter-item">
-                                    <label class="control">
-                                        <input type="radio" class="control-input input" name="product-group" value="0%">0%
-                                    </label>
-                                    <!-- /.control -->
-                                </li>
-                                <!-- /.catalog-filter-item -->
-                                <li class="catalog-filter-item">
-                                    <label class="control">
-                                        <input type="radio" class="control-input input" name="product-group" value="10%" checked>до 10%
-                                    </label>
-                                    <!-- /.control -->
-                                </li>
-                                <!-- /.catalog-filter-item -->
-                                <li class="catalog-filter-item">
-                                    <label class="control">
-                                        <input type="radio" class="control-input input" name="product-group" value="30%">до 30%
-                                    </label>
-                                    <!-- /.control -->
-                                </li>
-                                <!-- /.catalog-filter-item -->
-                                <li class="catalog-filter-item">
-                                    <label class="control">
-                                        <input type="radio" class="control-input input" name="product-group" value="above-30%">выше 30%
-                                    </label>
-                                    <!-- /.control -->
-                                </li>
-                                <!-- /.catalog-filter-item -->
-                            </ul>
-                            <!-- /.catalog-filter-list -->
-                        </fieldset>
-                        <!-- /.catalog-filter-group -->
+                            <fieldset class="catalog-filter-group">
+                                <legend class="catalog-filter-title">Жирность:</legend>
 
-                        <fieldset class="catalog-filter-group">
-                            <legend class="catalog-filter-title">Наполнители:</legend>
-                            <ul class="catalog-filter-list">
-                                <li class="catalog-filter-item">
-                                    <label class="control">
-                                        <input type="checkbox" class="control-input input" name="chocolate" checked>шоколадные
-                                    </label>
-                                    <!-- /.control -->
-                                </li>
-                                <!-- /.catalog-filter-item -->
-                                <li class="catalog-filter-item">
-                                    <label class="control">
-                                        <input type="checkbox" class="control-input input" name="sprinkles" checked>сахарные посыпки
-                                    </label>
-                                    <!-- /.control -->
-                                </li>
-                                <!-- /.catalog-filter-item -->
-                                <li class="catalog-filter-item">
-                                    <label class="control">
-                                        <input type="checkbox" class="control-input input" name="fruits">фрукты
-                                    </label>
-                                    <!-- /.control -->
-                                </li>
-                                <!-- /.catalog-filter-item -->
-                                <li class="catalog-filter-item">
-                                    <label class="control">
-                                        <input type="checkbox" class="control-input input" name="syrups">сиропы
-                                    </label>
-                                    <!-- /.control -->
-                                </li>
-                                <!-- /.catalog-filter-item -->
-                                <li class="catalog-filter-item">
-                                    <label class="control">
-                                        <input type="checkbox" class="control-input input" name="jams">джемы
-                                    </label>
-                                    <!-- /.control -->
-                                </li>
-                                <!-- /.catalog-filter-item -->
-                            </ul>
-                            <!-- /.catalog-filter-list -->
-                        </fieldset>
-                        <!-- /.catalog-filter-group -->
+                                <ul class="catalog-filter-list">
+                                    <li class="catalog-filter-item">
+                                        <label class="control">
+                                            <input type="radio" class="control-input input" name="product-group" value="0%">0%
+                                        </label>
+                                        <!-- /.control -->
+                                    </li>
+                                    <!-- /.catalog-filter-item -->
+                                    <li class="catalog-filter-item">
+                                        <label class="control">
+                                            <input type="radio" class="control-input input" name="product-group" value="10%" checked>до 10%
+                                        </label>
+                                        <!-- /.control -->
+                                    </li>
+                                    <!-- /.catalog-filter-item -->
+                                    <li class="catalog-filter-item">
+                                        <label class="control">
+                                            <input type="radio" class="control-input input" name="product-group" value="30%">до 30%
+                                        </label>
+                                        <!-- /.control -->
+                                    </li>
+                                    <!-- /.catalog-filter-item -->
+                                    <li class="catalog-filter-item">
+                                        <label class="control">
+                                            <input type="radio" class="control-input input" name="product-group" value="above-30%">выше 30%
+                                        </label>
+                                        <!-- /.control -->
+                                    </li>
+                                    <!-- /.catalog-filter-item -->
+                                </ul>
+                                <!-- /.catalog-filter-list -->
+                            </fieldset>
+                            <!-- /.catalog-filter-group -->
+                    </div>
+                    <!-- /.catalog-filter-upper -->
 
-                        <button class="button filter-button" type="submit">Применить</button>
-                    </form>
-                    <!-- /.catalog-filter-form -->
+                    <div class="catalog-filter-lower">
+                        <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form" method="get">
+                            <fieldset class="catalog-filter-group">
+                                <legend class="catalog-filter-title">Наполнители:</legend>
+                                <ul class="catalog-filter-list">
+                                    <li class="catalog-filter-item">
+                                        <label class="control">
+                                            <input type="checkbox" class="control-input input" name="chocolate" checked>шоколадные
+                                        </label>
+                                        <!-- /.control -->
+                                    </li>
+                                    <!-- /.catalog-filter-item -->
+                                    <li class="catalog-filter-item">
+                                        <label class="control">
+                                            <input type="checkbox" class="control-input input" name="sprinkles" checked>сахарные посыпки
+                                        </label>
+                                        <!-- /.control -->
+                                    </li>
+                                    <!-- /.catalog-filter-item -->
+                                    <li class="catalog-filter-item">
+                                        <label class="control">
+                                            <input type="checkbox" class="control-input input" name="fruits">фрукты
+                                        </label>
+                                        <!-- /.control -->
+                                    </li>
+                                    <!-- /.catalog-filter-item -->
+                                    <li class="catalog-filter-item">
+                                        <label class="control">
+                                            <input type="checkbox" class="control-input input" name="syrups">сиропы
+                                        </label>
+                                        <!-- /.control -->
+                                    </li>
+                                    <!-- /.catalog-filter-item -->
+                                    <li class="catalog-filter-item">
+                                        <label class="control">
+                                            <input type="checkbox" class="control-input input" name="jams">джемы
+                                        </label>
+                                        <!-- /.control -->
+                                    </li>
+                                    <!-- /.catalog-filter-item -->
+                                </ul>
+                                <!-- /.catalog-filter-list -->
+                            </fieldset>
+                            <!-- /.catalog-filter-group -->
+                            <button class="button filter-button" type="submit">Применить</button>
+                        </form>
+                        <!-- /.catalog-filter-form -->
+                    </div>
+                    <!-- /.catalog-filter-lower -->
                 </div>
                 <div class="product-cards">
                     <ul class="product-list">
@@ -347,45 +353,48 @@
                 </div>
                 <!-- /.product-cards -->
                 <div class="catalog-navigation">
-                    <button type="button" class="button">Показать еще</button>
-                    <ul class="pagination">
-                        <li class="pagination-item">
-                            <a href="#" class="pagination-link pagination-prev"><span class="visually-hidden">Предыдущая страница</span></a>
-                            <!-- /.pagination-link -->
-                        </li>
-                        <!-- /.pagination-item -->
-                        <li class="pagination-item">
-                            <a href="#" class="pagination-link">1</a>
-                            <!-- /.pagination-link -->
-                        </li>
-                        <!-- /.pagination-item -->
-                        <li class="pagination-item">
-                            <a href="#" class="pagination-link">2</a>
-                            <!-- /.pagination-link -->
-                        </li>
-                        <!-- /.pagination-item -->
-                        <li class="pagination-item">
-                            <a href="#" class="pagination-link">3</a>
-                            <!-- /.pagination-link -->
-                        </li>
-                        <!-- /.pagination-item -->
-                        <li class="pagination-item">
-                            <a href="#" class="pagination-link">4</a>
-                            <!-- /.pagination-link -->
-                        </li>
-                        <!-- /.pagination-item -->
-                        <li class="pagination-item">
-                            <a href="#" class="pagination-link">5</a>
-                            <!-- /.pagination-link -->
-                        </li>
-                        <!-- /.pagination-item -->
-                        <li class="pagination-item">
-                            <a href="#" class="pagination-link pagination-next"><span class="visually-hidden">Следующая страница</span></a>
-                            <!-- /.pagination-link -->
-                        </li>
-                        <!-- /.pagination-item -->
-                    </ul>
-                    <!-- /.pagination -->
+                    <div class="catalog-navigation-content">
+                        <button type="button" class="button">Показать еще</button>
+                        <ul class="pagination">
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link pagination-prev"><span class="visually-hidden">Предыдущая страница</span></a>
+                                <!-- /.pagination-link -->
+                            </li>
+                            <!-- /.pagination-item -->
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">1</a>
+                                <!-- /.pagination-link -->
+                            </li>
+                            <!-- /.pagination-item -->
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">2</a>
+                                <!-- /.pagination-link -->
+                            </li>
+                            <!-- /.pagination-item -->
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">3</a>
+                                <!-- /.pagination-link -->
+                            </li>
+                            <!-- /.pagination-item -->
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">4</a>
+                                <!-- /.pagination-link -->
+                            </li>
+                            <!-- /.pagination-item -->
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">5</a>
+                                <!-- /.pagination-link -->
+                            </li>
+                            <!-- /.pagination-item -->
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link pagination-next"><span class="visually-hidden">Следующая страница</span></a>
+                                <!-- /.pagination-link -->
+                            </li>
+                            <!-- /.pagination-item -->
+                        </ul>
+                        <!-- /.pagination -->
+                    </div>
+                    <!-- /.catalog-navigation-content -->
                 </div>
                 <!-- /.catalog-navigation -->
             </section>
