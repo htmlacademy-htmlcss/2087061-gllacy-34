@@ -11,50 +11,56 @@
         <nav class="navigation">
           <h1 class="visually-hidden">GllacyShop</h1>
           <!-- /.visually-hidden -->
-          <a href="#">
-            <img src="img/index/logo.svg" class="logo" alt="Логотип магазина 'GllacyShop'">
-          </a>
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a href="catalog.html" class="navigation-link">Каталог</a>
-              <!-- /.navigation-link -->
-            </li>
-            <!-- /.navigation-item -->
-            <li class="navigation-item">
-              <a href="#" class="navigation-link">Доставка и оплата</a>
-              <!-- /.navigation-link -->
-            </li>
-            <!-- /.navigation-item -->
-            <li class="navigation-item">
-              <a href="#" class="navigation-link">О компании</a>
-              <!-- /.navigation-link -->
-            </li>
-            <!-- /.navigation-item -->
-          </ul>
-          <!-- /.navigation-list -->
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a href="tel:+78005558628" class="navigation-link">+7 800 555-86-28</a>
-              <!-- /.navigation-link -->
-            </li>
-            <!-- /.navigation-item -->
-            <li class="navigation-item navigation-item-input">
-              <button type="button" href="#" class="navigation-link navigation-link-button"><span class="visually-hidden navigation-item-input-text">Поиск</span></button>
-              <!-- /.navigation-link navigation-item-input-->
-            </li>
-            <!-- /.navigation-item navigation-item-input -->
-            <li class="navigation-item navigation-item-input">
-              <button type="button" href="#" class="navigation-link navigation-link-button"><span class="visually-hidden navigation-item-input-text">Вход</span></button>
-              <!-- /.navigation-link navigation-item-input-->
-            </li>
-            <!-- /.navigation-item -->
-            <li class="navigation-item navigation-item-input">
-              <button type="button" href="#" class="navigation-link navigation-link-button"><span class="visually-hidden navigation-item-input-text">Корзина</span></button>
-              <!-- /.navigation-link navigation-item-input-->
-            </li>
-            <!-- /.navigation-item -->
-          </ul>
-          <!-- /.navigation-user -->
+          <div class="navigation-menu navigation-menu-logo">
+            <a href="#">
+              <img src="img/index/logo.svg" class="logo" alt="Логотип магазина 'GllacyShop'">
+            </a>
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a href="catalog.html" class="navigation-link">Каталог</a>
+                <!-- /.navigation-link -->
+              </li>
+              <!-- /.navigation-item -->
+              <li class="navigation-item">
+                <a href="#" class="navigation-link">Доставка и оплата</a>
+                <!-- /.navigation-link -->
+              </li>
+              <!-- /.navigation-item -->
+              <li class="navigation-item">
+                <a href="#" class="navigation-link">О компании</a>
+                <!-- /.navigation-link -->
+              </li>
+              <!-- /.navigation-item -->
+            </ul>
+            <!-- /.navigation-list -->
+          </div>
+          <!-- /.navigation-menu-logo -->
+          <div class="navigation-menu navigation-menu-user">
+            <ul class="navigation-list navigation-user">
+              <li class="navigation-item">
+                <a href="tel:+78005558628" class="navigation-link">+7 800 555-86-28</a>
+                <!-- /.navigation-link -->
+              </li>
+              <!-- /.navigation-item -->
+              <li class="navigation-item navigation-item-input search">
+                <button type="button" href="#" class="navigation-link navigation-link-button"><span class="visually-hidden navigation-item-input-text">Поиск</span></button>
+                <!-- /.navigation-link navigation-item-input-->
+              </li>
+              <!-- /.navigation-item navigation-item-input -->
+              <li class="navigation-item navigation-item-input login">
+                <button type="button" href="#" class="navigation-link navigation-link-button"><span class="visually-hidden navigation-item-input-text">Вход</span></button>
+                <!-- /.navigation-link navigation-item-input-->
+              </li>
+              <!-- /.navigation-item -->
+              <li class="navigation-item navigation-item-input cart">
+                <button type="button" href="#" class="navigation-link navigation-link-button"><span class="visually-hidden navigation-item-input-text">Корзина</span></button>
+                <!-- /.navigation-link navigation-item-input-->
+              </li>
+              <!-- /.navigation-item -->
+            </ul>
+            <!-- /.navigation-user -->
+          </div>
+          <!-- /.navigation-menu-user -->
         </nav>
         <!-- /.navigation -->
       </header>
@@ -84,7 +90,7 @@
             <!-- /.slider-button slider-button-next -->
 
             <ul class="slider-pagination">
-              <li class="slider-pagination-item">
+              <li class="slider-pagination-item active">
                 <span class="visually-hidden">1 фото</span>
                 <!-- /.visually-hidden -->
               </li>
@@ -127,16 +133,22 @@
           <h2 class="title-block">Заказывайте мороженое и получайте подарки!</h2>
           <ul class="gift-items">
             <li class="gift-item">
-              <h3>Малинка даром!</h3>
-              <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <button type="button">Хочу подарок</button>
+              <div class="gift-item-info">
+                <h3>Малинка даром!</h3>
+                <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                <button type="button">Хочу подарок</button>
+              </div>
+              <!-- /.gift-item-info -->
               <img src="img/index/raspberry1.png" width="219px" height="268px" alt="Фото малины в рожке для мороженного">
             </li>
             <!-- /.gift-item -->
             <li class="gift-item">
-              <h3>Маршмеллоу даром!</h3>
-              <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-              <button type="button">Хочу подарок</button>
+              <div class="gift-item-info">
+                <h3>Маршмеллоу даром!</h3>
+                <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+                <button type="button">Хочу подарок</button>
+              </div>
+              <!-- /.gift-item-info -->
               <img src="img/index/raspberry.png" width="219px" height="268px" alt="Фото маршмеллоу в рожке для мороженного">
             </li>
             <!-- /.gift-item -->
@@ -257,22 +269,25 @@
           <!-- /.delivery-info -->
           <form action="https://echo.htmlacademy.ru/" class="delivery-form" method="post">
             <div class="info-order">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</div>
-            <div class="delivery-date delivery-point">
-              <label for="delivery-date-time">Дата <img src="" alt="Иконка информации"></label>
-              <input type="text" id="delivery-date-time" class="delivery-date-time input" name="delivery-date-time" placeholder="01.04.2020">
+            <div class="delivery-form-input">
+              <div class="delivery-date delivery-point">
+                <label for="delivery-date-time">Дата <img src="" alt="Иконка информации"></label>
+                <input type="text" id="delivery-date-time" class="delivery-date-time input" name="delivery-date-time" placeholder="01.04.2020">
+              </div>
+              <!-- /.delivery-date -->
+              <div class="delivery-phone delivery-point">
+                <label for="delivery-phone-number">Телефон</label>
+                <input type="tel" id="delivery-phone-number" class="delivery-phone-number input" name="delivery-phone-number" placeholder="+7 800 999-00-00">
+              </div>
+              <!-- /.delivery-phone -->
+              <div class="delivery-address delivery-point">
+                <label for="delivery-address-street">Адрес <img src="" alt="Иконка информации"></label>
+                <input type="text" id="delivery-address-street" class="delivery-address-street input" name="delivery-address-street" placeholder="ул. Большая Конюшенная, 19/8">
+              </div>
+              <!-- /.delivery-address -->
             </div>
-          <!-- /.delivery-date -->
-            <div class="delivery-phone delivery-point">
-              <label for="delivery-phone-number">Телефон</label>
-              <input type="tel" id="delivery-phone-number" class="delivery-phone-number input" name="delivery-phone-number" placeholder="+7 800 999-00-00">
-            </div>
-          <!-- /.delivery-phone -->
-            <div class="delivery-address delivery-point">
-              <label for="delivery-address-street">Адрес <img src="" alt="Иконка информации"></label>
-              <input type="text" id="delivery-address-street" class="delivery-address-street input" name="delivery-address-street" placeholder="ул. Большая Конюшенная, 19/8">
-            </div>
-          <!-- /.delivery-address -->
-          <button class="button" type="submit">Отправить</button>
+            <!-- /.delivery-form-input -->
+            <button class="button" type="submit">Отправить</button>
           </form>
           <!-- /.delivery-form -->
         </section>
@@ -319,9 +334,9 @@
         <!-- /.social-icon -->
         <section class="footer-navigation">
           <ul class="footer-navigation-list">
-            <li class="footer-navigation-item">
+            <li class="footer-navigation-item active">
               <img src="" alt="Сердечко">
-              <a href="#" class="footer-navigation-link footer-navigation-link-active">Для поставщиков</a>
+              <a href="#" class="footer-navigation-link">Для поставщиков</a>
               <!-- /.footer-navigation-link -->
             </li>
             <!-- /.footer-navigation-item -->
