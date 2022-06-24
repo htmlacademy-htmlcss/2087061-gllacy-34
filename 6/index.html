@@ -70,63 +70,70 @@
       <main class="main-index">
         <div class="page-container">
           <section class="gallery">
-            <div class="gallery-info">
-              <h2 class="title-block">Нежный пломбир с клубничным джемом</h2>
-              <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-              <button type="button">Заказать</button>
+            <div class="gallery-main">
+              <div class="gallery-info">
+                <h2 class="title-block">Нежный пломбир с клубничным джемом</h2>
+                <p>Натуральное мороженое из свежих сливок <br> и молока с вкуснейшим клубничным джемом<br> – это идеальный десерт для всей семьи.</p>
+                <button type="button">Заказать</button>
+              </div>
+              <!-- /.gallery-info -->
+              <h2 class="visually-hidden">Слайдер</h2>
+              <!-- /.visually-hidden -->
+              <div class="slider">
+                <img src="img/index/icecream.png" width="306px" height="507px" alt="Примеры товаров">
+                <button type="button" class="slider-button slider-button-prev">
+                  <span class="visually-hidden">Предыдущее фото</span>
+                </button>
+                <!-- /.slider-button slider-button-prev -->
+                <button type="button" class="slider-button slider-button-next">
+                  <span class="visually-hidden">Предыдущее фото</span>
+                </button>
+                <!-- /.slider-button slider-button-next -->
+              </div>
+              <!-- /.slider -->
             </div>
-            <!-- /.gallery-info -->
+            <!-- /.slider -->
 
+            <div class="gallery-lower-navigation">
+              <ul class="slider-pagination">
+                <li class="slider-pagination-item active">
+                  <span class="visually-hidden">1 фото</span>
+                  <!-- /.visually-hidden -->
+                </li>
+                <!-- /.slider-pagination-item -->
+                <li class="slider-pagination-item">
+                  <span class="visually-hidden">2 фото</span>
+                  <!-- /.visually-hidden -->
+                </li>
+                <!-- /.slider-pagination-item -->
+                <li class="slider-pagination-item">
+                  <span class="visually-hidden">3 фото</span>
+                  <!-- /.visually-hidden -->
+                </li>
+                <!-- /.slider-pagination-item -->
+              </ul>
+              <!-- /.slider-pagination -->
 
-            <h2 class="visually-hidden">Слайдер</h2>
-            <!-- /.visually-hidden -->
-            <img src="img/index/icecream.png" width="306px" height="507px" alt="Примеры товаров">
-            <button type="button" class="slider-button slider-button-prev">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <!-- /.slider-button slider-button-prev -->
-            <button type="button" class="slider-button slider-button-next">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <!-- /.slider-button slider-button-next -->
-
-            <ul class="slider-pagination">
-              <li class="slider-pagination-item active">
-                <span class="visually-hidden">1 фото</span>
-                <!-- /.visually-hidden -->
-              </li>
-              <!-- /.slider-pagination-item -->
-              <li class="slider-pagination-item">
-                <span class="visually-hidden">2 фото</span>
-                <!-- /.visually-hidden -->
-              </li>
-              <!-- /.slider-pagination-item -->
-              <li class="slider-pagination-item">
-                <span class="visually-hidden">3 фото</span>
-                <!-- /.visually-hidden -->
-              </li>
-              <!-- /.slider-pagination-item -->
-            </ul>
-            <!-- /.slider-pagination -->
-
-            <ul class="social">
-              <li class="social-item">
-                <a href="https://t.me/htmlacademy" class="social-link"><img src="" alt="Телеграм"></a>
-                <!-- /.social-link -->
-              </li>
-              <!-- /.social-item -->
-              <li class="social-item">
-                <a href="https://vk.com/htmlacademy" class="social-link"><img src="" alt="Вконтакте"></a>
-                <!-- /.social-link -->
-              </li>
-              <!-- /.social-item -->
-              <li class="social-item">
-                <a href="https://www.youtube.com/user/htmlacademyru" class="social-link"><img src="" alt="Ютуб"></a>
-                <!-- /.social-link -->
-              </li>
-              <!-- /.social-item -->
-            </ul>
-            <!-- /.social -->
+              <ul class="social">
+                <li class="social-item">
+                  <a href="https://t.me/htmlacademy" class="social-link"><img src="" alt="Телеграм"></a>
+                  <!-- /.social-link -->
+                </li>
+                <!-- /.social-item -->
+                <li class="social-item">
+                  <a href="https://vk.com/htmlacademy" class="social-link"><img src="" alt="Вконтакте"></a>
+                  <!-- /.social-link -->
+                </li>
+                <!-- /.social-item -->
+                <li class="social-item">
+                  <a href="https://www.youtube.com/user/htmlacademyru" class="social-link"><img src="" alt="Ютуб"></a>
+                  <!-- /.social-link -->
+                </li>
+                <!-- /.social-item -->
+              </ul>
+              <!-- /.social -->
+            </div>
+            <!-- /.gallery-lower-navigation -->
           </section>
           <!-- /.gallery -->
 
@@ -162,43 +169,55 @@
           <h2 class="title-block">Попробуйте самые популярные вкусы нашего мороженого</h2>
           <ul class="popular-product-list">
             <li class="popular-product-item">
-              <img src="img/index/photo.jpg" alt="Малина">
-              <h4>Малинка</h4>
-              <p>Сливочное мороженое с малиновым джемом</p>
-              <div class="price-block">
-                <b>310 ₽/кг</b>
-                <button type="button" class="button">В корзину</button>
+              <img src="img/index/photo1.png" alt="Малина">
+              <div class="popular-product-item-name">
+                <h4>Малинка</h4>
+                <p>Сливочное мороженое с малиновым джемом</p>
+                <div class="price-block">
+                  <b>310 ₽/кг</b>
+                  <button type="button" class="button">В корзину</button>
+                </div>
               </div>
+              <!-- /.popular-product-item-name -->
             </li>
             <!-- /.popular-product-item -->
             <li class="popular-product-item">
-              <img src="img/index/photo1.jpg" alt="Фисташка">
-              <h4>Фисташка</h4>
-              <p>Фисташковый пломбир с кусочками шоколада</p>
-              <div class="price-block">
-                <b>340 ₽/кг</b>
-                <button type="button" class="button">В корзину</button>
+              <img src="img/index/photo2.png" alt="Фисташка">
+              <div class="popular-product-item-name">
+                <h4>Фисташка</h4>
+                <p>Фисташковый пломбир с кусочками шоколада</p>
+                <div class="price-block">
+                  <b>340 ₽/кг</b>
+                  <button type="button" class="button">В корзину</button>
+                </div>
               </div>
+              <!-- /.popular-product-item-name -->
             </li>
             <!-- /.popular-product-item -->
             <li class="popular-product-item">
-              <img src="img/index/photo2.jpg" alt="Черника">
-              <h4>Черника</h4>
-              <p>Крем-брюле с черничным джемом</p>
-              <div class="price-block">
-                <b>330 ₽/кг</b>
-                <button type="button" class="button">В корзину</button>
+              <img src="img/index/photo3.png" alt="Черника">
+              <div class="popular-product-item-name">
+                <h4>Черника</h4>
+                <p>Крем-брюле с черничным джемом</p>
+                <div class="price-block">
+                  <b>330 ₽/кг</b>
+                  <button type="button" class="button">В корзину</button>
+                </div>
               </div>
+              <!-- /.popular-product-item-name -->
             </li>
             <!-- /.popular-product-item -->
             <li class="popular-product-item">
-              <img src="img/index/photo3.jpg" alt="Бабл-гам">
-              <h4>Бабл-гам</h4>
-              <p>Ванильный пломбир со сладкой посыпкой</p>
-              <div class="price-block">
-                <b>320 ₽/кг</b>
-                <button type="button" class="button">В корзину</button>
+              <img src="img/index/photo4.png" alt="Бабл-гам">
+              <div class="popular-product-item-name">
+                <h4>Бабл-гам</h4>
+                <p>Ванильный пломбир со сладкой посыпкой</p>
+                <div class="price-block">
+                  <b>320 ₽/кг</b>
+                  <button type="button" class="button">В корзину</button>
+                </div>
               </div>
+              <!-- /.popular-product-item-name -->
             </li>
             <!-- /.popular-product-item -->
           </ul>
@@ -272,7 +291,7 @@
             <div class="info-order">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</div>
             <div class="delivery-form-input">
               <div class="delivery-date delivery-point">
-                <label for="delivery-date-time">Дата <img src="" alt="Иконка информации"></label>
+                <label for="delivery-date-time">Дата <button type="button" class="delivery-info-button"></button></label>
                 <input type="text" id="delivery-date-time" class="delivery-date-time input" name="delivery-date-time" placeholder="01.04.2020">
               </div>
               <!-- /.delivery-date -->
@@ -282,7 +301,7 @@
               </div>
               <!-- /.delivery-phone -->
               <div class="delivery-address delivery-point">
-                <label for="delivery-address-street">Адрес <img src="" alt="Иконка информации"></label>
+                <label for="delivery-address-street">Адрес <button type="button" class="delivery-info-button"></button></label>
                 <input type="text" id="delivery-address-street" class="delivery-address-street input" name="delivery-address-street" placeholder="ул. Большая Конюшенная, 19/8">
               </div>
               <!-- /.delivery-address -->
