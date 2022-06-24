@@ -97,7 +97,6 @@
                         </div>
                         <!-- /.sorting -->
                         <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form" method="get">
-
                             <div class="range-price">
                                 <label class="catalog-filter-title" for="price">Цена: 100 ₽ – 500 ₽</label>
                                 <div class="range-price-line">
@@ -106,90 +105,95 @@
                                 <!-- /.range-price-line -->
                             </div>
                             <!-- /.range-price -->
-
-                            <fieldset class="catalog-filter-group">
-                                <legend class="catalog-filter-title">Жирность:</legend>
-
-                                <ul class="catalog-filter-list">
-                                    <li class="catalog-filter-item">
-                                        <label class="control">
-                                            <input type="radio" class="control-input input" name="product-group" value="0%">0%
-                                        </label>
-                                        <!-- /.control -->
-                                    </li>
-                                    <!-- /.catalog-filter-item -->
-                                    <li class="catalog-filter-item">
-                                        <label class="control">
-                                            <input type="radio" class="control-input input" name="product-group" value="10%" checked>до 10%
-                                        </label>
-                                        <!-- /.control -->
-                                    </li>
-                                    <!-- /.catalog-filter-item -->
-                                    <li class="catalog-filter-item">
-                                        <label class="control">
-                                            <input type="radio" class="control-input input" name="product-group" value="30%">до 30%
-                                        </label>
-                                        <!-- /.control -->
-                                    </li>
-                                    <!-- /.catalog-filter-item -->
-                                    <li class="catalog-filter-item">
-                                        <label class="control">
-                                            <input type="radio" class="control-input input" name="product-group" value="above-30%">выше 30%
-                                        </label>
-                                        <!-- /.control -->
-                                    </li>
-                                    <!-- /.catalog-filter-item -->
-                                </ul>
-                                <!-- /.catalog-filter-list -->
-                            </fieldset>
-                            <!-- /.catalog-filter-group -->
+                            <div class="catalog-filter-fieldset">
+                                <label class="catalog-filter-title">Жирность:</label>
+                                <fieldset class="catalog-filter-group">
+                                    <ul class="catalog-filter-list">
+                                        <li class="catalog-filter-item">
+                                            <label class="control">
+                                                <input type="radio" class="control-input input" name="product-group" value="0%">0%
+                                            </label>
+                                            <!-- /.control -->
+                                        </li>
+                                        <!-- /.catalog-filter-item -->
+                                        <li class="catalog-filter-item">
+                                            <label class="control">
+                                                <input type="radio" class="control-input input" name="product-group" value="10%" checked>до 10%
+                                            </label>
+                                            <!-- /.control -->
+                                        </li>
+                                        <!-- /.catalog-filter-item -->
+                                        <li class="catalog-filter-item">
+                                            <label class="control">
+                                                <input type="radio" class="control-input input" name="product-group" value="30%">до 30%
+                                            </label>
+                                            <!-- /.control -->
+                                        </li>
+                                        <!-- /.catalog-filter-item -->
+                                        <li class="catalog-filter-item">
+                                            <label class="control">
+                                                <input type="radio" class="control-input input" name="product-group" value="above-30%">выше 30%
+                                            </label>
+                                            <!-- /.control -->
+                                        </li>
+                                        <!-- /.catalog-filter-item -->
+                                    </ul>
+                                    <!-- /.catalog-filter-list -->
+                                </fieldset>
+                                <!-- /.catalog-filter-group -->
+                            </div>
+                            <!-- /.catalog-filter-fieldset -->
+                        </form>
                     </div>
                     <!-- /.catalog-filter-upper -->
 
                     <div class="catalog-filter-lower">
                         <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form" method="get">
-                            <fieldset class="catalog-filter-group">
-                                <legend class="catalog-filter-title">Наполнители:</legend>
-                                <ul class="catalog-filter-list">
-                                    <li class="catalog-filter-item">
-                                        <label class="control">
-                                            <input type="checkbox" class="control-input input" name="chocolate" checked>шоколадные
-                                        </label>
-                                        <!-- /.control -->
-                                    </li>
-                                    <!-- /.catalog-filter-item -->
-                                    <li class="catalog-filter-item">
-                                        <label class="control">
-                                            <input type="checkbox" class="control-input input" name="sprinkles" checked>сахарные посыпки
-                                        </label>
-                                        <!-- /.control -->
-                                    </li>
-                                    <!-- /.catalog-filter-item -->
-                                    <li class="catalog-filter-item">
-                                        <label class="control">
-                                            <input type="checkbox" class="control-input input" name="fruits">фрукты
-                                        </label>
-                                        <!-- /.control -->
-                                    </li>
-                                    <!-- /.catalog-filter-item -->
-                                    <li class="catalog-filter-item">
-                                        <label class="control">
-                                            <input type="checkbox" class="control-input input" name="syrups">сиропы
-                                        </label>
-                                        <!-- /.control -->
-                                    </li>
-                                    <!-- /.catalog-filter-item -->
-                                    <li class="catalog-filter-item">
-                                        <label class="control">
-                                            <input type="checkbox" class="control-input input" name="jams">джемы
-                                        </label>
-                                        <!-- /.control -->
-                                    </li>
-                                    <!-- /.catalog-filter-item -->
-                                </ul>
-                                <!-- /.catalog-filter-list -->
-                            </fieldset>
-                            <!-- /.catalog-filter-group -->
+                            <div class="catalog-filter-fieldset">
+                                <label class="catalog-filter-title">Наполнители:</label>
+                                <fieldset class="catalog-filter-group">
+                                    <ul class="catalog-filter-list">
+                                        <li class="catalog-filter-item">
+                                            <label class="control">
+                                                <input type="checkbox" class="control-input input" name="chocolate" checked>шоколадные
+                                            </label>
+                                            <!-- /.control -->
+                                        </li>
+                                        <!-- /.catalog-filter-item -->
+                                        <li class="catalog-filter-item">
+                                            <label class="control">
+                                                <input type="checkbox" class="control-input input" name="sprinkles" checked>сахарные посыпки
+                                            </label>
+                                            <!-- /.control -->
+                                        </li>
+                                        <!-- /.catalog-filter-item -->
+                                        <li class="catalog-filter-item">
+                                            <label class="control">
+                                                <input type="checkbox" class="control-input input" name="fruits">фрукты
+                                            </label>
+                                            <!-- /.control -->
+                                        </li>
+                                        <!-- /.catalog-filter-item -->
+                                        <li class="catalog-filter-item">
+                                            <label class="control">
+                                                <input type="checkbox" class="control-input input" name="syrups">сиропы
+                                            </label>
+                                            <!-- /.control -->
+                                        </li>
+                                        <!-- /.catalog-filter-item -->
+                                        <li class="catalog-filter-item">
+                                            <label class="control">
+                                                <input type="checkbox" class="control-input input" name="jams">джемы
+                                            </label>
+                                            <!-- /.control -->
+                                        </li>
+                                        <!-- /.catalog-filter-item -->
+                                    </ul>
+                                    <!-- /.catalog-filter-list -->
+                                </fieldset>
+                                <!-- /.catalog-filter-group -->
+                            </div>
+                            <!-- /.catalog-filter-fieldset -->
                             <button class="button filter-button" type="submit">Применить</button>
                         </form>
                         <!-- /.catalog-filter-form -->
@@ -200,7 +204,7 @@
                     <ul class="product-list">
                         <li class="product-card">
                             <a href="#" class="product-link">
-                                <img src="img/catalog/photo1.jpg" width="168px" height="168px" alt="Малина">
+                                <img src="img/catalog/photo1.png" width="168px" height="168px" alt="Малина">
                                 <h3>Малинка</h3>
                                 <p>Сливочное мороженое с малиновым джемом</p>
                                 <div class="price-block">
@@ -213,7 +217,7 @@
                         <!-- /.product-card -->
                         <li class="product-card">
                             <a href="#" class="product-link">
-                                <img src="img/catalog/photo2.jpg" width="168px" height="168px" alt="Фисташка">
+                                <img src="img/catalog/photo2.png" width="168px" height="168px" alt="Фисташка">
                                 <h3>Фисташка</h3>
                                 <p>Фисташковый пломбир с кусочками шоколада</p>
                                 <div class="price-block">
@@ -226,7 +230,7 @@
                         <!-- /.product-card -->
                         <li class="product-card">
                             <a href="#" class="product-link">
-                                <img src="img/catalog/photo3.jpg" width="168px" height="168px" alt="Черника">
+                                <img src="img/catalog/photo3.png" width="168px" height="168px" alt="Черника">
                                 <h3>Черника</h3>
                                 <p>Крем-брюле с черничным джемом</p>
                                 <div class="price-block">
@@ -239,7 +243,7 @@
                         <!-- /.product-card -->
                         <li class="product-card">
                             <a href="#" class="product-link">
-                                <img src="img/catalog/photo4.jpg" width="168px" height="168px" alt="Бабл-гам">
+                                <img src="img/catalog/photo4.png" width="168px" height="168px" alt="Бабл-гам">
                                 <h3>Бабл-гам</h3>
                                 <p>Ванильный пломбир со сладкой посыпкой</p>
                                 <div class="price-block">
@@ -252,7 +256,7 @@
                         <!-- /.product-card -->
                         <li class="product-card">
                             <a href="#" class="product-link">
-                                <img src="img/catalog/photo5.jpg" width="168px" height="168px" alt="Ежевика">
+                                <img src="img/catalog/photo5.png" width="168px" height="168px" alt="Ежевика">
                                 <h3>Ежевика</h3>
                                 <p>Сливочное мороженое с ежевичным джемом</p>
                                 <div class="price-block">
@@ -265,7 +269,7 @@
                         <!-- /.product-card -->
                         <li class="product-card">
                             <a href="#" class="product-link">
-                                <img src="img/catalog/photo6.jpg" width="168px" height="168px" alt="Банан">
+                                <img src="img/catalog/photo6.png" width="168px" height="168px" alt="Банан">
                                 <h3>Банан</h3>
                                 <p>Сливочный пломбир с банановым вкусом</p>
                                 <div class="price-block">
@@ -278,7 +282,7 @@
                         <!-- /.product-card -->
                         <li class="product-card">
                             <a href="#" class="product-link">
-                                <img src="img/catalog/photo7.jpg" width="168px" height="168px" alt="Шоколадка">
+                                <img src="img/catalog/photo7.png" width="168px" height="168px" alt="Шоколадка">
                                 <h3>Шоколадка</h3>
                                 <p>Классический шоколадный пломбир</p>
                                 <div class="price-block">
@@ -291,7 +295,7 @@
                         <!-- /.product-card -->
                         <li class="product-card">
                             <a href="#" class="product-link">
-                                <img src="img/catalog/photo8.jpg" width="168px" height="168px" alt="Клубничка">
+                                <img src="img/catalog/photo8.png" width="168px" height="168px" alt="Клубничка">
                                 <h3>Клубничка</h3>
                                 <p>Сливочный пломбир с клубничным вкусом</p>
                                 <div class="price-block">
@@ -304,7 +308,7 @@
                         <!-- /.product-card -->
                         <li class="product-card">
                             <a href="#" class="product-link">
-                                <img src="img/catalog/photo9.jpg" width="168px" height="168px" alt="Лимон">
+                                <img src="img/catalog/photo9.png" width="168px" height="168px" alt="Лимон">
                                 <h3>Лимон</h3>
                                 <p>Освежающий лимонный сорбет</p>
                                 <div class="price-block">
@@ -317,7 +321,7 @@
                         <!-- /.product-card -->
                         <li class="product-card">
                             <a href="#" class="product-link">
-                                <img src="img/catalog/photo10.jpg" width="168px" height="168px" alt="Ментол">
+                                <img src="img/catalog/photo10.png" width="168px" height="168px" alt="Ментол">
                                 <h3>Ментол</h3>
                                 <p>Сливочный пломбир с ментоловым сиропом</p>
                                 <div class="price-block">
@@ -330,7 +334,7 @@
                         <!-- /.product-card -->
                         <li class="product-card">
                             <a href="#" class="product-link">
-                                <img src="img/catalog/photo11.jpg" width="168px" height="168px" alt="Орешек">
+                                <img src="img/catalog/photo11.png" width="168px" height="168px" alt="Орешек">
                                 <h3>Орешек</h3>
                                 <p>Фисташковый пломбир с шоколадным сиропом</p>
                                 <div class="price-block">
@@ -343,7 +347,7 @@
                         <!-- /.product-card -->
                         <li class="product-card">
                             <a href="#" class="product-link">
-                                <img src="img/catalog/photo12.jpg" width="168px" height="168px" alt="Крем-брюле">
+                                <img src="img/catalog/photo12.png" width="168px" height="168px" alt="Крем-брюле">
                                 <h3>Крем-брюле</h3>
                                 <p>Классическое крем-брюле</p>
                                 <div class="price-block">
@@ -361,12 +365,10 @@
                 <div class="catalog-navigation">
                     <div class="catalog-navigation-content">
                         <button type="button" class="button">Показать еще</button>
+                        <div class="catalog-navigation-pagination">
+                            <button class="pagination-page"></button>
+                        <!-- /.pagination-page -->
                         <ul class="pagination">
-                            <li class="pagination-item">
-                                <a href="#" class="pagination-link pagination-prev"><span class="visually-hidden">Предыдущая страница</span></a>
-                                <!-- /.pagination-link -->
-                            </li>
-                            <!-- /.pagination-item -->
                             <li class="pagination-item">
                                 <a href="#" class="pagination-link">1</a>
                                 <!-- /.pagination-link -->
@@ -392,13 +394,12 @@
                                 <!-- /.pagination-link -->
                             </li>
                             <!-- /.pagination-item -->
-                            <li class="pagination-item">
-                                <a href="#" class="pagination-link pagination-next"><span class="visually-hidden">Следующая страница</span></a>
-                                <!-- /.pagination-link -->
-                            </li>
-                            <!-- /.pagination-item -->
                         </ul>
                         <!-- /.pagination -->
+                        <button class="pagination-page"></button>
+                        <!-- /.pagination-page -->
+                        </div>
+                        <!-- /.catalog-navigation-pagination -->
                     </div>
                     <!-- /.catalog-navigation-content -->
                 </div>
