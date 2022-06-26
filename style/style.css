@@ -103,16 +103,34 @@ button {
     min-height: 32px;
 }
 
-.navigation-link-button {
+.navigation-user .navigation-link-button {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     font-family: "Inter", sans-serif;
     text-decoration: none;
     color: #2D3440;
     background-color: rgba(252, 252, 252, 0.3);
     border-radius: 30px;
-    border: none
+    border: none;
+}
+
+.navigation-link-button-search {
+    background-image: url("../img/index/Search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navigation-link-button-login {
+    background-image: url("../img/index/Log-in.svg");
+    background-repeat: no-repeat;
+    background-position: 15%; /* Как правиль вставить свг с текстом, чтобы они вместе были по центру? */
+}
+
+.navigation-link-button-cart {
+    background-image: url("../img/index/Cart.svg");
+    background-repeat: no-repeat;
+    background-position: 10%; /* Как правиль вставить свг с текстом, чтобы они вместе были по центру? */
 }
 
 .navigation-item {
@@ -144,7 +162,7 @@ button {
     font-family: "Inter", sans-serif;
 }
 
-.navigation-item .navigation-link {
+.navigation-menu-logo .navigation-link {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -153,11 +171,13 @@ button {
     color: #2D3440;
 }
 
-.navigation-user .navigation-link {
+.navigation-user .navigation-phone {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     font-family: "Inter", sans-serif;
+    color: #2D3440;
+    text-decoration: none;
 }
 
 .title-block {
@@ -312,6 +332,9 @@ button {
     min-height: 32px;
     border-radius: 26px;
     border: none;
+    background-image: url("../img/catalog/CartCatalog.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .about-shop {
@@ -899,7 +922,7 @@ button {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 56px 0 0 0;
+    margin: 107px 0 0 0;
     padding: 0;
 }
 
@@ -1030,4 +1053,22 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.social-link-telegram, .social-link-whatsapp, .social-link-youtube {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.social-link-telegram {
+    background-image: url("../img/index/socitem.svg");
+}
+
+.social-link-whatsapp {
+    background-image: url("../img/index/socitem-1.svg");
+}
+
+.social-link-youtube {
+    background-image: url("../img/index/socitem-2.svg");
 }
