@@ -96,11 +96,25 @@ button {
 .navigation-item-input.login .navigation-link-button{
     min-width: 88px;
     min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-item-input.login svg {
+    margin-right: 5px;
 }
 
 .navigation-item-input.cart .navigation-link-button{
     min-width: 115px;
     min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-item-input.cart svg {
+    margin-right: 5px;
 }
 
 .navigation-user .navigation-link-button {
@@ -116,21 +130,15 @@ button {
 }
 
 .navigation-link-button-search {
-    background-image: url("../img/index/Search.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    padding: 7px 8px 4px 8px;
 }
 
 .navigation-link-button-login {
-    background-image: url("../img/index/Log-in.svg");
-    background-repeat: no-repeat;
-    background-position: 15%; /* Как правиль вставить свг с текстом, чтобы они вместе были по центру? */
+
 }
 
 .navigation-link-button-cart {
-    background-image: url("../img/index/Cart.svg");
-    background-repeat: no-repeat;
-    background-position: 10%; /* Как правиль вставить свг с текстом, чтобы они вместе были по центру? */
+
 }
 
 .navigation-item {
@@ -332,9 +340,13 @@ button {
     min-height: 32px;
     border-radius: 26px;
     border: none;
-    background-image: url("../img/catalog/CartCatalog.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-block .button path {
+    fill: #FCFCFC;
 }
 
 .about-shop {
@@ -368,6 +380,39 @@ button {
     font-size: 16px;
     line-height: 22px;
     margin: 0;
+}
+
+.about-shop-item-img {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    border: 2px solid #2D3440;
+    padding: 8px 18px;
+    border-radius: 50px;
+}
+
+.about-shop-item-img.icecream {
+    background-image: url("../img/index/ice-cream.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-shop-item-img.leaf {
+    background-image: url("../img/index/leaf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-shop-item-img.cow {
+    background-image: url("../img/index/cow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-shop-item-img.thermometer {
+    background-image: url("../img/index/thermometer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .serving {
@@ -792,6 +837,41 @@ button {
     justify-content: center;
 }
 
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider::before {
+    content: "";
+    width: 312px;
+    height: 312px;
+    position: absolute;
+    background-color: #FFCBD8;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.slider-navigation {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 350px;
+}
+
+.slider-button {
+    border: 2px solid #FCFCFC;
+    background-color: rgba(252, 252, 252, 0.3);
+    padding: 11px 11px 8px 11px;
+    border-radius: 50%;
+}
+
+.slider-button path {
+    fill: #FCFCFC;
+}
+
 .slider-pagination {
     margin: 0;
     padding: 0;
@@ -900,7 +980,7 @@ button {
 .gallery-main {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .gallery-lower-navigation {
@@ -927,16 +1007,18 @@ button {
 }
 
 .about-shop-list {
-    display: flex;
+    /* display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
+    padding: 0; */
+    display: grid;
+    grid-template-columns: 505px 508px;
     padding: 0;
-}
-
-.about-shop-item {
-    flex-basis: 50%;
+    margin: 0;
+    row-gap: 40px;
+    column-gap: 32px;
 }
 
 .banner {
@@ -963,6 +1045,13 @@ button {
 
 .social-item {
     list-style: none;
+    outline: none;
+    width: 24px;
+    height: 24px;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 16px;
 }
 
 .footer-navigation-list {
@@ -988,6 +1077,8 @@ button {
     font-weight: 700;
     margin-right: 24px;
 }
+
+/* .footer-navigation-item.active::before {} */
 
 .footer-logo {
     display: flex;
@@ -1055,20 +1146,37 @@ button {
     justify-content: center;
 }
 
+.social-link {
+    outline: none;
+}
 
-.social-link-telegram, .social-link-whatsapp, .social-link-youtube {
+.social-link-telegram svg, .social-link-vk svg, .social-link-youtube svg {
+    width: 24px;
+    height: 24px;
     background-repeat: no-repeat;
     background-size: 100% auto;
+    background-position: 0 0;
+    border-radius: 50%;
+    display: block;
+    border: 2px solid rgba(252, 252, 252, 0.3);
 }
 
-.social-link-telegram {
-    background-image: url("../img/index/socitem.svg");
+.social-link path{
+    fill: #FCFCFC;
 }
 
-.social-link-whatsapp {
-    background-image: url("../img/index/socitem-1.svg");
+.social-link:hover svg{
+    background-color: #2D3440;
+    border: 2px solid rgba(252, 252, 252, 0.3);
+    transition: 0.2s ease;
 }
 
-.social-link-youtube {
-    background-image: url("../img/index/socitem-2.svg");
+.social-link:active svg{
+    opacity: 0.5;
+}
+
+.social-link:focus svg{
+    background-color: #2D3440;
+    border: 2px solid #2D3440;
+    border-radius: 50%;
 }
