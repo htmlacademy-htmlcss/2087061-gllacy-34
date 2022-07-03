@@ -88,12 +88,11 @@ button {
     border-radius: 30px;
 }
 
-.navigation-menu-logo .navigation-link:focus {
+.navigation-menu-logo .navigation-link:focus-visible {
     background-color: rgba(252, 252, 252, 0.5);
     border-radius: 30px;
     border: 2px solid #2D3440;
     outline: none;
-    padding: 6px 13px;
 }
 
 .navigation-user {
@@ -103,11 +102,6 @@ button {
 .navigation-item-input.search .navigation-link-button{
     min-width: 32px;
     min-height: 32px;
-}
-
-.navigation-link-button-search:focus {
-    border: 2px solid #2D3440;
-    outline: none;
 }
 
 .navigation-item-input.login .navigation-link-button{
@@ -145,8 +139,23 @@ button {
     color: #2D3440;
     background-color: rgba(252, 252, 252, 0.3);
     border-radius: 30px;
-    border: none;
     position: relative;
+    border: 2px solid transparent;
+}
+
+.navigation-user .navigation-link-button:hover {
+    background-color: rgba(252, 252, 252, 0.5);
+}
+
+.navigation-user .navigation-link-button:active {
+    border: 2px solid #2D3440;
+    background-color: rgba(252, 252, 252, 0.5);
+}
+
+.navigation-user .navigation-link-button:focus-visible {
+    border: 2px solid transparent;
+    background-color: rgba(252, 252, 252, 1);
+    outline: none;
 }
 
 .navigation-icon {
@@ -197,6 +206,7 @@ button {
     text-align: center;
     display: block;
     padding: 8px 16px;
+    border: 2px solid transparent;
 }
 
 .navigation-user .navigation-phone {
@@ -247,12 +257,12 @@ button {
 }
 
 .gallery-info button:active {
-    border: 2px solid #2D3440;
+    border: 2px solid transparent;
     background-color: #FCFCFC;
     padding: 14px 34px;
 }
 
-.gallery-info button:focus {
+.gallery-info button:focus-visible {
     border: 2px solid #2D3440;
     background-color: rgba(252, 252, 252, 0.5);
     padding: 14px 34px;
@@ -325,7 +335,7 @@ button {
     background-color: #FCFCFC;
 }
 
-.gift-item-info button:focus {
+.gift-item-info button:focus-visible {
     border: 2px solid #2D3440;
     background-color: rgba(252, 252, 252, 0.5);
     outline: none;
@@ -413,36 +423,22 @@ button {
 .price-block .button:hover {
     background-color: #FFFFFF;
     border: 2px solid #FF2F64;
+    color: #2D3440;
 }
 
 .price-block .button:active {
     background-color: #FFCBD8;
     border: 2px solid #FF2F64;
+    color: #2D3440;
 }
 
-.price-block .button:focus {
+.price-block .button:focus-visible {
     background-color: #FF2F64;
     border: 2px solid #2D3440;
 }
 
 .price-block .button:disabled {
     background-color: #B9B9B9;
-}
-
-.price-block .button:hover path {
-    fill: #2D3440;
-}
-
-.price-block .button:focus path{
-    fill: #FFFFFF;
-}
-
-.price-block .button:disabled path{
-    fill: #565C66;
-}
-
-.price-block .button path {
-    fill: #FCFCFC;
 }
 
 .about-shop {
@@ -599,7 +595,7 @@ button {
     color: #FFFFFF;
 }
 
-.mailing-list-form .button:focus {
+.mailing-list-form .button:focus-visible {
     background-color: #FF2F64;
     border: 2px solid #2D3440;
     color: #FFFFFF;
@@ -751,7 +747,7 @@ button {
     color: #FFFFFF;
 }
 
-.delivery-form .button:focus {
+.delivery-form .button:focus-visible {
     background-color: #FF2F64;
     border: 2px solid #2D3440;
     color: #FFFFFF;
@@ -833,7 +829,7 @@ button {
     padding: 12px 34px;
 }
 
-.address-block .button:focus {
+.address-block .button:focus-visible {
     background-color: #FF2F64;
     border: 2px solid #2D3440;
     color: #FFFFFF;
@@ -1033,10 +1029,25 @@ button {
     background-color: rgba(252, 252, 252, 0.3);
     padding: 11px 11px 8px 11px;
     border-radius: 50%;
+    fill: #FFFFFF;
 }
 
-.slider-button path {
-    fill: #FCFCFC;
+.slider-button:hover {
+    background-color: #FFFFFF;
+    fill: #2D3440;
+}
+
+.slider-button:active {
+    background-color: rgba(252, 252, 252, 0.3);
+    border: 2px solid transparent;
+    fill: #2D3440;
+}
+
+.slider-button:focus-visible {
+    background-color: rgba(252, 252, 252, 0.3);
+    border: 2px solid #2D3440;
+    outline: none;
+    fill: #2D3440;
 }
 
 .slider-pagination {
@@ -1342,35 +1353,30 @@ button {
     justify-content: center;
 }
 
-.social-link {
+.social-icon {
+    width: 24px;
+    height: 24px;
+    color: #FFFFFF;
+    border: 2px solid rgba(252, 252, 252, 0.3);
+    border-radius: 24px;
     outline: none;
 }
 
-.social-link-telegram svg, .social-link-vk svg, .social-link-youtube svg {
-    width: 24px;
-    height: 24px;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: 0 0;
-    border-radius: 50%;
-    display: block;
-    border: 2px solid rgba(252, 252, 252, 0.3);
-}
-
-.social-link path{
-    fill: #FCFCFC;
-}
-
-.social-link:hover svg{
+.social-icon:hover {
+    fill: #FFFFFF;
     background-color: #2D3440;
 }
 
-.social-link:active svg{
+.social-icon:active {
     opacity: 0.5;
 }
 
-.social-link:focus svg{
-    background-color: #2D3440;
+.social-icon:focus-visible {
+    color: #FFFFFF;
     border: 2px solid #2D3440;
-    border-radius: 50%;
 }
+
+
+/*
+    Иконки перенастроил, как ты и сказал, но социалки все равно не могу адекватно настроить, посмтри, пожалуйста, в чем может быть проблема?
+*/
