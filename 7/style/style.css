@@ -62,8 +62,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 400px;
-    width: 100%;
 }
 
 .navigation-menu {
@@ -80,8 +78,21 @@ button {
     margin-left: 16px;
 }
 
-.navigation-menu-logo .navigation-item {
-    padding: 8px 16px;
+.navigation-menu-logo .navigation-link:hover {
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+}
+
+.navigation-menu-logo .navigation-link:active {
+    background-color: #FCFCFC;
+    border-radius: 30px;
+}
+
+.navigation-menu-logo .navigation-link:focus-visible {
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 30px;
+    border: 2px solid #2D3440;
+    outline: none;
 }
 
 .navigation-user {
@@ -96,25 +107,27 @@ button {
 .navigation-item-input.login .navigation-link-button{
     min-width: 88px;
     min-height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-left: 25px;
 }
 
-.navigation-item-input.login svg {
-    margin-right: 5px;
+.navigation-item-input.login .navigation-icon {
+    right: auto;
+    left: 16px;
+    margin: auto 0;
 }
 
 .navigation-item-input.cart .navigation-link-button{
     min-width: 115px;
     min-height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-left: 30px;
 }
 
-.navigation-item-input.cart svg {
-    margin-right: 5px;
+
+
+.navigation-item-input.cart .navigation-icon {
+    right: auto;
+    left: 16px;
+    margin: auto 0;
 }
 
 .navigation-user .navigation-link-button {
@@ -126,19 +139,32 @@ button {
     color: #2D3440;
     background-color: rgba(252, 252, 252, 0.3);
     border-radius: 30px;
-    border: none;
+    position: relative;
+    border: 2px solid transparent;
 }
 
-.navigation-link-button-search {
-    padding: 7px 8px 4px 8px;
+.navigation-user .navigation-link-button:hover {
+    background-color: rgba(252, 252, 252, 0.5);
 }
 
-.navigation-link-button-login {
-
+.navigation-user .navigation-link-button:active {
+    border: 2px solid #2D3440;
+    background-color: rgba(252, 252, 252, 0.5);
 }
 
-.navigation-link-button-cart {
+.navigation-user .navigation-link-button:focus-visible {
+    border: 2px solid transparent;
+    background-color: rgba(252, 252, 252, 1);
+    outline: none;
+}
 
+.navigation-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .navigation-item {
@@ -177,6 +203,10 @@ button {
     font-family: "Inter", sans-serif;
     text-decoration: none;
     color: #2D3440;
+    text-align: center;
+    display: block;
+    padding: 8px 16px;
+    border: 2px solid transparent;
 }
 
 .navigation-user .navigation-phone {
@@ -215,11 +245,34 @@ button {
     line-height: 20px;
     background-color: #FCFCFC;
     color: #2D3440;
-    min-width: 139px;
-    min-height: 44px;
-    border: 4px solid rgba(252, 252, 252, 0.4);
+    padding: 12px 32px;
+    border: 4px solid rgba(219, 219, 219, 0.4);
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
+}
+
+.gallery-info button:hover {
+    border: 4px solid #FCFCFC;
+    background-color: rgba(252, 252, 252, 0.4);
+}
+
+.gallery-info button:active {
+    border: 2px solid transparent;
+    background-color: #FCFCFC;
+    padding: 14px 34px;
+}
+
+.gallery-info button:focus-visible {
+    border: 2px solid #2D3440;
+    background-color: rgba(252, 252, 252, 0.5);
+    padding: 14px 34px;
+    outline: none;
+}
+
+.gallery-info button:disabled {
+    border: 4px solid rgba(252, 252, 252, 0.4);
+    background-color: #E7E7E7;
+    outline: none;
 }
 
 .gift {
@@ -270,6 +323,28 @@ button {
     border-radius: 26px;
     border: 4px solid rgba(252, 252, 252, 0.4);
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.gift-item-info button:hover {
+    border: 4px solid #FCFCFC;
+    background-color: rgba(252, 252, 252, 0.4);
+}
+
+.gift-item-info button:active {
+    border: 2px solid #2D3440;
+    background-color: #FCFCFC;
+}
+
+.gift-item-info button:focus-visible {
+    border: 2px solid #2D3440;
+    background-color: rgba(252, 252, 252, 0.5);
+    outline: none;
+}
+
+.gift-item-info button:disabled {
+    border: 4px solid rgba(252, 252, 252, 0.4);
+    background-color: #E7E7E7;
+    outline: none;
 }
 
 .popular-product {
@@ -345,8 +420,25 @@ button {
     justify-content: center;
 }
 
-.price-block .button path {
-    fill: #FCFCFC;
+.price-block .button:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #FF2F64;
+    color: #2D3440;
+}
+
+.price-block .button:active {
+    background-color: #FFCBD8;
+    border: 2px solid #FF2F64;
+    color: #2D3440;
+}
+
+.price-block .button:focus-visible {
+    background-color: #FF2F64;
+    border: 2px solid #2D3440;
+}
+
+.price-block .button:disabled {
+    background-color: #B9B9B9;
 }
 
 .about-shop {
@@ -392,7 +484,7 @@ button {
 }
 
 .about-shop-item-img.icecream {
-    background-image: url("../img/index/ice-cream.svg");
+    background-image: url("../img/index/icecream.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -486,9 +578,33 @@ button {
     height: 52px;
     background-color: #FF2F64;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-    border: 4px solid rgba(255, 47, 100, 0.3);
+    border: 4px solid rgba(255, 255, 255, 0.3);
     border-radius: 26px;
     padding: 0;
+}
+
+.mailing-list-form .button:hover {
+    background: rgba(252, 252, 252, 0.3);
+    border: 4px solid #FF2F64;
+    color: #2D3440;
+}
+
+.mailing-list-form .button:active {
+    background: #FEAFC3;
+    border: 2px solid #2D3440;
+    color: #FFFFFF;
+}
+
+.mailing-list-form .button:focus-visible {
+    background-color: #FF2F64;
+    border: 2px solid #2D3440;
+    color: #FFFFFF;
+}
+
+.mailing-list-form .button:disabled {
+    background-color: #B9B9B9;
+    border: 4px solid rgba(185, 185, 185, 0.3);
+    color: #FFFFFF;
 }
 
 .delivery {
@@ -613,9 +729,34 @@ button {
 .delivery-form .button {
     min-width: 152px;
     min-height: 44px;
-    border: 4px solid rgba(255, 47, 100, 0.3);
-    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
+    background-color: #FF2F64;
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.delivery-form .button:hover {
+    background: rgba(252, 252, 252, 0.3);
+    border: 4px solid #FF2F64;
+    color: #2D3440;
+}
+
+.delivery-form .button:active {
+    background: #FEAFC3;
+    border: 2px solid #2D3440;
+    color: #FFFFFF;
+}
+
+.delivery-form .button:focus-visible {
+    background-color: #FF2F64;
+    border: 2px solid #2D3440;
+    color: #FFFFFF;
+}
+
+.delivery-form .button:disabled {
+    background-color: #B9B9B9;
+    border: 4px solid rgba(185, 185, 185, 0.3);
+    color: #FFFFFF;
 }
 
 .address {
@@ -668,10 +809,31 @@ button {
 
 .address-block .button {
     margin-top: 32px;
-    border: 4px solid rgba(255, 47, 100, 0.3);
-    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     padding: 10px 32px;
+    background-color: #FF2F64;
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.address-block .button:hover {
+    background: rgba(252, 252, 252, 0.3);
+    border: 4px solid #FF2F64;
+    color: #2D3440;
+}
+
+.address-block .button:active {
+    background: #FEAFC3;
+    border: 2px solid #2D3440;
+    color: #FFFFFF;
+    padding: 12px 34px;
+}
+
+.address-block .button:focus-visible {
+    background-color: #FF2F64;
+    border: 2px solid #2D3440;
+    color: #FFFFFF;
+    padding: 12px 34px;
 }
 
 .footer-navigation-item {
@@ -838,6 +1000,7 @@ button {
 }
 
 .slider {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -866,10 +1029,25 @@ button {
     background-color: rgba(252, 252, 252, 0.3);
     padding: 11px 11px 8px 11px;
     border-radius: 50%;
+    fill: #FFFFFF;
 }
 
-.slider-button path {
-    fill: #FCFCFC;
+.slider-button:hover {
+    background-color: #FFFFFF;
+    fill: #2D3440;
+}
+
+.slider-button:active {
+    background-color: rgba(252, 252, 252, 0.3);
+    border: 2px solid transparent;
+    fill: #2D3440;
+}
+
+.slider-button:focus-visible {
+    background-color: rgba(252, 252, 252, 0.3);
+    border: 2px solid #2D3440;
+    outline: none;
+    fill: #2D3440;
 }
 
 .slider-pagination {
@@ -882,16 +1060,37 @@ button {
 }
 
 .slider-pagination-item {
-    background-color: #FCFCFC;
-    width: 12px;
-    height: 12px;
-    border-radius: 100px;
     list-style: none;
-    opacity: 0.3;
 }
 
-.slider-pagination-item.active {
+.slider-pagination-item .button {
+    border: 1px solid transparent;
+    background-color: #FCFCFC;
+    opacity: 0.3;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.slider-pagination-item.active .button {
     opacity: 1;
+}
+
+.slider-pagination-item:hover .button {
+    border: 1px solid #FCFCFC;
+    opacity: 1;
+    background-color: rgba(252, 252, 252, 0.3);
+}
+
+.slider-pagination-item:active .button {
+    border: 1px solid transparent;
+    opacity: 0.5;
+}
+
+.slider-pagination-item:focus .button {
+    border: 1px solid #2D3440;
+    opacity: 1;
+    outline: none;
 }
 
 .pagination-prev {
@@ -1078,7 +1277,15 @@ button {
     margin-right: 24px;
 }
 
-/* .footer-navigation-item.active::before {} */
+ .footer-navigation-item.active {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .footer-navigation-item.active .footer-navigation-link {
+    margin-left: 8px;
+}
 
 .footer-logo {
     display: flex;
@@ -1146,37 +1353,30 @@ button {
     justify-content: center;
 }
 
-.social-link {
+.social-icon {
+    width: 24px;
+    height: 24px;
+    color: #FFFFFF;
+    border: 2px solid rgba(252, 252, 252, 0.3);
+    border-radius: 24px;
     outline: none;
 }
 
-.social-link-telegram svg, .social-link-vk svg, .social-link-youtube svg {
-    width: 24px;
-    height: 24px;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: 0 0;
-    border-radius: 50%;
-    display: block;
-    border: 2px solid rgba(252, 252, 252, 0.3);
-}
-
-.social-link path{
-    fill: #FCFCFC;
-}
-
-.social-link:hover svg{
+.social-icon:hover {
+    fill: #FFFFFF;
     background-color: #2D3440;
-    border: 2px solid rgba(252, 252, 252, 0.3);
-    transition: 0.2s ease;
 }
 
-.social-link:active svg{
+.social-icon:active {
     opacity: 0.5;
 }
 
-.social-link:focus svg{
-    background-color: #2D3440;
+.social-icon:focus-visible {
+    color: #FFFFFF;
     border: 2px solid #2D3440;
-    border-radius: 50%;
 }
+
+
+/*
+    Иконки перенастроил, как ты и сказал, но социалки все равно не могу адекватно настроить, посмтри, пожалуйста, в чем может быть проблема?
+*/
