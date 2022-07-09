@@ -98,28 +98,28 @@
                 <div class="catalog-filter">
                     <h2 class="visually-hidden">Список товаров с фильтрами</h2>
                     <!-- /.visually-hidden -->
-                    <div class="catalog-filter-upper">
-                        <div class="sorting">
-                            <span class="catalog-filter-title">Сортировка:</span>
-                            <select aria-label="Сортировка" class="select-control">
-                                <option value="popular">по популярности</option>
-                                <option value="price-cheap">по цене(убыванию)</option>
-                                <option value="preice-expensive">по цене(возрастанию)</option>
-                            </select>
-                        </div>
-                        <!-- /.sorting -->
-                        <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form" method="get">
-                            <div class="range-price">
-                                <label class="catalog-filter-title" for="price">Цена: 100 ₽ – 500 ₽</label>
-                                <div class="range-price-line">
-                                    <input class="input" type="range" id="price" name="price" >
-                                </div>
-                                <!-- /.range-price-line -->
+                    <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form" method="get">
+                        <div class="catalog-filter-upper">
+                            <div class="sorting">
+                                <span class="catalog-filter-title">Сортировка:</span>
+                                <select aria-label="Сортировка" class="select-control">
+                                    <option value="popular">по популярности</option>
+                                    <option value="price-cheap">по цене(убыванию)</option>
+                                    <option value="preice-expensive">по цене(возрастанию)</option>
+                                </select>
                             </div>
-                            <!-- /.range-price -->
-                            <div class="catalog-filter-fieldset">
-                                <label class="catalog-filter-title">Жирность:</label>
-                                <fieldset class="catalog-filter-group">
+                            <!-- /.sorting -->
+                            <div class="range-price">
+                                    <label class="catalog-filter-title" for="price">Цена: 100 ₽ – 500 ₽</label>
+                                    <div class="range-price-line">
+                                        <input class="input" type="range" id="price" name="price" >
+                                    </div>
+                                    <!-- /.range-price-line -->
+                                </div>
+                                <!-- /.range-price -->
+                                <div class="catalog-filter-fieldset">
+                                    <label class="catalog-filter-title">Жирность:</label>
+                                    <fieldset class="catalog-filter-group">
                                     <ul class="catalog-filter-list">
                                         <li class="catalog-filter-item">
                                             <label class="control">
@@ -155,12 +155,10 @@
                                 <!-- /.catalog-filter-group -->
                             </div>
                             <!-- /.catalog-filter-fieldset -->
-                        </form>
-                    </div>
-                    <!-- /.catalog-filter-upper -->
+                        </div>
+                        <!-- /.catalog-filter-upper -->
 
-                    <div class="catalog-filter-lower">
-                        <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form" method="get">
+                        <div class="catalog-filter-lower">
                             <div class="catalog-filter-fieldset">
                                 <label class="catalog-filter-title">Наполнители:</label>
                                 <fieldset class="catalog-filter-group">
@@ -207,10 +205,9 @@
                             </div>
                             <!-- /.catalog-filter-fieldset -->
                             <button class="button filter-button" type="submit">Применить</button>
-                        </form>
-                        <!-- /.catalog-filter-form -->
-                    </div>
-                    <!-- /.catalog-filter-lower -->
+                        </div>
+                        <!-- /.catalog-filter-lower -->
+                    </form>
                 </div>
                 <div class="product-cards">
                     <ul class="product-list">
