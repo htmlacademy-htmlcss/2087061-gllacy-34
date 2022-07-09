@@ -267,6 +267,10 @@ button {
     max-width: 470px;
 }
 
+.gallery-info {
+    max-width: 470px;
+}
+
 .gallery-info p {
     font-weight: 400;
     font-size: 18px;
@@ -281,42 +285,42 @@ button {
     background-color: #FCFCFC;
     color: #2D3440;
     padding: 12px 32px;
-    border: 4px solid rgba(252, 252, 252, 0.4);
+    border: none;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
+    outline-color: rgba(252, 252, 252, 0.4);
+    outline-style: solid;
+    outline-width: 4px;
 }
 
 .gallery-info button:hover {
-    border: 4px solid #FCFCFC;
+    outline-color: #FCFCFC;
+    outline-width: 4px;
     background-color: rgba(252, 252, 252, 0.4);
     box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
 }
 
 .gallery-info button:active {
-    border: 2px solid #2D3440;
+    outline-color: #2D3440;
+    outline-width: 2px;
     background-color: #FCFCFC;
-    padding: 14px 34px;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .gallery-info button:focus-visible {
-    border: 2px solid #2D3440;
+    outline-color: #2D3440;
+    outline-width: 2px;
     background-color: rgba(252, 252, 252, 0.5);
-    padding: 14px 34px;
-    outline: none;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .gallery-info button:disabled {
-    border: 4px solid rgba(252, 252, 252, 0.4);
+    outline-color: rgba(252, 252, 252, 0.4);
     background-color: #E7E7E7;
     font-weight: 400;
     color: #B9B9B9;
-    outline: none;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .gift {
@@ -365,37 +369,41 @@ button {
     min-width: 176px;
     min-height: 44px;
     border-radius: 26px;
-    border: 4px solid rgba(252, 252, 252, 0.4);
+    border: none;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
+    outline-style: solid;
+    outline-color: rgba(252, 252, 252, 0.4);
+    outline-width: 4px;
 }
 
 .gift-item-info button:hover {
-    border: 4px solid #FCFCFC;
+    outline-color: #FCFCFC;
+    outline-width: 4px;
     background-color: rgba(252, 252, 252, 0.4);
     box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
 }
 
 .gift-item-info button:active {
-    border: 2px solid #2D3440;
+    outline-color: #2D3440;
+    outline-width: 2px;
     background-color: #FCFCFC;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .gift-item-info button:focus-visible {
-    border: 2px solid #2D3440;
+    outline-color: #2D3440;
+    outline-width: 2px;
     background-color: rgba(252, 252, 252, 0.5);
-    outline: none;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .gift-item-info button:disabled {
-    border: 4px solid rgba(252, 252, 252, 0.4);
+    outline-color: rgba(252, 252, 252, 0.4);
     background-color: #E7E7E7;
     font-weight: 400;
     color: #B9B9B9;
-    outline: none;
 }
 
 .popular-product {
@@ -619,13 +627,15 @@ button {
 
 .mailing-list-form {
     margin-top: 42px;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .mailing-list-form .input {
     max-width: 332px;
     width: 312px;
-    height: 48px;
+    height: 44px;
     border-radius: 4px;
     border: 1px solid #B9B9B9;
     padding-left: 16px;
@@ -634,40 +644,46 @@ button {
 
 .mailing-list-form .button {
     width: 152px;
-    height: 52px;
+    height: 44px;
     background-color: #FF2F64;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-    border: 4px solid rgba(255, 47, 100, 0.3);
+    border: none;
     border-radius: 26px;
     padding: 0;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
+    outline-style: solid;
+    outline-color: rgba(255, 47, 100, 0.3);
+    outline-width: 4px;
 }
 
 .mailing-list-form .button:hover {
     background: rgba(252, 252, 252, 0.3);
-    border: 4px solid #FF2F64;
+    outline-color: #FF2F64;
+    outline-width: 4px;
     color: #2D3440;
 }
 
 .mailing-list-form .button:active {
     background: #FEAFC3;
-    border: 2px solid #2D3440;
+    outline-color: #2D3440;
+    outline-width: 2px;
     color: #FFFFFF;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .mailing-list-form .button:focus-visible {
     background-color: #FF2F64;
-    border: 2px solid #2D3440;
+    outline-color: #2D3440;
+    outline-width: 2px;
     color: #FFFFFF;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-    outline: none;
 }
 
 .mailing-list-form .button:disabled {
     background-color: #B9B9B9;
-    border: 4px solid rgba(185, 185, 185, 0.3);
+    outline-color: rgba(185, 185, 185, 0.3);
+    outline-width: 4px;
     color: #565C66;
     font-weight: 400;
 }
@@ -794,35 +810,41 @@ button {
     border-radius: 26px;
     background-color: #FF2F64;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-    border: 4px solid rgba(255, 47, 100, 0.3);
     transition-timing-function: ease-out;
+    border: none;
     transition-duration: 0.1s;
+    outline-style: solid;
+    outline-color: rgba(255, 47, 100, 0.3);
+    outline-width: 4px;
 }
 
 .delivery-form .button:hover {
     background: rgba(252, 252, 252, 0.3);
-    border: 4px solid #FF2F64;
+    outline-color: #FF2F64;
+    outline-width: 4px;
     color: #2D3440;
 }
 
 .delivery-form .button:active {
     background: #FEAFC3;
-    border: 2px solid #2D3440;
+    outline-color: #2D3440;
+    outline-width: 2px;
     color: #FFFFFF;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .delivery-form .button:focus-visible {
     background-color: #FF2F64;
-    border: 2px solid #2D3440;
+    outline-color: #2D3440;
+    outline-width: 2px;
     color: #FFFFFF;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-    outline: none;
 }
 
 .delivery-form .button:disabled {
     background-color: #B9B9B9;
-    border: 4px solid rgba(185, 185, 185, 0.3);
+    outline-color: rgba(185, 185, 185, 0.3);
+    outline-width: 4px;
     color: #565C66;
     font-weight: 400;
 }
@@ -882,37 +904,35 @@ button {
     padding: 10px 32px;
     background-color: #FF2F64;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-    border: 4px solid rgba(255, 47, 100, 0.3);
+    border: none;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
+    outline: 4px solid rgba(255, 47, 100, 0.3);
 }
 
 .address-block .button:hover {
     background: rgba(252, 252, 252, 0.3);
-    border: 4px solid #FF2F64;
+    outline: 4px solid #FF2F64;
     color: #2D3440;
 }
 
 .address-block .button:active {
     background: #FEAFC3;
-    border: 2px solid #2D3440;
+    outline: 2px solid #2D3440;
     color: #FFFFFF;
-    padding: 12px 34px;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .address-block .button:focus-visible {
     background-color: #FF2F64;
-    border: 2px solid #2D3440;
+    outline: 2px solid #2D3440;
     color: #FFFFFF;
-    padding: 12px 34px;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-    outline: none;
 }
 
 .address-block .button:disabled {
     background-color: #B9B9B9;
-    border: 4px solid rgba(185, 185, 185, 0.3);
+    outline: 4px solid rgba(185, 185, 185, 0.3);
     color: #565C66;
     font-weight: 400;
 }
@@ -1058,38 +1078,41 @@ button {
     line-height: 20px;
     color: #2D3440;
     background-color: #FCFCFC;
-    border: 4px solid rgba(252, 252, 252, 0.4);
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
+    border: none;
     padding: 12px 32px;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
+    outline-style: solid;
+    outline-color: rgba(252, 252, 252, 0.4);
 }
 
 .catalog-navigation .button:hover {
     background-color: rgba(252, 252, 252, 0.4);
-    border: 4px solid #FCFCFC;
     box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
+    outline-color: #FCFCFC;
 }
 
 .catalog-navigation .button:active {
     background-color: #FCFCFC;
-    border: 2px solid #2D3440;
     box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
-    padding: 14px 34px;
+    outline-color: #2D3440;
+    outline-width: 2px;
 }
 
 .catalog-navigation .button:focus-visible {
     background-color: rgba(252, 252, 252, 0.5);
-    border: 2px solid #2D3440;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-    padding: 14px 34px;
-    outline: none;
+    outline-color: #2D3440;
+    outline-width: 2px;
 }
 
 .catalog-navigation .button:disabled {
     font-weight: 400;
     color: #B9B9B9;
     background-color: #E7E7E7;
-    border: 4px solid rgba(252, 252, 252, 0.4);
+    outline-color: rgba(252, 252, 252, 0.4);
 }
 
 .catalog-navigation {
@@ -1107,10 +1130,11 @@ button {
 }
 
 .catalog-navigation-pagination {
-    display: grid;
-    grid-template-columns: 16px 120px 16px;
-    gap: 8px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    max-width: 168px;
+    width: 100%;
 }
 
 .pagination {
@@ -1246,35 +1270,42 @@ button {
     border: 1px solid #2D3440;
     outline: none;
 }
-
-.pagination-prev {
-    opacity: .3;
-}
-
 .pagination-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 76px;
+    padding: 0;
     background-color: transparent;
     border: none;
-    width: 16px;
-    height: 16px;
-    position: relative;
+    width: 24px;
+    height: 24px;
 }
 
-.pagination-button {
-    position: absolute;
+.pagination-page:hover {
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
 }
 
-.pagination-page-prev {
-    opacity: 0.3;
+.pagination-page:active {
+    border: 1px solid #FCFCFC;
+}
+
+.pagination-page:focus-visible {
+    border: 1px solid #2D3440;
+    outline: none;
+    background-color: rgba(252, 252, 252, 0.3);
 }
 
 .pagination-page-prev .pagination-button  {
-    top: 0;
-    left: 50%;
+    width: 16px;
+    opacity: 0.3;
 }
 
 .pagination-page-next .pagination-button  {
-    top: 0;
-    right: 50%;
+    width: 16px;
 }
 
 .select-control {
@@ -1527,10 +1558,23 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
+    max-width: 24px;
+    max-height: 24px;
     border: 1px solid transparent;
     border-radius: 50px;
+    width: 100%;
+}
+
+.pagination .pagination-item:focus-visible {
+    border: 1px solid #2D3440;
+    background: rgba(252, 252, 252, 0.5);
+    outline: none;
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pagination .pagination-item:hover {
