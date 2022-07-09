@@ -118,27 +118,23 @@ button {
 .navigation-item-input.login .navigation-link-button{
     min-width: 88px;
     min-height: 32px;
-    padding-left: 38px;
 }
 
 .navigation-item-input.login .navigation-icon {
     right: auto;
     left: 16px;
-    margin: auto 0;
+    margin: auto 6px auto 0;
 }
 
 .navigation-item-input.cart .navigation-link-button{
     min-width: 115px;
     min-height: 32px;
-    padding-left: 38px;
 }
-
-
 
 .navigation-item-input.cart .navigation-icon {
     right: auto;
     left: 16px;
-    margin: auto 0;
+    margin: auto 6px auto 0;
 }
 
 .navigation-user .navigation-link-button {
@@ -150,10 +146,14 @@ button {
     color: #2D3440;
     background-color: rgba(252, 252, 252, 0.3);
     border-radius: 30px;
+    padding: 0;
     position: relative;
     border: 2px solid transparent;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navigation-user .navigation-link-button:hover {
@@ -172,7 +172,6 @@ button {
 }
 
 .navigation-icon {
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -228,7 +227,7 @@ button {
     font-family: "Inter", sans-serif;
 }
 
-.navigation-item .navigation-link {
+.navigation-menu-logo .navigation-link {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -1562,6 +1561,8 @@ button {
     position: absolute;
     border-radius: 50%;
     color: #FFFFFF;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
 .social-icon {
@@ -1570,10 +1571,14 @@ button {
     color: #FFFFFF;
     border-radius: 24px;
     outline: none;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
 .social-link circle{
     color: transparent;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
 .social-link:hover circle{
