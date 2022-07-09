@@ -78,24 +78,32 @@ button {
     margin-left: 16px;
 }
 
+.navigation-menu-logo .navigation-link-active:hover{
+    background-color: #FF4A78;
+}
+
+.navigation-menu-logo .navigation-link-active:active{
+    background-color:#FF4A78;
+}
+
+.navigation-menu-logo .navigation-link-active:focus-visible{
+    background-color: #FF4A78;
+    border: 2px solid #2D3440;
+    outline: none;
+}
+
 .navigation-menu-logo .navigation-link:hover {
     background-color: rgba(252, 252, 252, 0.5);
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .navigation-menu-logo .navigation-link:active {
     background-color: #FCFCFC;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .navigation-menu-logo .navigation-link:focus-visible {
     background-color: rgba(252, 252, 252, 0.5);
     border: 2px solid #2D3440;
     outline: none;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .navigation-user {
@@ -110,7 +118,7 @@ button {
 .navigation-item-input.login .navigation-link-button{
     min-width: 88px;
     min-height: 32px;
-    padding-left: 25px;
+    padding-left: 38px;
 }
 
 .navigation-item-input.login .navigation-icon {
@@ -122,7 +130,7 @@ button {
 .navigation-item-input.cart .navigation-link-button{
     min-width: 115px;
     min-height: 32px;
-    padding-left: 30px;
+    padding-left: 38px;
 }
 
 
@@ -144,27 +152,23 @@ button {
     border-radius: 30px;
     position: relative;
     border: 2px solid transparent;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
 .navigation-user .navigation-link-button:hover {
     background-color: rgba(252, 252, 252, 0.5);
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .navigation-user .navigation-link-button:active {
     border: 2px solid transparent;
     background-color: rgba(252, 252, 252, 1);
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .navigation-user .navigation-link-button:focus-visible {
     outline: none;
     border: 2px solid #2D3440;
     background-color: rgba(252, 252, 252, 0.5);
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .navigation-icon {
@@ -197,6 +201,25 @@ button {
     border-radius: 30px;
 }
 
+.navigation-item-active .navigation-link-active {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    display: block;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-color: #FF4A78;
+}
+
+.navigation-item.navigation-item-active .navigation-link {
+    color: #FFFFFF;
+}
+
 .navigation-item-input-text {
     font-weight: 400;
     font-size: 14px;
@@ -205,7 +228,7 @@ button {
     font-family: "Inter", sans-serif;
 }
 
-.navigation-menu-logo .navigation-link {
+.navigation-item .navigation-link {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -217,6 +240,9 @@ button {
     padding: 8px 16px;
     border: 2px solid transparent;
     border-radius: 30px;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
+
 }
 
 .navigation-user .navigation-phone {
@@ -256,16 +282,16 @@ button {
     background-color: #FCFCFC;
     color: #2D3440;
     padding: 12px 32px;
-    border: 4px solid rgba(219, 219, 219, 0.4);
+    border: 4px solid rgba(252, 252, 252, 0.4);
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
 .gallery-info button:hover {
     border: 4px solid #FCFCFC;
     background-color: rgba(252, 252, 252, 0.4);
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
 }
 
@@ -273,8 +299,6 @@ button {
     border: 2px solid #2D3440;
     background-color: #FCFCFC;
     padding: 14px 34px;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
@@ -283,8 +307,6 @@ button {
     background-color: rgba(252, 252, 252, 0.5);
     padding: 14px 34px;
     outline: none;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
@@ -346,21 +368,19 @@ button {
     border-radius: 26px;
     border: 4px solid rgba(252, 252, 252, 0.4);
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
 .gift-item-info button:hover {
     border: 4px solid #FCFCFC;
     background-color: rgba(252, 252, 252, 0.4);
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
 }
 
 .gift-item-info button:active {
     border: 2px solid #2D3440;
     background-color: #FCFCFC;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
@@ -368,8 +388,6 @@ button {
     border: 2px solid #2D3440;
     background-color: rgba(252, 252, 252, 0.5);
     outline: none;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
@@ -379,8 +397,6 @@ button {
     font-weight: 400;
     color: #B9B9B9;
     outline: none;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .popular-product {
@@ -454,36 +470,31 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
 .price-block .button:hover {
     background-color: #FFFFFF;
     border: 2px solid #FF2F64;
     color: #2D3440;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .price-block .button:active {
     background-color: #FFCBD8;
     border: 2px solid #FF2F64;
     color: #2D3440;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .price-block .button:focus-visible {
     background-color: #FF2F64;
     border: 2px solid #2D3440;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
+    outline: none;
 }
 
 .price-block .button:disabled {
     background-color: #B9B9B9;
     color: #565C66;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .about-shop {
@@ -525,8 +536,9 @@ button {
     height: 32px;
     margin-right: 16px;
     border: 2px solid #2D3440;
-    padding: 8px 18px;
+    padding: 6px;
     border-radius: 50px;
+    flex-shrink: 0;
 }
 
 .about-shop-item-img.icecream {
@@ -626,25 +638,23 @@ button {
     height: 52px;
     background-color: #FF2F64;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-    border: 4px solid rgba(255, 255, 255, 0.3);
+    border: 4px solid rgba(255, 47, 100, 0.3);
     border-radius: 26px;
     padding: 0;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
 .mailing-list-form .button:hover {
     background: rgba(252, 252, 252, 0.3);
     border: 4px solid #FF2F64;
     color: #2D3440;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .mailing-list-form .button:active {
     background: #FEAFC3;
     border: 2px solid #2D3440;
     color: #FFFFFF;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
@@ -652,18 +662,14 @@ button {
     background-color: #FF2F64;
     border: 2px solid #2D3440;
     color: #FFFFFF;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-
+    outline: none;
 }
 
 .mailing-list-form .button:disabled {
     background-color: #B9B9B9;
-    border: 4px solid rgba(255, 255, 255, 0.3);
+    border: 4px solid rgba(185, 185, 185, 0.3);
     color: #565C66;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     font-weight: 400;
 }
 
@@ -705,6 +711,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    align-self: flex-start;
 }
 
 .info-order {
@@ -788,23 +795,21 @@ button {
     border-radius: 26px;
     background-color: #FF2F64;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-    border: 4px solid rgba(255, 255, 255, 0.3);
+    border: 4px solid rgba(255, 47, 100, 0.3);
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
 .delivery-form .button:hover {
     background: rgba(252, 252, 252, 0.3);
     border: 4px solid #FF2F64;
     color: #2D3440;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .delivery-form .button:active {
     background: #FEAFC3;
     border: 2px solid #2D3440;
     color: #FFFFFF;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
@@ -812,17 +817,14 @@ button {
     background-color: #FF2F64;
     border: 2px solid #2D3440;
     color: #FFFFFF;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    outline: none;
 }
 
 .delivery-form .button:disabled {
     background-color: #B9B9B9;
-    border: 4px solid rgba(255, 255, 255, 0.3);
+    border: 4px solid rgba(185, 185, 185, 0.3);
     color: #565C66;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     font-weight: 400;
 }
 
@@ -881,15 +883,15 @@ button {
     padding: 10px 32px;
     background-color: #FF2F64;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-    border: 4px solid rgba(255, 255, 255, 0.3);
+    border: 4px solid rgba(255, 47, 100, 0.3);
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
 .address-block .button:hover {
     background: rgba(252, 252, 252, 0.3);
     border: 4px solid #FF2F64;
     color: #2D3440;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .address-block .button:active {
@@ -897,8 +899,6 @@ button {
     border: 2px solid #2D3440;
     color: #FFFFFF;
     padding: 12px 34px;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
@@ -907,17 +907,14 @@ button {
     border: 2px solid #2D3440;
     color: #FFFFFF;
     padding: 12px 34px;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    outline: none;
 }
 
 .address-block .button:disabled {
     background-color: #B9B9B9;
-    border: 4px solid rgba(255, 255, 255, 0.3);
+    border: 4px solid rgba(185, 185, 185, 0.3);
     color: #565C66;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
     font-weight: 400;
 }
 
@@ -952,7 +949,6 @@ button {
     font-size: 14px;
     line-height: 20px;
     text-decoration: none;
-    margin-right: 20px;
     color: #2D3440;
 }
 
@@ -962,6 +958,14 @@ button {
 
 .breadcrumbs-item {
     list-style: none;
+}
+
+.breadcrumbs-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.breadcrumbs-item:not(:first-child) {
+    margin-left: 8px;
 }
 
 .catalog-filter-title {
@@ -985,6 +989,30 @@ button {
     width: 185px;
     height: 36px;
     border-radius: 20px;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
+}
+
+.filter-button:hover {
+    background-color: #FCFCFC;
+    border: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.filter-button:active {
+    background-color: rgba(252, 252, 252, 0.5);
+    border: 2px solid transparent;
+}
+
+.filter-button:focus-visible  {
+    background-color: rgba(252, 252, 252, 0.3);
+    border: 2px solid #2D3440;
+    outline: none;
+}
+
+.filter-button:disabled  {
+    background-color: rgba(252, 252, 252, 0.3);
+    opacity: 0.4;
+    border: 2px solid #FCFCFC;
 }
 
 .sorting {
@@ -1035,6 +1063,34 @@ button {
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     padding: 12px 32px;
+}
+
+.catalog-navigation .button:hover {
+    background-color: rgba(252, 252, 252, 0.4);
+    border: 4px solid #FCFCFC;
+    box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
+}
+
+.catalog-navigation .button:active {
+    background-color: #FCFCFC;
+    border: 2px solid #2D3440;
+    box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
+    padding: 14px 34px;
+}
+
+.catalog-navigation .button:focus-visible {
+    background-color: rgba(252, 252, 252, 0.5);
+    border: 2px solid #2D3440;
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+    padding: 14px 34px;
+    outline: none;
+}
+
+.catalog-navigation .button:disabled {
+    font-weight: 400;
+    color: #B9B9B9;
+    background-color: #E7E7E7;
+    border: 4px solid rgba(252, 252, 252, 0.4);
 }
 
 .catalog-navigation {
@@ -1115,21 +1171,19 @@ button {
     padding: 11px 11px 8px 11px;
     border-radius: 50%;
     fill: #FFFFFF;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
 .slider-button:hover {
     background-color: #FFFFFF;
     fill: #2D3440;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .slider-button:active {
     background-color: rgba(252, 252, 252, 0.5);
     border: 2px solid transparent;
     fill: #2D3440;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .slider-button:focus-visible {
@@ -1137,8 +1191,6 @@ button {
     border: 2px solid #2D3440;
     outline: none;
     fill: #2D3440;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .slider-button:disabled {
@@ -1168,12 +1220,12 @@ button {
     width: 12px;
     height: 12px;
     border-radius: 50%;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
 .slider-pagination-item:hover .button {
     border: 1px solid #FCFCFC;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .slider-pagination-item.active .button {
@@ -1184,25 +1236,46 @@ button {
 .slider-pagination-item .button:active {
     border: 1px solid transparent;
     background-color: rgba(252, 252, 252, 0.5);
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .slider-pagination-item:focus-visible .button {
     border: 1px solid #2D3440;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
+    outline: none;
 }
 
 .slider-pagination-item .button:focus-visible {
     border: 1px solid #2D3440;
     outline: none;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .pagination-prev {
     opacity: .3;
+}
+
+.pagination-page {
+    background-color: transparent;
+    border: none;
+    width: 16px;
+    height: 16px;
+    position: relative;
+}
+
+.pagination-button {
+    position: absolute;
+}
+
+.pagination-page-prev {
+    opacity: 0.3;
+}
+
+.pagination-page-prev .pagination-button  {
+    top: 0;
+    left: 50%;
+}
+
+.pagination-page-next .pagination-button  {
+    top: 0;
+    right: 50%;
 }
 
 .select-control {
@@ -1260,7 +1333,7 @@ button {
 
 .catalog-filter-lower {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .catalog-filter-lower .catalog-filter-group {
@@ -1421,7 +1494,8 @@ button {
 
 .catalog-filter-form {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .product-list {
@@ -1454,6 +1528,31 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+
+.pagination .pagination-item:hover {
+    background: rgba(252, 252, 252, 0.5);
+}
+
+.pagination .pagination-item:active {
+    border: 1px solid #FCFCFC;
+    background: rgba(252, 252, 252, 0.5);
+}
+
+.pagination .pagination-link:focus-visible {
+    border: 1px solid #2D3440;
+    background: rgba(252, 252, 252, 0.5);
+    outline: none;
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-item .social-link {
@@ -1462,6 +1561,7 @@ button {
     border: 2px solid rgba(252, 252, 252, 0.3);
     position: absolute;
     border-radius: 50%;
+    color: #FFFFFF;
 }
 
 .social-icon {
@@ -1472,12 +1572,15 @@ button {
     outline: none;
 }
 
-.social-link:hover .social-icon{
-    fill: #FFFFFF;
-    background-color: #2D3440;
+.social-link circle{
+    color: transparent;
 }
 
-.social-item .social-link:hover {
+.social-link:hover circle{
+    color: #2D3440;
+}
+
+.social-link:hover {
     border: 2px solid rgba(252, 252, 252, 0.5);
 }
 
