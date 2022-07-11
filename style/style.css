@@ -42,6 +42,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    color: #2D3440;
 }
 
 .main-index .input::placeholder {
@@ -59,7 +60,7 @@ body {
 .main-index .input:disabled {
     background-color: #E7E7E7;
     outline: 1px solid #B9B9B9;
-    opacity: 0.65;
+    color: rgba(45, 52, 64, 0.65);
 }
 
 .main-index .input:disabled:hover {
@@ -173,6 +174,7 @@ button {
     box-sizing: border-box;
     border-radius: 4px;
     display: none;
+    filter: drop-shadow(0 15px 40px rgba(45, 52, 64, 0.12));
 }
 
 .popover-active {
@@ -262,7 +264,10 @@ button {
 .popover-form .input:disabled {
     background-color: #E7E7E7;
     outline: 1px solid #B9B9B9;
-    opacity: 0.65;
+}
+
+.popover-form .input:disabled::placeholder {
+    color: rgba(45, 52, 64, 0.65);
 }
 
 .popover-form .input:disabled:hover {
@@ -344,7 +349,7 @@ button {
 
 .popover-search .input {
     max-width: 276px;
-    background-image: url("/img/index/cross.svg");
+    background-image: url("../../img/index/cross.svg");
     background-repeat: no-repeat;
     background-position: right 13px center;
 }
@@ -362,7 +367,6 @@ button {
 
 .popover-catalog-title {
     margin: 0 auto;
-    width: 100%;
     padding-bottom: 12px;
     border-bottom: 1px solid #B9B9B9;
     font-size: 14px;
@@ -383,6 +387,8 @@ button {
     line-height: 20px;
     color: #2D3440;
     padding: 6px 16px;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
 .popover-catalog-item:hover {
@@ -391,6 +397,19 @@ button {
 
 .popover-catalog-item:active {
     background-color: #FF7799;
+}
+
+.popover-empty-cart {
+    max-width: 288px;
+    padding: 48px 0;
+}
+
+.popover-empty-cart p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
 }
 
 .info-product span {
@@ -404,6 +423,10 @@ button {
     margin-left: 52px;
     background-color: transparent;
     border: none;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    padding: 0;
 }
 
 .delete-product span {
@@ -412,6 +435,12 @@ button {
     background-color: #2D3440;
     position: absolute;
     border-radius: 10px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
 }
 
 .delete-product span:first-child {
@@ -423,7 +452,7 @@ button {
 }
 
 .popover-total {
-    border-top: 1px solid #000;
+    border-top: 1px solid #E7E7E7;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1097,7 +1126,7 @@ button {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #B9B9B9;
+    color: #2D3440;
     outline: 1px solid #B9B9B9;
     border: none;
     height: 48px;
@@ -2343,6 +2372,8 @@ button {
     background-color: #FCFCFC;
     padding: 64px;
     width: 442px;
+    box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+    border-radius: 8px;
 }
 
 .modal-close-button {
@@ -2353,11 +2384,31 @@ button {
     height: 20px;
     padding: 0;
     margin: 0;
-    background-image: url("/img/index/cross.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     border: none;
     background-color: transparent;
+}
+
+.modal-close-button span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #2D3440;
+    width: 13px;
+    height: 2px;
+    border-radius: 2px;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
+}
+
+.modal-close-button span:first-child{
+    transform: rotate(45deg);
+}
+
+.modal-close-button span:nth-child(2){
+    transform: rotate(-45deg);
 }
 
 .modal-title {
@@ -2394,7 +2445,7 @@ button {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    color: #B9B9B9;
+    color: #2D3440;
     padding: 14px 16px;
     width: 406px;
     border-radius: 4px;
@@ -2412,7 +2463,7 @@ button {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    color: #B9B9B9;
+    color: #2D3440;
     padding: 14px 16px;
     width: 406px;
     border-radius: 4px;
@@ -2473,7 +2524,10 @@ button {
 .modal-input .input:disabled, .textarea:disabled {
     background-color: #E7E7E7;
     outline: 1px solid #B9B9B9;
-    opacity: 0.65;
+}
+
+.modal-input .input:disabled::placeholder, .textarea:disabled::placeholder {
+    color: rgba(45, 52, 64, 0.65);
 }
 
 .modal-input .input:disabled:hover, .textarea:disabled:hover {
