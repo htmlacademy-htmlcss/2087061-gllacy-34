@@ -19,6 +19,25 @@
               <li class="navigation-item">
                 <a href="catalog.html" class="navigation-link">Каталог</a>
                 <!-- /.navigation-link -->
+                <div class="popover popover-catalog">
+                  <div class="popover-content">
+                      <h4 class="popover-catalog-title">Новинки</h4>
+                      <!-- /.popover-title -->
+                      <ul class="popover-catalog-list">
+                          <li class="popover-catalog-item">Сливочное</li>
+                          <!-- /.popover-catalog-item -->
+                          <li class="popover-catalog-item">Щербеты</li>
+                          <!-- /.popover-catalog-item -->
+                          <li class="popover-catalog-item">Фруктовый лед</li>
+                          <!-- /.popover-catalog-item -->
+                          <li class="popover-catalog-item">Мелорин</li>
+                          <!-- /.popover-catalog-item -->
+                      </ul>
+                      <!-- /.popover-catalog-list -->
+                  </div>
+                  <!-- /.popover-content -->
+                </div>
+                <!-- /.popover popover-catalog -->
               </li>
               <!-- /.navigation-item -->
               <li class="navigation-item">
@@ -48,6 +67,17 @@
                   <span class="visually-hidden navigation-item-input-text">Поиск</span>
                 </button>
                 <!-- /.navigation-link navigation-item-input-->
+                <div class="popover popover-search">
+                  <div class="popover-content">
+                    <form action="https://echo.htmlacademy.ru" class="popover-form-search popover-form" method="post">
+                      <label for="" class="visually-hidden">Что вы хотите найти?</label>
+                      <input type="text" class="input" placeholder="Поиск по сайту" name="request">
+                      <button type="submit" class="visually-hidden"></button>
+                    </form>
+                  </div>
+                  <!-- /.popover-content -->
+                </div>
+                <!-- /.popover popover-cart -->
               </li>
               <!-- /.navigation-item navigation-item-input -->
               <li class="navigation-item navigation-item-input login">
@@ -56,6 +86,29 @@
                   <span class="visually-hidden navigation-item-input-text">Вход</span>
                 </button>
                 <!-- /.navigation-link navigation-item-input-->
+                <div class="popover popover-login">
+                  <div class="popover-content">
+                    <h3 class="popover-title">Личный кабинет</h3>
+                    <!-- /.popover-title -->
+                    <form action="https://echo.htmlacademy.ru" class="popover-form-login popover-form" method="post">
+                      <label for="popoverMail" class="visually-hidden">Введите свой email</label>
+                      <input class="input" type="text" id="popoverMail" name="email" placeholder="email@example.com">
+                      <label for="popoverPassword" class="visually-hidden">Введите свой пароль</label>
+                      <input class="input" type="password" name="password" id="popoverPassword">
+                      <div class="popover-button">
+                        <button type="submit" class="button">Войти</button>
+                        <div class="popover-button-recovery">
+                          <a href="#" class="popover-button-recovery-item">Забыли пароль?</a>
+                          <a href="#" class="popover-button-recovery-item">Регистрация</a>
+                        </div>
+                        <!-- /.popover-button-recovery -->
+                      </div>
+                      <!-- /.popover-button -->
+                    </form>
+                  </div>
+                  <!-- /.popover-content -->
+                </div>
+                <!-- /.popover popover-cart -->
               </li>
               <!-- /.navigation-item -->
               <li class="navigation-item navigation-item-input cart">
@@ -64,6 +117,52 @@
                   <span class="visually-hidden navigation-item-input-text">Корзина</span>
                 </button>
                 <!-- /.navigation-link navigation-item-input-->
+                <div class="popover popover-cart">
+                  <div class="popover-content">
+                    <h3 class="popover-title">Корзина</h3>
+                    <!-- /.popover-title -->
+                    <ul class="popover-list">
+                      <li class="popover-item">
+                        <img src="/img/index/photo1.png" alt="">
+                        <div class="info-product">
+                          <b>Малинка</b>
+                          <span>1 кг х 310 ₽</span>
+                        </div>
+                        <!-- /.info-product -->
+                        <b>310 ₽</b>
+                        <button type="button" class="delete-product button">
+                          <span></span>
+                          <span></span>
+                        </button>
+                        <!-- /.delete-product -->
+                      </li>
+                      <!-- /.popover-item -->
+                      <li class="popover-item">
+                        <img src="/img/index/photo4.png" alt="">
+                        <div class="info-product">
+                          <b>Малинка</b>
+                          <span>1 кг х 320 ₽</span>
+                        </div>
+                        <!-- /.info-product -->
+                        <b>480 ₽</b>
+                        <button type="button" class="delete-product button">
+                          <span></span>
+                          <span></span>
+                        </button>
+                        <!-- /.delete-product -->
+                      </li>
+                      <!-- /.popover-item -->
+                    </ul>
+                    <!-- /.popover-list -->
+                    <div class="popover-total">
+                      <button type="button" class="button">Оформить заказ</button>
+                      <b>Итого: 790 ₽</b>
+                    </div>
+                    <!-- /.popover-total -->
+                  </div>
+                  <!-- /.popover-content -->
+                </div>
+                <!-- /.popover popover-cart -->
               </li>
               <!-- /.navigation-item -->
             </ul>
@@ -88,31 +187,48 @@
               <h2 class="visually-hidden">Слайдер</h2>
               <!-- /.visually-hidden -->
               <div class="slider">
-                <img src="img/index/icecream.png" width="306px" height="507px" alt="Примеры товаров">
-                <div class="slider-navigation">
-                  <button type="button" class="slider-button slider-button-prev">
+                <div class="slider-wrapper">
+                  <div class="slider-slides">
+                    <div class="slider-slide slider-slide-active">
+                      <img src="img/index/icecream.png" alt="">
+                    </div>
+                    <!-- /.slider-slide -->
+                    <div class="slider-slide slider-slide-other">
+                      <img src="img/index/icecream2.png" alt="">
+                    </div>
+                    <!-- /.slider-slide -->
+                    <div class="slider-slide slider-slide-other">
+                      <img src="img/index/icecream1.png" alt="">
+                    </div>
+                    <!-- /.slider-slide -->
+                  </div>
+                  <!-- /.slider-slides -->
+                  <div class="slider-arrows">
+                    <button type="button" class="slider-button slider-button-prev">
+                      <svg class="slider-arrow-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currenColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z"/>
+                      </svg>
+                    <span class="visually-hidden">Следующее фото</span>
+                  </button>
+                  <!-- /.slider-button slider-button-prev -->
+                  <button type="button" class="slider-button slider-button-next">
                     <svg class="slider-arrow-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currenColor" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z"/>
                     </svg>
-                  <span class="visually-hidden">Следующее фото</span>
-                </button>
-                <!-- /.slider-button slider-button-prev -->
-                <button type="button" class="slider-button slider-button-next">
-                  <svg class="slider-arrow-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currenColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z"/>
-                  </svg>
-                  <span class="visually-hidden">Предыдущее фото</span>
-                </button>
-                <!-- /.slider-button slider-button-next -->
+                    <span class="visually-hidden">Предыдущее фото</span>
+                  </button>
+                  <!-- /.slider-button slider-button-next -->
+                  </div>
+                  <!-- /.slider-arrows -->
                 </div>
-                <!-- /.slider-navigation -->
+                <!-- /.slider-wrapper -->
               </div>
               <!-- /.slider -->
             </div>
-            <!-- /.slider -->
+            <!-- /.gallery-main -->
 
             <div class="gallery-lower-navigation">
-              <ul class="slider-pagination">
+              <ol class="slider-pagination">
                 <li class="slider-pagination-item active">
                   <button type="button" class="button"></button>
                   <span class="visually-hidden">1 фото</span>
@@ -131,7 +247,7 @@
                   <!-- /.visually-hidden -->
                 </li>
                 <!-- /.slider-pagination-item -->
-              </ul>
+              </ol>
               <!-- /.slider-pagination -->
 
               <ul class="social">
@@ -364,7 +480,22 @@
             <div class="info-order">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</div>
             <div class="delivery-form-input">
               <div class="delivery-date delivery-point">
-                <label for="delivery-date-time">Дата <button type="button" class="delivery-info-button"></button></label>
+                <span class="delivery-point-form">
+                  <label for="delivery-date-time">Дата</label>
+                  <span class="tooltip">
+                    <button type="button" class="tooltip-toggle" aria-labelledby="tooltip-label"></button>
+                      <svg class="tooltip-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z" fill="#2D3440"/>
+                      </svg>
+                    </button>
+                    <!-- /.btn tooltip-toggle -->
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                      Укажите желаемую дату и время
+                    </span>
+                    <!-- /.tooltip-text -->
+                  </span>
+                </span>
+                <!-- /.delivery-point-form -->
                 <input type="text" id="delivery-date-time" class="delivery-date-time input" name="delivery-date-time" placeholder="01.04.2020">
               </div>
               <!-- /.delivery-date -->
@@ -484,5 +615,44 @@
       <!-- /.page-footer -->
     </div>
     <!-- /.container -->
+
+    <div class="modal-container modal-active">
+      <div class="modal">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+          <!-- /.visually-hidden -->
+        </button>
+        <!-- /.modal-close-button -->
+        <div class="modal-content">
+          <h3 class="modal-title">Мы обязательно ответим вам!</h3>
+          <!-- /.modal-title -->
+          <form action="https://echo.htmlacademy.ru" class="modal-form" method="post">
+              <p class="modal-input">
+                <label for="modalName" class="visually-hidden">Введите ваше имя и фамилию</label>
+                <!-- /.visually-hidden -->
+                <input type="text" class="input" id="modalName" name="name" placeholder="Имя и фамилия">
+              </p>
+              <!-- /.modal-input -->
+              <p class="modal-input">
+                <label for="modalMail" class="visually-hidden">Введите ваш email</label>
+                <!-- /.visually-hidden -->
+                <input type="text" class="input" id="modalMail" name="email" placeholder="email@example.com">
+              </p>
+              <!-- /.modal-input -->
+              <p class="modal-input">
+                <label for="modalQuestion" class="visually-hidden">Введите ваше сообщение</label>
+                <!-- /.visually-hidden -->
+                <textarea type="text" class="textarea" id="modalQuestion" name="question" placeholder="В свободной форме"></textarea>
+              </p>
+              <!-- /.modal-input -->
+              <button type="submit" class="modal-button-submit">Отправить</button>
+          </form>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal -->
+    </div>
+    <!-- /.modal-container -->
+
   </body>
 </html>
