@@ -334,11 +334,17 @@ button {
     align-items: flex-start;
 }
 
-.popover-button-recovery a{
+.popover-button-recovery-item {
      font-size: 14px;
      line-height: 20px;
      font-weight: 400;
      color: #2D3440;
+     transition-timing-function: ease-out;
+        transition-duration: 0.1s;
+}
+
+.popover-button-recovery-item:hover {
+    color: rgba(255, 47, 100, 0.6);
 }
 
 .popover-search {
@@ -382,13 +388,17 @@ button {
 }
 
 .popover-catalog-item {
+    padding: 6px 16px;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
+}
+
+.popover-catalog-item a {
+    text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #2D3440;
-    padding: 6px 16px;
-    transition-timing-function: ease-out;
-    transition-duration: 0.1s;
 }
 
 .popover-catalog-item:hover {
@@ -441,6 +451,8 @@ button {
     right: 0;
     margin: auto;
     z-index: 3;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
 .delete-product span:first-child {
@@ -449,6 +461,10 @@ button {
 
 .delete-product span:last-child {
     transform: rotate(-45deg);
+}
+
+.delete-product:hover span{
+    background-color: #FF2F64;
 }
 
 .popover-total {
@@ -2409,6 +2425,10 @@ button {
 
 .modal-close-button span:nth-child(2){
     transform: rotate(-45deg);
+}
+
+.modal-close-button:hover span {
+    background-color: #FF2F64;
 }
 
 .modal-title {
