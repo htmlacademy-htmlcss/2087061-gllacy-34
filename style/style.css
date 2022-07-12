@@ -1251,14 +1251,14 @@ button {
     min-width: 150px;
     border-radius: 1px;
     position: absolute;
-    bottom: 100%;
+    top: 0%;
     color: #2D3440;
     font-size: 14px;
     line-height: 17px;
     font-weight: normal;
     text-transform: none;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 100%;
+    /* transform: translateX(-50%); */
     width: 160px;
     z-index: 1;
     margin-bottom: 6px;
@@ -1281,11 +1281,19 @@ button {
     height: 100%;
     color: #242424;
     display: block;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
-  display: block;
+.tooltip-icon:hover {
+    fill: #FF2F64;
+}
+
+
+
+.tooltip-toggle:hover ~ .tooltip-text,
+.tooltip-toggle:focus-visible ~ .tooltip-text {
+    display: block;
 }
 
 .address {
