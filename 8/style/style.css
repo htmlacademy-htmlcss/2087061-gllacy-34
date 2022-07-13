@@ -355,7 +355,7 @@ button {
 
 .popover-search .input {
     max-width: 276px;
-    background-image: url("../../img/index/cross.svg");
+    background-image: url("img/index/cross.svg");
     background-repeat: no-repeat;
     background-position: right 13px center;
 }
