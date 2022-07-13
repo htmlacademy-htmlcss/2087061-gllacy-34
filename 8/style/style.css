@@ -355,7 +355,7 @@ button {
 
 .popover-search .input {
     max-width: 276px;
-    background-image: url("../../img/index/cross.svg");
+    background-image: url("/img/index/cross.svg");
     background-repeat: no-repeat;
     background-position: right 13px center;
 }
@@ -388,9 +388,9 @@ button {
 }
 
 .popover-catalog-item {
-    padding: 6px 16px;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
+    max-width: 122px;
 }
 
 .popover-catalog-item a {
@@ -399,14 +399,24 @@ button {
     font-size: 14px;
     line-height: 20px;
     color: #2D3440;
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
 }
 
-.popover-catalog-item:hover {
+.popover-catalog-item a:hover {
     background-color: #FFCBD8;
 }
 
-.popover-catalog-item:active {
+.popover-catalog-item a:active {
     background-color: #FF7799;
+}
+
+.popover-catalog-item a:focus-visible {
+    background-color: #FFCBD8;
+    outline: none;
 }
 
 .popover-empty-cart {
@@ -453,6 +463,7 @@ button {
     z-index: 3;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
+    outline: none;
 }
 
 .delete-product span:first-child {
@@ -465,6 +476,11 @@ button {
 
 .delete-product:hover span{
     background-color: #FF2F64;
+}
+
+.delete-product:active span{
+    background-color: #FF2F64;
+    opacity: 0.6;
 }
 
 .popover-total {
@@ -1510,15 +1526,15 @@ button {
 .range-scale {
     position: relative;
     height: 0;
-    border: 2px solid #CCA8B5;
+    border: 1px solid #CCA8B5;
     border-radius: 2px;
 }
 
 .range-bar {
     position: absolute;
     height: 0;
-    border: 2px solid #565C66;
-    margin-top: -2px;
+    border: 1px solid #565C66;
+    margin-top: -1px;
 }
 
 .range-toggle {
@@ -1720,29 +1736,6 @@ button {
     align-items: center;
     justify-content: center;
 }
-
-/* .slider {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
- .slider::before {
-    content: "";
-    width: 312px;
-    height: 312px;
-    position: absolute;
-    background-color: #FFCBD8;
-    z-index: -1;
-    border-radius: 50%;
-}
-
-.slider-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-} */
 
 .slider-wrapper {
     position: relative;
@@ -2425,6 +2418,7 @@ button {
     border-radius: 2px;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
+    outline: none;
 }
 
 .modal-close-button span:first-child{
@@ -2437,6 +2431,11 @@ button {
 
 .modal-close-button:hover span {
     background-color: #FF2F64;
+}
+
+.modal-close-button:active span {
+    background-color: #FF2F64;
+    opacity: 0.6;
 }
 
 .modal-title {
