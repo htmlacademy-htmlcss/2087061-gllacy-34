@@ -637,7 +637,7 @@ button {
     text-align: center;
     display: block;
     padding: 8px 16px;
-    border: 2px solid transparent;
+    outline: 2px solid transparent;
     border-radius: 30px;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
@@ -668,8 +668,7 @@ button {
 }
 
 .gallery-info {
-    max-width: 470px;
-    width: 100%;
+    width: 470px;
 }
 
 .gallery-info p {
@@ -914,6 +913,8 @@ button {
     border-radius: 20px;
     padding: 24px;
     margin-top: 80px;
+    width: 1170px;
+
 }
 
 .about-shop-content {
@@ -984,7 +985,7 @@ button {
 }
 
 .serving-content {
-    padding: 51px;
+    padding: 32px 32px 67px 32px;
 }
 
 .serving-content span {
@@ -1743,18 +1744,18 @@ button {
     justify-content: center;
 }
 
+.slider {
+    width: 606px;
+}
+
 .slider-wrapper {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .slider-slides {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 630px;
 }
 
 
@@ -1793,8 +1794,8 @@ button {
 .slider-arrows {
     position: absolute;
     top: 50%;
-    left: -22px; /* Можно так сдлеть? */
-    transform: translateY(-50%);
+    left: -22px;
+    transform: translateY(calc(-50% + 3px));
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -1809,6 +1810,8 @@ button {
     fill: #FFFFFF;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
+    width: 38px;
+    height: 38px;
 }
 
 .slider-button:hover {
@@ -2126,7 +2129,7 @@ button {
 .gallery-main {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .gallery-lower-navigation {
@@ -2164,7 +2167,7 @@ button {
 
 .about-shop-list {
     display: grid;
-    grid-template-columns: 505px 508px;
+    grid-template-columns: repeat(2, 1fr);
     padding: 0;
     margin: 0;
     row-gap: 40px;
@@ -2266,7 +2269,7 @@ button {
     font-size: 32px;
     line-height: 46px;
     font-weight: 900;
-    margin: 0 0 40px 0;
+    margin: 0 0 35px 0;
 }
 
 .catalog-filter {
