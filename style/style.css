@@ -987,7 +987,7 @@ button {
 }
 
 .serving-content {
-    padding: 32px 32px 67px 32px;
+    padding: 34px 32px 68px 32px;
 }
 
 .serving-content span {
@@ -1019,7 +1019,7 @@ button {
 .mailing-list-content {
     background-color: #FFFFFF;
     border-radius: 16px;
-    padding: 26px;
+    padding: 24px 26px 32px ;
 }
 
 .mailing-list-content p {
@@ -1031,7 +1031,7 @@ button {
 }
 
 .mailing-list-form {
-    margin-top: 42px;
+    margin-top: 46px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1186,7 +1186,7 @@ button {
 }
 
 .delivery-address,  .delivery-address input {
-    max-width: 388px;
+    max-width: 422px;
     width: 100%;
 }
 
@@ -1196,7 +1196,7 @@ button {
 }
 
 .delivery-phone, .delivery-phone input {
-    max-width: 255px;
+    max-width: 287px;
     width: 100%;
 }
 
@@ -1327,7 +1327,7 @@ button {
     background-position: center;
     background-size: cover;
     padding: 64px;
-    margin-top: 80px;
+    margin-top: 81px;
     border-radius: 16px;
 }
 
@@ -2196,7 +2196,7 @@ button {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 48px 14px 50px 0;
+    padding: 48px 14px 45px 0;
 }
 
 .social-icons {
@@ -2249,11 +2249,16 @@ button {
     margin-right: 24px;
 }
 
+.footer-navigation-item.active {
+    position: relative;
+}
+
  .footer-navigation-item.active::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    transform: translateY(calc(-50% + 1px));
+    left: -24px;
     background-image: url('../img/index/heart-fill.svg');
     width: 16px;
     height: 16px;
