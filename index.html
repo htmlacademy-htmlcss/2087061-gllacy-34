@@ -19,7 +19,7 @@
               <li class="navigation-item">
                 <a href="catalog.html" class="navigation-link">Каталог</a>
                 <!-- /.navigation-link -->
-                <div class="popover popover-catalog popover-active">
+                <div class="popover popover-catalog">
                   <div class="popover-content">
                       <h4 class="popover-catalog-title">Новинки</h4>
                       <!-- /.popover-title -->
@@ -62,7 +62,7 @@
               </li>
               <!-- /.navigation-item -->
               <li class="navigation-item navigation-item-input search">
-                <button type="button" href="#" class="navigation-link navigation-link-button navigation-link-button-search">
+                <button type="button" class="navigation-link navigation-link-button navigation-link-button-search">
                   <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="currenColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.663 8.188a4.667 4.667 0 1 1 8.028 3.237.67.67 0 0 0-.123.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z"/></svg>
                   <span class="visually-hidden navigation-item-input-text">Поиск</span>
                 </button>
@@ -70,8 +70,8 @@
                 <div class="popover popover-search">
                   <div class="popover-content">
                     <form action="https://echo.htmlacademy.ru" class="popover-form-search popover-form" method="post">
-                      <label for="" class="visually-hidden">Что вы хотите найти?</label>
-                      <input type="text" class="input" placeholder="Поиск по сайту" name="request">
+                      <label for="request" class="visually-hidden">Что вы хотите найти?</label>
+                      <input type="text" id="request" class="input" placeholder="Поиск по сайту" name="request">
                       <button type="submit" class="visually-hidden"></button>
                     </form>
                   </div>
@@ -81,7 +81,7 @@
               </li>
               <!-- /.navigation-item navigation-item-input -->
               <li class="navigation-item navigation-item-input login">
-                <button type="button" href="#" class="navigation-link navigation-link-button navigation-link-button-login">
+                <button type="button" class="navigation-link navigation-link-button navigation-link-button-login">
                   <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currenColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 0 1 0-1.333h2.666A.667.667 0 0 0 13 13.19V3.858a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 2.525ZM5.862 4.72c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.774l-3.328 3.33a.667.667 0 1 1-.943-.944l2.195-2.195h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 5.663a.667.667 0 0 1 0-.943Z"/></svg>Вход
                   <span class="visually-hidden navigation-item-input-text">Вход</span>
                 </button>
@@ -112,7 +112,7 @@
               </li>
               <!-- /.navigation-item -->
               <li class="navigation-item navigation-item-input cart">
-                <button type="button" href="#" class="navigation-link navigation-link-button navigation-link-button-cart">
+                <button type="button" class="navigation-link navigation-link-button navigation-link-button-cart">
                   <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#2D3440"/></svg>2 товара
                   <span class="visually-hidden navigation-item-input-text">Корзина</span>
                 </button>
@@ -176,10 +176,10 @@
 
       <main class="main-index">
         <div class="page-container">
-          <section class="gallery">
+          <div class="gallery">
             <div class="gallery-main">
               <div class="gallery-info">
-                <h2 class="title-block">Нежный пломбир с клубничным джемом</h2>
+                <h2 class="title-block">Нежный пломбир <br> с клубничным джемом</h2>
                 <p>Натуральное мороженое из свежих сливок <br> и молока с вкуснейшим клубничным джемом<br> – это идеальный десерт для всей семьи.</p>
                 <button type="button">Заказать</button>
               </div>
@@ -291,10 +291,10 @@
               <!-- /.social -->
             </div>
             <!-- /.gallery-lower-navigation -->
-          </section>
+          </div>
           <!-- /.gallery -->
 
-        <section class="gift">
+        <div class="gift">
           <h2 class="title-block">Заказывайте мороженое и получайте подарки!</h2>
           <ul class="gift-items">
             <li class="gift-item">
@@ -304,7 +304,7 @@
                 <button type="button">Хочу подарок</button>
               </div>
               <!-- /.gift-item-info -->
-              <img src="img/index/raspberry1.png" width="219px" height="268px" alt="Фото малины в рожке для мороженного">
+              <img src="img/index/raspberry1.png" width="219" height="268" alt="Фото малины в рожке для мороженного">
             </li>
             <!-- /.gift-item -->
             <li class="gift-item">
@@ -314,15 +314,15 @@
                 <button type="button">Хочу подарок</button>
               </div>
               <!-- /.gift-item-info -->
-              <img src="img/index/raspberry.png" width="219px" height="268px" alt="Фото маршмеллоу в рожке для мороженного">
+              <img src="img/index/raspberry.png" width="219" height="268" alt="Фото маршмеллоу в рожке для мороженного">
             </li>
             <!-- /.gift-item -->
           </ul>
           <!-- /.gift-items -->
-        </section>
+        </div>
         <!-- /.gift -->
 
-        <section class="popular-product">
+        <div class="popular-product">
           <h2 class="title-block">Попробуйте самые популярные вкусы нашего мороженого</h2>
           <ul class="popular-product-list">
             <li class="popular-product-item">
@@ -334,7 +334,7 @@
                   <b>310 ₽/кг</b>
                   <button type="button" class="button">
                     <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                    <div class="visually-hidden">В корзину</div>
+                    <span class="visually-hidden">В корзину</span>
                     <!-- /.visually-hidden -->
                   </button>
                 </div>
@@ -351,7 +351,7 @@
                   <b>340 ₽/кг</b>
                   <button type="button" class="button">
                     <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                    <div class="visually-hidden">В корзину</div>
+                    <span class="visually-hidden">В корзину</span>
                     <!-- /.visually-hidden -->
                   </button>
                 </div>
@@ -368,7 +368,7 @@
                   <b>330 ₽/кг</b>
                   <button type="button" class="button">
                     <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                    <div class="visually-hidden">В корзину</div>
+                    <span class="visually-hidden">В корзину</span>
                     <!-- /.visually-hidden -->
                   </button>
                 </div>
@@ -385,7 +385,7 @@
                   <b>320 ₽/кг</b>
                   <button type="button" class="button">
                     <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                    <div class="visually-hidden">В корзину</div>
+                    <span class="visually-hidden">В корзину</span>
                     <!-- /.visually-hidden -->
                   </button>
                 </div>
@@ -395,9 +395,9 @@
             <!-- /.popular-product-item -->
           </ul>
           <!-- /.popular-product-list -->
-        </section>
+        </div>
         <!-- /.popular-product -->
-        <section class="about-shop">
+        <div class="about-shop">
           <div class="about-shop-content">
             <h2 class="title-block">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
             <ul class="about-shop-list">
@@ -441,20 +441,20 @@
             <!-- /.about-shop-list -->
           </div>
           <!-- /.about-shop-content -->
-        </section>
+        </div>
         <!-- /.about-shop -->
 
         <div class="banner">
-          <section class="serving">
+          <div class="serving">
             <div class="serving-content">
               <span>Новое в нашем блоге</span>
               <h3>10 способов сервировки фруктовых щербетов к столу</h3>
             </div>
             <!-- /.serving-content -->
-          </section>
+          </div>
           <!-- /.serving -->
 
-          <section class="mailing-list">
+          <div class="mailing-list">
             <div class="mailing-list-content">
               <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form action="https://echo.htmlacademy.ru/" class="mailing-list-form" method="post">
@@ -466,11 +466,11 @@
               <!-- /.mailing-list-form -->
             </div>
             <!-- /.mailing-list-content -->
-          </section>
+          </div>
           <!-- /.mailing-list -->
         </div>
         <!-- /.banner -->
-        <section class="delivery">
+        <div class="delivery">
           <div class="delivery-info">
             <h2 class="title-block">Доставка любимого мороженого на дом</h2>
             <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
@@ -483,13 +483,13 @@
                 <span class="delivery-point-form">
                   <label for="delivery-date-time">Дата</label>
                   <span class="tooltip">
-                    <button type="button" class="tooltip-toggle" aria-labelledby="tooltip-label">
+                    <button type="button" class="tooltip-toggle" aria-labelledby="tooltip-label-text">
                       <svg class="tooltip-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"/>
                       </svg>
                     </button>
                     <!-- /.btn tooltip-toggle -->
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-text">
                       Укажите желаемую дату и время
                     </span>
                     <!-- /.tooltip-text -->
@@ -531,11 +531,11 @@
             <button class="button" type="submit">Отправить</button>
           </form>
           <!-- /.delivery-form -->
-        </section>
+        </div>
         <!-- /.delivery -->
 
 
-        <section class="address">
+        <div class="address">
           <address class="address-block">
             <span>Адрес главного офиса<br> и офлайн-магазина:</span>
             <b>наб. реки Карповки, 5 лит П, Санкт-Петербург</b>
@@ -544,7 +544,7 @@
             <span class="schedule">(с 10 до 20 ежедневно)</span>
             <button class="button">Форма обратной связи</button>
           </address>
-        </section>
+        </div>
         <!-- /.address -->
         </div>
         <!-- /.page-container -->
@@ -552,7 +552,7 @@
       <!-- /.main-index -->
 
       <footer class="page-footer">
-        <section class="social-icons">
+        <div class="social-icons">
           <ul class="social">
             <li class="social-item">
               <a href="https://t.me/htmlacademy" class="social-link social-link-telegram">
@@ -592,9 +592,9 @@
             <!-- /.social-item -->
           </ul>
           <!-- /.social -->
-        </section>
+        </div>
         <!-- /.social-icon -->
-        <section class="footer-navigation">
+        <div class="footer-navigation">
           <ul class="footer-navigation-list">
             <li class="footer-navigation-item active">
               <svg class="footer-navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currenColor" xmlns="http://www.w3.org/2000/svg">
@@ -621,12 +621,12 @@
             <!-- /.footer-navigation-item -->
           </ul>
           <!-- /.footer-navigation -->
-        </section>
+        </div>
         <!-- /.footer-navigation -->
-        <section class="footer-logo">
+        <div class="footer-logo">
           <a href="https://htmlacademy.ru/"><img src="img/index/logo-htmlacademy.svg" alt="Логотип компании, которая разработала сайт 'GllacyShop'"></a>
           <span>Сделано в .html academy © 2021</span>
-        </section>
+        </div>
         <!-- /.footer-logo -->
       </footer>
       <!-- /.page-footer -->
@@ -661,7 +661,7 @@
               <p class="modal-input">
                 <label for="modalQuestion" class="visually-hidden">Введите ваше сообщение</label>
                 <!-- /.visually-hidden -->
-                <textarea type="text" class="textarea" id="modalQuestion" name="question" placeholder="В свободной форме"></textarea>
+                <textarea class="textarea" id="modalQuestion" name="question" placeholder="В свободной форме"></textarea>
               </p>
               <!-- /.modal-input -->
               <button type="submit" class="modal-button-submit">Отправить</button>
