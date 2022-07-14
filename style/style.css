@@ -610,7 +610,7 @@ button {
     text-align: center;
     display: block;
     padding: 8px 16px;
-    border: 2px solid transparent;
+    outline: 2px solid transparent;
     border-radius: 30px;
     background-color: #FF4A78;
 }
@@ -838,6 +838,8 @@ button {
 
 .popular-product-item img {
     margin-top: -51px;
+    width: 188px;
+    height: 188px;
 }
 
 .popular-product-item-name h4 {
@@ -1443,6 +1445,7 @@ button {
 
 .breadcrumbs-link.active {
     text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .breadcrumbs-item {
@@ -1472,9 +1475,10 @@ button {
     line-height: 20px;
     color: #2D3440;
     background-color: rgba(252, 252, 252, 0.3);
-    border: 2px solid #FCFCFC;
-    width: 185px;
-    height: 36px;
+    outline: 2px solid #FCFCFC;
+    border: none;
+    height: 38px;
+    padding: 8px 52px;
     border-radius: 20px;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
@@ -1482,18 +1486,19 @@ button {
 
 .filter-button:hover {
     background-color: #FCFCFC;
-    border: 2px solid rgba(252, 252, 252, 0.3);
+    outline: 2px solid rgba(252, 252, 252, 0.3);
+    border: none;
 }
 
 .filter-button:active {
     background-color: rgba(252, 252, 252, 0.5);
-    border: 2px solid transparent;
+    outline: 2px solid transparent;
 }
 
 .filter-button:focus-visible  {
     background-color: rgba(252, 252, 252, 0.3);
-    border: 2px solid #2D3440;
-    outline: none;
+    outline: 2px solid #2D3440;
+    border: none;
 }
 
 .filter-button:disabled  {
@@ -1596,12 +1601,12 @@ button {
 
 .range-toggle.toggle-min {
     top: -8px;
-    left: -8px;
+    left: -2px;
 }
 
 .range-toggle.toggle-max {
     top: -8px;
-    right: -8px;
+    right: -2px;
 }
 
 .range-input {
@@ -1633,7 +1638,8 @@ button {
 
 .product-link img {
     margin-top: -51px;
-    margin-bottom: 8px;
+    width: 188px;
+    height: 188px;
 }
 
 .product-link h3 {
@@ -1641,7 +1647,7 @@ button {
     font-size: 20px;
     line-height: 24px;
     color: #2D3440;
-    margin: 0 0 8px 0;
+    margin: -1px 0 8px 0;
 }
 
 .product-link p {
@@ -1662,11 +1668,10 @@ button {
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     border: none;
-    padding: 12px 32px;
+    padding: 12px 35px;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
-    outline-style: solid;
-    outline-color: rgba(252, 252, 252, 0.4);
+    outline: 2px solid rgba(252, 252, 252, 0.4);
 }
 
 .catalog-navigation .button:hover {
@@ -1968,6 +1973,11 @@ button {
     min-width: 383px;
 }
 
+.catalog-filter-fat .catalog-filter-list {
+    max-width: 383px;
+    padding: 8px 24px;
+}
+
 .catalog-filter-fat .control {
     display: flex;
     align-items: center;
@@ -1988,6 +1998,10 @@ button {
 
 .control:hover .control-mark {
     border: 1px solid #FCFCFC;
+}
+
+.control-input:focus-visible ~ .control-mark {
+    border: 1px solid #2D3440;
 }
 
 .control-input:disabled + .control-mark{
@@ -2070,25 +2084,21 @@ button {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 601px;
     margin: 0;
-    padding: 8px 24px 0 24px;
+    width: 604px;
+    padding: 10px 24px;
+    gap: 16px;
 }
 
 .catalog-filter-item {
     list-style: none;
-    margin-bottom: 8px;
-}
-
-.catalog-filter-item:not(:last-child) {
-    margin-right: 16px;
 }
 
 .catalog-filter-upper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .catalog-filter-upper .catalog-filter-fat {
@@ -2105,7 +2115,7 @@ button {
 }
 
 .catalog-filter-lower .catalog-filter-group {
-    margin-right: 16px;
+    margin-right: 18px;
 }
 
 .navigation {
@@ -2113,7 +2123,7 @@ button {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 24px 0;
+    padding: 22px 0 26px;
 }
 
 .navigation .logo {
@@ -2186,11 +2196,11 @@ button {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 45px 14px 50px 0;
+    padding: 48px 14px 50px 0;
 }
 
 .social-icons {
-    flex-basis: 20%;
+    flex-basis: 22%;
 }
 
 .social {
@@ -2228,7 +2238,6 @@ button {
 
 .footer-navigation-list .footer-navigation-item {
     margin-bottom: 8px;
-
 }
 
 .footer-navigation-item:nth-child(3) {
@@ -2240,15 +2249,15 @@ button {
     margin-right: 24px;
 }
 
- .footer-navigation-item.active {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+ .footer-navigation-item.active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../img/index/heart-fill.svg');
+    width: 16px;
+    height: 16px;
  }
-
- .footer-navigation-item.active .footer-navigation-link {
-    margin-left: 8px;
-}
 
 .footer-logo {
     display: flex;
@@ -2269,7 +2278,7 @@ button {
     font-size: 32px;
     line-height: 46px;
     font-weight: 900;
-    margin: 0 0 35px 0;
+    margin: 0 0 40px 0;
 }
 
 .catalog-filter {
@@ -2288,7 +2297,7 @@ button {
 .product-list {
     display: grid;
     grid-template-columns: repeat(4, 270px);
-    gap: 91px 30px;
+    gap: 87px 30px;
     margin: 0;
     padding: 0;
     margin-top: 95px;
@@ -2356,8 +2365,8 @@ button {
 }
 
 .social-item .social-link {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     border: 2px solid rgba(252, 252, 252, 0.3);
     position: absolute;
     border-radius: 50%;
@@ -2370,7 +2379,7 @@ button {
 }
 
 .social-icon {
-    width: 24px;
+    min-width: 24px;
     height: 24px;
     color: #FFFFFF;
     border-radius: 24px;
