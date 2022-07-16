@@ -22,8 +22,18 @@
     font-display: swap;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .container {
     max-width: 1170px;
+    margin: 0 auto;
+}
+
+.page-container {
     margin: 0 auto;
 }
 
@@ -34,7 +44,11 @@ body {
 }
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 .input {
@@ -604,7 +618,7 @@ button {
     text-align: center;
     display: block;
     padding: 8px 16px;
-    border: 2px solid transparent;
+    outline: 2px solid transparent;
     border-radius: 30px;
     background-color: #FF4A78;
 }
@@ -631,7 +645,7 @@ button {
     text-align: center;
     display: block;
     padding: 8px 16px;
-    border: 2px solid transparent;
+    outline: 2px solid transparent;
     border-radius: 30px;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
@@ -662,7 +676,7 @@ button {
 }
 
 .gallery-info {
-    max-width: 470px;
+    width: 470px;
 }
 
 .gallery-info p {
@@ -718,7 +732,8 @@ button {
 }
 
 .gift {
-    margin-top: 80px;
+    margin-top: 106px;
+    width: 1170px;
 }
 
 .gift .title-block {
@@ -730,10 +745,13 @@ button {
 .gift-item {
     background-color: #FF7799;
     max-width: 570px;
+    width: 100%;
     list-style: none;
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
     border-radius: 16px;
+    margin-bottom: 20px;
 }
 
 .gift-item-info {
@@ -801,7 +819,8 @@ button {
 }
 
 .popular-product {
-    margin-top: 80px;
+    margin-top: 60px;
+    width: 1170px;
 }
 
 .popular-product-item {
@@ -831,6 +850,8 @@ button {
 
 .popular-product-item img {
     margin-top: -51px;
+    width: 188px;
+    height: 188px;
 }
 
 .popular-product-item-name h4 {
@@ -906,6 +927,8 @@ button {
     border-radius: 20px;
     padding: 24px;
     margin-top: 80px;
+    width: 1170px;
+
 }
 
 .about-shop-content {
@@ -933,8 +956,8 @@ button {
 }
 
 .about-shop-item-img {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     margin-right: 16px;
     border: 2px solid #2D3440;
     padding: 6px;
@@ -976,7 +999,7 @@ button {
 }
 
 .serving-content {
-    padding: 51px;
+    padding: 34px 32px 68px 32px;
 }
 
 .serving-content span {
@@ -1000,6 +1023,7 @@ button {
     background-position: center;
     background-size: cover;
     max-width: 570px;
+    width: 100%;
     padding: 6px;
     border-radius: 16px;
 }
@@ -1007,8 +1031,7 @@ button {
 .mailing-list-content {
     background-color: #FFFFFF;
     border-radius: 16px;
-    padding: 26px;
-    max-width: 506px;
+    padding: 24px 26px 32px ;
 }
 
 .mailing-list-content p {
@@ -1020,14 +1043,15 @@ button {
 }
 
 .mailing-list-form {
-    margin-top: 42px;
+    margin-top: 46px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 503px;
 }
 
 .mailing-list-form input {
-    width: 300px;
+    width: 332px;
     height: 44px;
     border-radius: 4px;
     border: none;
@@ -1040,13 +1064,13 @@ button {
 }
 
 .mailing-list-form .button {
-    width: 152px;
-    height: 44px;
+    /* width: 152px;
+    height: 44px; */
     background-color: #FF2F64;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border: none;
     border-radius: 26px;
-    padding: 0;
+    padding: 12px 32px;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
     outline-style: solid;
@@ -1096,6 +1120,7 @@ button {
     padding: 64px 64px 64px 100px;
     margin-top: 80px;
     border-radius: 16px;
+    width: 1170px;
 }
 
 .delivery-info {
@@ -1115,7 +1140,7 @@ button {
 }
 
 .delivery-form {
-    max-width: 420px;
+    max-width: 500px;
     background-color: #FCFCFC;
     padding: 40px;
     border-radius: 8px;
@@ -1170,12 +1195,12 @@ button {
 }
 
 .delivery-date input  {
-    max-width: 85px;
+    max-width: 117px;
     margin-right: 16px;
 }
 
 .delivery-address,  .delivery-address input {
-    max-width: 388px;
+    max-width: 422px;
     width: 100%;
 }
 
@@ -1185,7 +1210,7 @@ button {
 }
 
 .delivery-phone, .delivery-phone input {
-    max-width: 255px;
+    max-width: 287px;
     width: 100%;
 }
 
@@ -1316,14 +1341,15 @@ button {
     background-position: center;
     background-size: cover;
     padding: 64px;
-    margin-top: 80px;
+    margin-top: 81px;
     border-radius: 16px;
+    width: 1170px;
 }
 
 .address-block {
-    max-width: 263px;
+    max-width: 343px;
     background-color: #FCFCFC;
-    padding: 40px;
+    padding: 40px 40px 44px;
     border-radius: 8px;
 }
 
@@ -1434,19 +1460,18 @@ button {
 
 .breadcrumbs-link.active {
     text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .breadcrumbs-item {
     list-style: none;
 }
 
-.breadcrumbs-item:not(:last-child) {
+.breadcrumbs-item.arrow {
+    margin-left: 8px;
     margin-right: 8px;
 }
 
-.breadcrumbs-item:not(:first-child) {
-    margin-left: 8px;
-}
 
 .catalog-filter-title {
     font-weight: 400;
@@ -1465,9 +1490,10 @@ button {
     line-height: 20px;
     color: #2D3440;
     background-color: rgba(252, 252, 252, 0.3);
-    border: 2px solid #FCFCFC;
-    width: 185px;
-    height: 36px;
+    outline: 2px solid #FCFCFC;
+    border: none;
+    height: 38px;
+    padding: 8px 52px;
     border-radius: 20px;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
@@ -1475,18 +1501,19 @@ button {
 
 .filter-button:hover {
     background-color: #FCFCFC;
-    border: 2px solid rgba(252, 252, 252, 0.3);
+    outline: 2px solid rgba(252, 252, 252, 0.3);
+    border: none;
 }
 
 .filter-button:active {
     background-color: rgba(252, 252, 252, 0.5);
-    border: 2px solid transparent;
+    outline: 2px solid transparent;
 }
 
 .filter-button:focus-visible  {
     background-color: rgba(252, 252, 252, 0.3);
-    border: 2px solid #2D3440;
-    outline: none;
+    outline: 2px solid #2D3440;
+    border: none;
 }
 
 .filter-button:disabled  {
@@ -1589,12 +1616,12 @@ button {
 
 .range-toggle.toggle-min {
     top: -8px;
-    left: -8px;
+    left: -2px;
 }
 
 .range-toggle.toggle-max {
     top: -8px;
-    right: -8px;
+    right: -2px;
 }
 
 .range-input {
@@ -1607,6 +1634,7 @@ button {
     font-family: "Inter", sans-serif;
     color: #2D3440;
     line-height: 20px;
+    margin-right: 2px;
 }
 
 .range-input::-webkit-inner-spin-button,
@@ -1626,7 +1654,8 @@ button {
 
 .product-link img {
     margin-top: -51px;
-    margin-bottom: 8px;
+    width: 188px;
+    height: 188px;
 }
 
 .product-link h3 {
@@ -1634,7 +1663,7 @@ button {
     font-size: 20px;
     line-height: 24px;
     color: #2D3440;
-    margin: 0 0 8px 0;
+    margin: -1px 0 8px 0;
 }
 
 .product-link p {
@@ -1655,11 +1684,10 @@ button {
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     border: none;
-    padding: 12px 32px;
+    padding: 12px 35px;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
-    outline-style: solid;
-    outline-color: rgba(252, 252, 252, 0.4);
+    outline: 2px solid rgba(252, 252, 252, 0.4);
 }
 
 .catalog-navigation .button:hover {
@@ -1692,7 +1720,7 @@ button {
 .catalog-navigation {
     display: flex;
     justify-content: flex-end;
-    padding: 41px 0;
+    padding: 56px 0 38px 0;
     margin-bottom: 40px;
 }
 
@@ -1737,18 +1765,19 @@ button {
     justify-content: center;
 }
 
+.slider {
+    width: 590px;
+    margin-left: 24px;
+}
+
 .slider-wrapper {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .slider-slides {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 630px;
 }
 
 
@@ -1787,8 +1816,8 @@ button {
 .slider-arrows {
     position: absolute;
     top: 50%;
-    left: -22px; /* Можно так сдлеть? */
-    transform: translateY(-50%);
+    left: -22px;
+    transform: translateY(calc(-50% + 3px));
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -1803,6 +1832,9 @@ button {
     fill: #FFFFFF;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
+    width: 38px;
+    height: 38px;
+    position: relative;
 }
 
 .slider-button:hover {
@@ -1825,6 +1857,15 @@ button {
 
 .slider-button:disabled {
     opacity: 0.4;
+}
+
+.slider-arrow-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .slider-button-next {
@@ -1959,6 +2000,11 @@ button {
     min-width: 383px;
 }
 
+.catalog-filter-fat .catalog-filter-list {
+    max-width: 383px;
+    padding: 8px 24px;
+}
+
 .catalog-filter-fat .control {
     display: flex;
     align-items: center;
@@ -1981,6 +2027,11 @@ button {
     border: 1px solid #FCFCFC;
 }
 
+.control-input:focus-visible + .control-mark {
+    border: 1px solid #2D3440;
+    background-color: #FCFCFC;
+}
+
 .control-input:disabled + .control-mark{
     opacity: 0.5;
     border: 1px solid #2D3440;
@@ -1999,7 +2050,11 @@ button {
   content: "";
   border: none;
   background-color: transparent;
-  background-image: url("/img/catalog/checkbox.svg");
+  background-image: url("../../img/catalog/checkbox.svg");
+}
+
+.control-input[type="checkbox"]:checked:focus-visible + .control-mark {
+    background-color: #fff;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -2060,27 +2115,30 @@ button {
 .catalog-filter-list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0;
-    padding: 8px 24px;
+    width: 604px;
+    padding: 10px 24px;
+    gap: 16px;
 }
 
 .catalog-filter-item {
     list-style: none;
 }
 
-.catalog-filter-item:not(:last-child) {
-    margin-right: 16px;
-}
-
 .catalog-filter-upper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .catalog-filter-upper .catalog-filter-fat {
     margin-left: 24px;
+}
+
+.catalog-filter-upper .catalof-filter-group {
+    max-width: 383px;
 }
 
 .catalog-filter-lower {
@@ -2089,7 +2147,7 @@ button {
 }
 
 .catalog-filter-lower .catalog-filter-group {
-    margin-right: 16px;
+    margin-right: 18px;
 }
 
 .navigation {
@@ -2097,7 +2155,7 @@ button {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 24px 0;
+    padding: 22px 0 26px;
 }
 
 .navigation .logo {
@@ -2107,6 +2165,8 @@ button {
 .gallery {
     padding-left: 70px;
     padding-top: 20px;
+    position: relative;
+    width: 1170px;
 }
 
 .gallery-main {
@@ -2117,30 +2177,40 @@ button {
 
 .gallery-lower-navigation {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    left: 0;
 }
 
 .gift-items {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 55px 0 0 0;
     padding: 0;
 }
 
 .popular-product-list {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 107px 0 0 0;
+    padding: 0; */
     padding: 0;
+    margin: 107px 0 0 0;
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    column-gap: 30px;
+    row-gap: 91px;
 }
 
 .about-shop-list {
     display: grid;
-    grid-template-columns: 505px 508px;
+    grid-template-columns: repeat(2, 1fr);
     padding: 0;
     margin: 0;
     row-gap: 40px;
@@ -2152,21 +2222,34 @@ button {
     align-items: center;
     justify-content: space-between;
     margin-top: 80px;
+    width: 1170px;
 }
 
 .page-footer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 50px 14px 50px 0;
+    flex-wrap: wrap;
+    padding: 42px 14px 45px 0;
+}
+
+.page-footer.catalog {
+    padding: 49px 14px 45px 0;
+}
+
+.social-icons {
+    flex-basis: 22%;
 }
 
 .social {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; */
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 24px 24px 24px;
+    gap: 16px;
 }
 
 .social-item {
@@ -2193,7 +2276,6 @@ button {
 
 .footer-navigation-list .footer-navigation-item {
     margin-bottom: 8px;
-
 }
 
 .footer-navigation-item:nth-child(3) {
@@ -2205,15 +2287,20 @@ button {
     margin-right: 24px;
 }
 
- .footer-navigation-item.active {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
- }
-
- .footer-navigation-item.active .footer-navigation-link {
-    margin-left: 8px;
+.footer-navigation-item.active {
+    position: relative;
 }
+
+ .footer-navigation-item.active::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(calc(-50% + 1px));
+    left: -24px;
+    background-image: url('../img/index/heart-fill.svg');
+    width: 16px;
+    height: 16px;
+ }
 
 .footer-logo {
     display: flex;
@@ -2226,7 +2313,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 32px 0 16px 0;
+    margin: 26px 0 16px 0;
     padding: 0;
 }
 
@@ -2253,7 +2340,7 @@ button {
 .product-list {
     display: grid;
     grid-template-columns: repeat(4, 270px);
-    gap: 91px 30px;
+    gap: 87px 30px;
     margin: 0;
     padding: 0;
     margin-top: 95px;
@@ -2321,8 +2408,8 @@ button {
 }
 
 .social-item .social-link {
-    width: 24px;
-    height: 23px;
+    width: 28px;
+    height: 28px;
     border: 2px solid rgba(252, 252, 252, 0.3);
     position: absolute;
     border-radius: 50%;
@@ -2335,7 +2422,7 @@ button {
 }
 
 .social-icon {
-    width: 24px;
+    min-width: 24px;
     height: 24px;
     color: #FFFFFF;
     border-radius: 24px;
@@ -2561,6 +2648,11 @@ button {
     background-color: #E7E7E7;
     outline: 1px solid #B9B9B9;
     opacity: 1;
+}
+
+.footer-line {
+    height: 0;
+    border: 1px solid rgba(252, 252, 252, 0.3);
 }
 
 

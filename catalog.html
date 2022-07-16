@@ -4,16 +4,18 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicon/favicon.ico" sizes="32x32">
   </head>
   <body>
     <div class="container">
         <header class="page-header">
             <nav class="navigation">
-              <h2 class="visually-hidden">GllacyShop</h2>
+              <h2 class="visually-hidden">GllacyShop.</h2>
               <!-- /.visually-hidden -->
                 <div class="navigation-menu navigation-menu-logo">
                     <a href="index.html">
-                        <img src="img/catalog/logo.svg" alt="Логотип магазина 'GllacyShop'">
+                        <img src="img/catalog/logo.svg" width="137" height="56" alt="Логотип магазина 'GllacyShop'.">
                     </a>
                     <ul class="navigation-list">
                         <li class="navigation-item-active">
@@ -62,16 +64,16 @@
                         </li>
                         <!-- /.navigation-item -->
                         <li class="navigation-item navigation-item-input search">
-                            <button type="button" href="#" class="navigation-link navigation-link-button navigation-link-button-search">
+                            <button type="button" class="navigation-link navigation-link-button navigation-link-button-search">
                               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="currenColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.663 8.188a4.667 4.667 0 1 1 8.028 3.237.67.67 0 0 0-.123.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z"/></svg>
-                              <span class="visually-hidden navigation-item-input-text">Поиск</span>
+                              <span class="visually-hidden navigation-item-input-text">Поиск.</span>
                             </button>
                             <!-- /.navigation-link navigation-item-input-->
                             <div class="popover popover-search">
                               <div class="popover-content">
                                 <form action="https://echo.htmlacademy.ru" class="popover-form-search popover-form">
-                                  <label for="" class="visually-hidden">Что вы хотите найти?</label>
-                                  <input type="text" class="input" placeholder="Поиск по сайту" name="request">
+                                  <label for="request" class="visually-hidden">Что вы хотите найти?</label>
+                                  <input type="text" id="request" class="input" placeholder="Поиск по сайту" name="request">
                                   <button type="submit" class="visually-hidden"></button>
                                 </form>
                               </div>
@@ -81,9 +83,9 @@
                           </li>
                           <!-- /.navigation-item navigation-item-input -->
                           <li class="navigation-item navigation-item-input login">
-                            <button type="button" href="#" class="navigation-link navigation-link-button navigation-link-button-login">
+                            <button type="button" class="navigation-link navigation-link-button navigation-link-button-login">
                               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currenColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 0 1 0-1.333h2.666A.667.667 0 0 0 13 13.19V3.858a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 2.525ZM5.862 4.72c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.774l-3.328 3.33a.667.667 0 1 1-.943-.944l2.195-2.195h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 5.663a.667.667 0 0 1 0-.943Z"/></svg>Вход
-                              <span class="visually-hidden navigation-item-input-text">Вход</span>
+                              <span class="visually-hidden navigation-item-input-text">Вход.</span>
                             </button>
                             <!-- /.navigation-link navigation-item-input-->
                             <div class="popover popover-login">
@@ -91,9 +93,9 @@
                                 <h3 class="popover-title">Личный кабинет</h3>
                                 <!-- /.popover-title -->
                                 <form action="https://echo.htmlacademy.ru" class="popover-form-login popover-form">
-                                  <label for="popoverMail" class="visually-hidden">Введите свой email</label>
+                                  <label for="popoverMail" class="visually-hidden">Введите свой email.</label>
                                   <input class="input" type="text" id="popoverMail" name="email" placeholder="email@example.com">
-                                  <label for="popoverPassword" class="visually-hidden">Введите свой пароль</label>
+                                  <label for="popoverPassword" class="visually-hidden">Введите свой пароль.</label>
                                   <input class="input" type="password" name="password" id="popoverPassword">
                                   <div class="popover-button">
                                     <button type="submit" class="button">Войти</button>
@@ -112,9 +114,9 @@
                           </li>
                           <!-- /.navigation-item -->
                           <li class="navigation-item navigation-item-input cart">
-                            <button type="button" href="#" class="navigation-link navigation-link-button navigation-link-button-cart">
+                            <button type="button" class="navigation-link navigation-link-button navigation-link-button-cart">
                               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#2D3440"/></svg>2 товара
-                              <span class="visually-hidden navigation-item-input-text">Корзина</span>
+                              <span class="visually-hidden navigation-item-input-text">Корзина.</span>
                             </button>
                             <!-- /.navigation-link navigation-item-input-->
                             <div class="popover popover-empty-cart">
@@ -136,16 +138,18 @@
         <!-- /.page-header -->
 
         <main class="main-inner">
-            <section class="catalog">
+            <div class="catalog">
                     <ul class="breadcrumbs">
                         <li class="breadcrumbs-item">
                             <a href="index.html" class="breadcrumbs-link">Главная</a>
                             <!-- /.breadcrumbs-link -->
                         </li>
                         <!-- /.breadcrumbs-item -->
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35355 3.14645C3.15829 2.95118 2.84171 2.95118 2.64645 3.14645C2.45118 3.34171 2.45118 3.65829 2.64645 3.85355L4.79289 6L2.64645 8.14645C2.45118 8.34171 2.45118 8.65829 2.64645 8.85355C2.84171 9.04882 3.15829 9.04882 3.35355 8.85355L5.85355 6.35355C6.04882 6.15829 6.04882 5.84171 5.85355 5.64645L3.35355 3.14645ZM6.85352 3.14645C6.65826 2.95118 6.34168 2.95118 6.14642 3.14645C5.95115 3.34171 5.95115 3.65829 6.14642 3.85355L8.29286 6L6.14642 8.14645C5.95115 8.34171 5.95115 8.65829 6.14642 8.85355C6.34168 9.04882 6.65826 9.04882 6.85352 8.85355L9.35352 6.35355C9.54878 6.15829 9.54878 5.84171 9.35352 5.64645L6.85352 3.14645Z" fill="#2D3440"/>
-                        </svg>
+                        <li class="breadcrumbs-item arrow">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.35355 3.14645C3.15829 2.95118 2.84171 2.95118 2.64645 3.14645C2.45118 3.34171 2.45118 3.65829 2.64645 3.85355L4.79289 6L2.64645 8.14645C2.45118 8.34171 2.45118 8.65829 2.64645 8.85355C2.84171 9.04882 3.15829 9.04882 3.35355 8.85355L5.85355 6.35355C6.04882 6.15829 6.04882 5.84171 5.85355 5.64645L3.35355 3.14645ZM6.85352 3.14645C6.65826 2.95118 6.34168 2.95118 6.14642 3.14645C5.95115 3.34171 5.95115 3.65829 6.14642 3.85355L8.29286 6L6.14642 8.14645C5.95115 8.34171 5.95115 8.65829 6.14642 8.85355C6.34168 9.04882 6.65826 9.04882 6.85352 8.85355L9.35352 6.35355C9.54878 6.15829 9.54878 5.84171 9.35352 5.64645L6.85352 3.14645Z" fill="#2D3440"/>
+                            </svg>
+                        </li>
                         <li class="breadcrumbs-item">
                             <span class="breadcrumbs-link active">Каталог</span>
                             <!-- /.breadcrumbs-link -->
@@ -156,7 +160,7 @@
                     <h2 class="inner-header-title">Сливочное мороженое</h2>
                     <!-- /.inner-header-title -->
                 <div class="catalog-filter">
-                    <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+                    <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
                     <!-- /.visually-hidden -->
                     <form action="https://echo.htmlacademy.ru/" class="catalog-filter-form" method="get">
                         <div class="catalog-filter-upper">
@@ -170,33 +174,33 @@
                             </fieldset>
                             <!-- /.sorting -->
                             <div class="catalog-filter-price">
-                                <label class="catalog-filter-title">
+                                <span class="catalog-filter-title">
                                     Цена:
-                                    <div class="range-wrapper-inputs">
-                                        <label for="" class="catalog-filter-label">
-                                            <input type="number" value="100" class="range-input" name="min-price">₽
+                                    <span class="range-wrapper-inputs">
+                                        <label for="min-price" class="catalog-filter-label">
+                                            <input type="number" id="min-price" value="100" class="range-input" name="min-price">₽
                                         </label>
                                         <!-- /.catalog-filter-label -->
                                         <span>–</span>
-                                        <label for="" class="catalog-filter-label">
-                                            <input type="number" value="500" class="range-input" name="max-price">₽
+                                        <label for="max-price" class="catalog-filter-label">
+                                            <input type="number" id="max-price" value="500" class="range-input" name="max-price">₽
                                         </label>
                                         <!-- /.catalog-filter-label -->
-                                    </div>
+                                    </span>
                                     <!-- /.range-wrapper -->
-                                </label>
+                                </span>
                                 <!-- /.catalog-filter-title -->
                                 <fieldset class="catalog-filter-group">
                                     <div class="range">
                                         <div class="range-scale">
-                                            <div class="range-bar" style="left: 24px; width: 56px;">
+                                            <div class="range-bar" style="left: 24px; width: 86px;">
                                                 <button type="button" class="range-toggle toggle-min">
-                                                    <span class="visually-hidden">Изменить минимальную цену</span>
+                                                    <span class="visually-hidden">Изменить минимальную цену.</span>
                                                     <!-- /.visually-hidden -->
                                                 </button>
                                                 <!-- /.range-toggle toggle-min -->
                                                 <button type="button" class="range-toggle toggle-max">
-                                                    <span class="visually-hidden">Изменить минимальную цену</span>
+                                                    <span class="visually-hidden">Изменить минимальную цену.</span>
                                                     <!-- /.visually-hidden -->
                                                 </button>
                                                 <!-- /.range-toggle toggle-max -->
@@ -227,7 +231,7 @@
                                         <!-- /.catalog-filter-item -->
                                         <li class="catalog-filter-item">
                                             <label class="control">
-                                                <input type="radio" class="visually-hidden control-input input" name="product-group" value="10%">
+                                                <input type="radio" class="visually-hidden control-input input" name="product-group" value="10%" checked>
                                                 <span class="control-mark"></span>
                                                 <span>до 10%</span>
                                             </label>
@@ -327,206 +331,206 @@
                 <div class="product-cards">
                     <ul class="product-list">
                         <li class="product-card">
-                            <a href="#" class="product-link">
-                                <img src="img/catalog/photo1.png" width="168px" height="168px" alt="Малина">
+                            <div class="product-link">
+                                <img src="img/catalog/photo1.png" width="168" height="168" alt="Малина.">
                                 <h3>Малинка</h3>
                                 <p>Сливочное мороженое с малиновым джемом</p>
                                 <div class="price-block">
                                     <b>310 ₽/кг</b>
                                     <button type="button" class="button">
-                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                                        <div class="visually-hidden">В корзину</div>
+                                        <span class="visually-hidden">В корзину.</span>
                                         <!-- /.visually-hidden -->
+                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
                                       </button>
                                 </div>
-                            </a>
+                            </div>
                             <!-- /.product-link -->
                         </li>
                         <!-- /.product-card -->
                         <li class="product-card">
-                            <a href="#" class="product-link">
-                                <img src="img/catalog/photo2.png" width="168px" height="168px" alt="Фисташка">
+                            <div class="product-link">
+                                <img src="img/catalog/photo2.png" width="168" height="168" alt="Фисташка.">
                                 <h3>Фисташка</h3>
                                 <p>Фисташковый пломбир с кусочками шоколада</p>
                                 <div class="price-block">
                                     <b>340 ₽/кг</b>
                                     <button type="button" class="button">
-                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                                        <div class="visually-hidden">В корзину</div>
+                                        <span class="visually-hidden">В корзину.</span>
                                         <!-- /.visually-hidden -->
+                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
                                       </button>
                                 </div>
-                            </a>
+                            </div>
                             <!-- /.product-link -->
                         </li>
                         <!-- /.product-card -->
                         <li class="product-card">
-                            <a href="#" class="product-link">
-                                <img src="img/catalog/photo3.png" width="168px" height="168px" alt="Черника">
+                            <div class="product-link">
+                                <img src="img/catalog/photo3.png" width="168" height="168" alt="Черника.">
                                 <h3>Черника</h3>
                                 <p>Крем-брюле с черничным джемом</p>
                                 <div class="price-block">
                                     <b>330 ₽/кг</b>
                                     <button type="button" class="button">
-                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                                        <div class="visually-hidden">В корзину</div>
+                                        <span class="visually-hidden">В корзину.</span>
                                         <!-- /.visually-hidden -->
+                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
                                       </button>
                                 </div>
-                            </a>
+                            </div>
                             <!-- /.product-link -->
                         </li>
                         <!-- /.product-card -->
                         <li class="product-card">
-                            <a href="#" class="product-link">
-                                <img src="img/catalog/photo4.png" width="168px" height="168px" alt="Бабл-гам">
+                            <div class="product-link">
+                                <img src="img/catalog/photo4.png" width="168" height="168" alt="Бабл-гам.">
                                 <h3>Бабл-гам</h3>
                                 <p>Ванильный пломбир со сладкой посыпкой</p>
                                 <div class="price-block">
                                     <b>320 ₽/кг</b>
                                     <button type="button" class="button">
-                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                                        <div class="visually-hidden">В корзину</div>
+                                        <span class="visually-hidden">В корзину.</span>
                                         <!-- /.visually-hidden -->
+                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
                                       </button>
                                 </div>
-                            </a>
+                            </div>
                             <!-- /.product-link -->
                         </li>
                         <!-- /.product-card -->
                         <li class="product-card">
-                            <a href="#" class="product-link">
-                                <img src="img/catalog/photo5.png" width="168px" height="168px" alt="Ежевика">
+                            <div class="product-link">
+                                <img src="img/catalog/photo5.png" width="168" height="168" alt="Ежевика.">
                                 <h3>Ежевика</h3>
                                 <p>Сливочное мороженое с ежевичным джемом</p>
                                 <div class="price-block">
                                     <b>330 ₽/кг</b>
                                     <button type="button" class="button">
-                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                                        <div class="visually-hidden">В корзину</div>
+                                        <span class="visually-hidden">В корзину.</span>
                                         <!-- /.visually-hidden -->
+                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
                                       </button>
                                 </div>
-                            </a>
+                            </div>
                             <!-- /.product-link -->
                         </li>
                         <!-- /.product-card -->
                         <li class="product-card">
-                            <a href="#" class="product-link">
-                                <img src="img/catalog/photo6.png" width="168px" height="168px" alt="Банан">
+                            <div class="product-link">
+                                <img src="img/catalog/photo6.png" width="168" height="168" alt="Банан.">
                                 <h3>Банан</h3>
                                 <p>Сливочный пломбир с банановым вкусом</p>
                                 <div class="price-block">
                                     <b>340 ₽/кг</b>
                                     <button type="button" class="button">
-                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                                        <div class="visually-hidden">В корзину</div>
+                                        <span class="visually-hidden">В корзину.</span>
                                         <!-- /.visually-hidden -->
+                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
                                       </button>
                                 </div>
-                            </a>
+                            </div>
                             <!-- /.product-link -->
                         </li>
                         <!-- /.product-card -->
                         <li class="product-card">
-                            <a href="#" class="product-link">
-                                <img src="img/catalog/photo7.png" width="168px" height="168px" alt="Шоколадка">
+                            <div class="product-link">
+                                <img src="img/catalog/photo7.png" width="168" height="168" alt="Шоколадка.">
                                 <h3>Шоколадка</h3>
                                 <p>Классический шоколадный пломбир</p>
                                 <div class="price-block">
                                     <b>270 ₽/кг</b>
                                     <button type="button" class="button">
-                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                                        <div class="visually-hidden">В корзину</div>
+                                        <span class="visually-hidden">В корзину.</span>
                                         <!-- /.visually-hidden -->
+                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
                                       </button>
                                 </div>
-                            </a>
+                            </div>
                             <!-- /.product-link -->
                         </li>
                         <!-- /.product-card -->
                         <li class="product-card">
-                            <a href="#" class="product-link">
-                                <img src="img/catalog/photo8.png" width="168px" height="168px" alt="Клубничка">
+                            <div class="product-link">
+                                <img src="img/catalog/photo8.png" width="168" height="168" alt="Клубничка.">
                                 <h3>Клубничка</h3>
                                 <p>Сливочный пломбир с клубничным вкусом</p>
                                 <div class="price-block">
                                     <b>300 ₽/кг</b>
                                     <button type="button" class="button">
-                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                                        <div class="visually-hidden">В корзину</div>
+                                        <span class="visually-hidden">В корзину.</span>
                                         <!-- /.visually-hidden -->
+                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
                                       </button>
                                 </div>
-                            </a>
+                            </div>
                             <!-- /.product-link -->
                         </li>
                         <!-- /.product-card -->
                         <li class="product-card">
-                            <a href="#" class="product-link">
-                                <img src="img/catalog/photo9.png" width="168px" height="168px" alt="Лимон">
+                            <div class="product-link">
+                                <img src="img/catalog/photo9.png" width="168" height="168" alt="Лимон.">
                                 <h3>Лимон</h3>
                                 <p>Освежающий лимонный сорбет</p>
                                 <div class="price-block">
                                     <b>310 ₽/кг</b>
                                     <button type="button" class="button">
-                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                                        <div class="visually-hidden">В корзину</div>
+                                        <span class="visually-hidden">В корзину.</span>
                                         <!-- /.visually-hidden -->
+                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
                                       </button>
                                 </div>
-                            </a>
+                            </div>
                             <!-- /.product-link -->
                         </li>
                         <!-- /.product-card -->
                         <li class="product-card">
-                            <a href="#" class="product-link">
-                                <img src="img/catalog/photo10.png" width="168px" height="168px" alt="Ментол">
+                            <div class="product-link">
+                                <img src="img/catalog/photo10.png" width="168" height="168" alt="Ментол.">
                                 <h3>Ментол</h3>
                                 <p>Сливочный пломбир с ментоловым сиропом</p>
                                 <div class="price-block">
                                     <b>320 ₽/кг</b>
                                     <button type="button" class="button">
-                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                                        <div class="visually-hidden">В корзину</div>
+                                        <span class="visually-hidden">В корзину.</span>
                                         <!-- /.visually-hidden -->
+                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
                                       </button>
                                 </div>
-                            </a>
+                            </div>
                             <!-- /.product-link -->
                         </li>
                         <!-- /.product-card -->
                         <li class="product-card">
-                            <a href="#" class="product-link">
-                                <img src="img/catalog/photo11.png" width="168px" height="168px" alt="Орешек">
+                            <div class="product-link">
+                                <img src="img/catalog/photo11.png" width="168" height="168" alt="Орешек.">
                                 <h3>Орешек</h3>
                                 <p>Фисташковый пломбир с шоколадным сиропом</p>
                                 <div class="price-block">
                                     <b>360 ₽/кг</b>
                                     <button type="button" class="button">
-                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                                        <div class="visually-hidden">В корзину</div>
+                                        <span class="visually-hidden">В корзину.</span>
                                         <!-- /.visually-hidden -->
+                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
                                       </button>
                                 </div>
-                            </a>
+                            </div>
                             <!-- /.product-link -->
                         </li>
                         <!-- /.product-card -->
                         <li class="product-card">
-                            <a href="#" class="product-link">
-                                <img src="img/catalog/photo12.png" width="168px" height="168px" alt="Крем-брюле">
+                            <div class="product-link">
+                                <img src="img/catalog/photo12.png" width="168" height="168" alt="Крем-брюле.">
                                 <h3>Крем-брюле</h3>
                                 <p>Классическое крем-брюле</p>
                                 <div class="price-block">
                                     <b>280 ₽/кг</b>
                                     <button type="button" class="button">
-                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
-                                        <div class="visually-hidden">В корзину</div>
+                                        <span class="visually-hidden">В корзину.</span>
                                         <!-- /.visually-hidden -->
-                                      </button>
+                                        <svg class="button-cart-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/></svg>
+                                    </button>
                                 </div>
-                            </a>
+                            </div>
                             <!-- /.product-link -->
                         </li>
                         <!-- /.product-card -->
@@ -584,15 +588,15 @@
                     <!-- /.catalog-navigation-content -->
                 </div>
                 <!-- /.catalog-navigation -->
-            </section>
+            </div>
             <!-- /.catalog -->
         </main>
         <!-- /.main-inner -->
 
-        <hr>
+        <hr class="footer-line">
 
-        <footer class="page-footer">
-            <section class="social-icons">
+        <footer class="page-footer catalog">
+            <div class="social-icons">
                 <ul class="social">
                     <li class="social-item">
                       <a href="https://t.me/htmlacademy" class="social-link social-link-telegram">
@@ -600,7 +604,7 @@
                           <circle cx="12" cy="12" r="11"></circle>
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.627 18.627 24 12 24C5.373 24 0 18.627 0 12C0 5.373 5.373 0 12 0C18.627 0 24 5.373 24 12ZM12.43 8.859C11.263 9.344 8.93 10.349 5.432 11.873C4.864 12.099 4.566 12.32 4.539 12.536C4.493 12.902 4.951 13.046 5.573 13.241C5.658 13.268 5.746 13.295 5.836 13.325C6.449 13.524 7.273 13.757 7.701 13.766C8.09 13.774 8.524 13.614 9.003 13.286C12.271 11.079 13.958 9.964 14.064 9.94C14.139 9.923 14.243 9.901 14.313 9.964C14.383 10.026 14.376 10.144 14.369 10.176C14.323 10.369 12.529 12.038 11.599 12.902C11.309 13.171 11.104 13.362 11.062 13.406C10.968 13.503 10.872 13.596 10.78 13.685C10.21 14.233 9.784 14.645 10.804 15.317C11.294 15.64 11.686 15.907 12.077 16.173C12.504 16.464 12.93 16.754 13.482 17.116C13.622 17.208 13.756 17.303 13.887 17.396C14.384 17.751 14.831 18.069 15.383 18.019C15.703 17.989 16.035 17.688 16.203 16.789C16.6 14.663 17.382 10.059 17.563 8.161C17.574 8.00341 17.5673 7.84509 17.543 7.689C17.5284 7.56293 17.4671 7.44693 17.371 7.364C17.228 7.247 17.006 7.222 16.906 7.224C16.455 7.232 15.763 7.473 12.43 8.859V8.859Z" fill="some-color"/>
                         </svg>
-                        <div class="visually-hidden">Иконка Telegram</div>
+                        <div class="visually-hidden">Иконка Telegram.</div>
                         <!-- /.visually-hidden -->
                       </a>
                       <!-- /.social-link -->
@@ -612,7 +616,7 @@
                           <circle cx="12" cy="12" r="11"></circle>
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM12.5884 14.9749H11.8711C11.8711 14.9749 10.2885 15.0584 8.89479 13.7867C7.37486 12.3995 6.03249 9.64702 6.03249 9.64702C6.03249 9.64702 5.95511 9.46654 6.03917 9.3793C6.13366 9.28121 6.39106 9.27493 6.39106 9.27493L8.10567 9.26508C8.10567 9.26508 8.26727 9.28878 8.38294 9.36317C8.47824 9.42457 8.53167 9.53936 8.53167 9.53936C8.53167 9.53936 8.80878 10.1536 9.17581 10.7093C9.89212 11.7942 10.2258 12.0315 10.469 11.9152C10.8233 11.7458 10.7171 10.3816 10.7171 10.3816C10.7171 10.3816 10.7236 9.88646 10.5387 9.66601C10.3955 9.4951 10.1254 9.44527 10.0062 9.43128C9.90971 9.42 10.0681 9.22367 10.2733 9.13558C10.5819 9.00308 11.1268 8.99551 11.7706 9.00136C12.2722 9.00579 12.4165 9.0332 12.6127 9.07475C13.0677 9.17105 13.0536 9.47963 13.0229 10.1454C13.0138 10.3444 13.0032 10.5752 13.0032 10.8418C13.0032 10.9018 13.0012 10.9657 12.9991 11.0315C12.9885 11.3725 12.9763 11.7629 13.2324 11.908C13.3637 11.9822 13.6849 11.9191 14.4884 10.7233C14.8693 10.1566 15.1549 9.49024 15.1549 9.49024C15.1549 9.49024 15.2173 9.37145 15.3142 9.32048C15.4134 9.26851 15.5472 9.2845 15.5472 9.2845L17.3515 9.27465C17.3515 9.27465 17.8937 9.21796 17.9815 9.43242C18.0735 9.65758 17.7788 10.1833 17.0417 11.0444C16.3463 11.8567 16.006 12.1587 16.0328 12.4236C16.0527 12.6198 16.2739 12.7957 16.7015 13.1436C17.5897 13.8661 17.8264 14.2455 17.8827 14.3357C17.8872 14.343 17.8906 14.3484 17.893 14.3519C18.2905 14.9296 17.4522 14.9749 17.4522 14.9749L15.8497 14.9944C15.8497 14.9944 15.5053 15.0543 15.0521 14.7814C14.8151 14.6388 14.5833 14.406 14.3626 14.1842C14.0251 13.8451 13.7131 13.5316 13.4469 13.6056C13.0002 13.7298 13.0143 14.5734 13.0143 14.5734C13.0143 14.5734 13.0175 14.7536 12.9157 14.8495C12.8051 14.954 12.5884 14.9749 12.5884 14.9749Z" fill="some-color"/>
                         </svg>
-                        <div class="visually-hidden">Иконка ВКонтакте</div>
+                        <div class="visually-hidden">Иконка ВКонтакте.</div>
                         <!-- /.visually-hidden -->
                       </a>
                       <!-- /.social-link -->
@@ -624,7 +628,7 @@
                           <circle cx="12" cy="12" r="11"></circle>
                           <path d="M14.0037 11.7913L11.1963 10.4813C10.9513 10.3675 10.75 10.495 10.75 10.7662V13.2338C10.75 13.505 10.9513 13.6325 11.1963 13.5188L14.0025 12.2087C14.2488 12.0938 14.2487 11.9063 14.0037 11.7913ZM12 0C5.3725 0 0 5.3725 0 12C0 18.6275 5.3725 24 12 24C18.6275 24 24 18.6275 24 12C24 5.3725 18.6275 0 12 0ZM12 16.875C5.8575 16.875 5.75 16.3213 5.75 12C5.75 7.67875 5.8575 7.125 12 7.125C18.1425 7.125 18.25 7.67875 18.25 12C18.25 16.3213 18.1425 16.875 12 16.875Z" fill="some-color"/>
                         </svg>
-                        <div class="visually-hidden">Иконка YouTube</div>
+                        <div class="visually-hidden">Иконка YouTube.</div>
                         <!-- /.visually-hidden -->
                       </a>
                       <!-- /.social-link -->
@@ -632,14 +636,11 @@
                     <!-- /.social-item -->
                   </ul>
                   <!-- /.social -->
-            </section>
+            </div>
             <!-- /.social-icon -->
-            <section class="footer-navigation">
+            <div class="footer-navigation">
               <ul class="footer-navigation-list">
                 <li class="footer-navigation-item active">
-                    <svg class="footer-navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currenColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.8911 2.99447C13.5506 2.65381 13.1463 2.38357 12.7014 2.19919C12.2564 2.01482 11.7795 1.91992 11.2978 1.91992C10.8161 1.91992 10.3392 2.01482 9.89423 2.19919C9.44926 2.38357 9.04497 2.65381 8.70447 2.99447L7.9978 3.70114L7.29113 2.99447C6.60334 2.30668 5.67049 1.92028 4.6978 1.92028C3.72511 1.92028 2.79226 2.30668 2.10447 2.99447C1.41667 3.68227 1.03027 4.61512 1.03027 5.58781C1.03027 6.56049 1.41667 7.49334 2.10447 8.18114L2.81113 8.88781L7.9978 14.0745L13.1845 8.88781L13.8911 8.18114C14.2318 7.84064 14.502 7.43635 14.6864 6.99138C14.8708 6.5464 14.9657 6.06946 14.9657 5.58781C14.9657 5.10615 14.8708 4.62921 14.6864 4.18424C14.502 3.73926 14.2318 3.33498 13.8911 2.99447Z"/>
-                    </svg>
                     <a href="#" class="footer-navigation-link">Для поставщиков</a>
                     <!-- /.footer-navigation-link -->
                 </li>
@@ -661,12 +662,12 @@
                 <!-- /.footer-navigation-item -->
               </ul>
               <!-- /.footer-navigation -->
-            </section>
+            </div>
             <!-- /.footer-navigation -->
-            <section class="footer-logo">
-                <a href="https://htmlacademy.ru/"><img src="img/index/logo-htmlacademy.svg" alt="Логотип компании, которая разработала сайт 'GllacyShop'"></a>
+            <div class="footer-logo">
+                <a href="https://htmlacademy.ru/"><img src="img/index/logo-htmlacademy.svg" width="93" height="27" alt="Логотип компании, которая разработала сайт 'GllacyShop'."></a>
                 <span>Сделано в .html academy © 2021</span>
-            </section>
+            </div>
             <!-- /.footer-logo -->
         </footer>
         <!-- /.page-footer -->
