@@ -1064,8 +1064,6 @@ button {
 }
 
 .mailing-list-form .button {
-    /* width: 152px;
-    height: 44px; */
     background-color: #FF2F64;
     box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border: none;
@@ -1299,7 +1297,6 @@ button {
     font-weight: normal;
     text-transform: none;
     left: 100%;
-    /* transform: translateX(-50%); */
     width: 160px;
     z-index: 1;
     margin-bottom: 6px;
@@ -2044,13 +2041,10 @@ button {
   left: 0;
   bottom: 0;
   right: 0;
-  /* width: 16px; */
-  /* height: 16px; */
-  /* background-color: #242424; */
   content: "";
   border: none;
   background-color: transparent;
-  background-image: url("../../img/catalog/checkbox.svg");
+  background-image: url("/img/catalog/checkbox.svg");
 }
 
 .control-input[type="checkbox"]:checked:focus-visible + .control-mark {
@@ -2194,12 +2188,6 @@ button {
 }
 
 .popular-product-list {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 107px 0 0 0;
-    padding: 0; */
     padding: 0;
     margin: 107px 0 0 0;
     display: grid;
@@ -2242,9 +2230,6 @@ button {
 }
 
 .social {
-    /* display: flex;
-    align-items: center;
-    justify-content: flex-start; */
     margin: 0;
     padding: 0;
     display: grid;
@@ -2654,9 +2639,3 @@ button {
     height: 0;
     border: 1px solid rgba(252, 252, 252, 0.3);
 }
-
-
-/*
-    1)У иконок при наведении появляется какая-то граница мнешье пикселя, не понимаю как испарвить, пробовал экспортировать разные иконки
-    2)При нажатии на кнопку "Форма обратной связи", в самом низу в футере резко поднимаются и опускаются пункты "Для поставщиков" и логотип
-*/
